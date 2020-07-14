@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Васильева](https://up.htmlacademy.ru/adaptive/20/user/1422609).
-* Наставник: [Дмитрий Казанцев](https://htmlacademy.ru/profile/id24186).
+* Наставник: `Неизвестно`.
 
 ---
 
