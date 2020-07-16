@@ -5,8 +5,117 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="mobile-header">
+      <nav class="mobile-navigation">
+        <a>Pink</a>
+        <a href="#" class="burger-menu-link" aria-label="Ссылка открывающая навигационное меню страницы"></a>
+      </nav>
+      <ul class="mobile-dropdown-list">
+        <li><a>Главная</a></li>
+        <li><a href="#">Фотографии</a></li>
+        <li><a href="#">Конкурс</a></li>
+        <li><a href="#">HTML Academy</a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="intro-banner-section">
+      <h1 class="visually-hidden">Мобильное приложение Pink</h1>
+      <p>Взгляните на жизнь иначе!</p>
+      </section>
+      <section class="download-app-section">
+        <a href="#" class="download-app-link">Скачать приложение</a>
+        <ul class="mobile-logos-list">
+          <li class="logo-apple"></li>
+          <li class="logo-android"></li>
+          <li class="logo-windows"></li>
+        </ul>
+        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="benefits-section">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p>Устали от серости мегаполиса?<br>
+        Нам есть, что вам предложить!</p>
+        <ul class="benefits-list">
+          <li>
+            <h3>Поднимает настроение</h3>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li>
+            <h3>Меняет мир вокруг</h3>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li>
+            <h3>Заводит новых друзей</h3>
+            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews-section">
+        <p class="customer-name">Николай Петров</p>
+        <p class="review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычне серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <ul class="reviews-slider-button-list">
+          <li><button class="reviews-slider-button-1" aria-label="Кнопка просмотра первого отзыва"></button></li>
+          <li><button class="reviews-slider-button-2" aria-label="Кнопка просмотра второго отзыва"></button></li>
+          <li><button class="reviews-slider-button-3" aria-label="Кнопка просмотра третьего отзыва"></button></li>
+        </ul>
+      </section>
+      <section class="price-section">
+        <table class="price-table">
+          <th>
+            <p class="table-header-paragraph">База</p>
+            <p class="table-header-price">1,99 USD</p>
+          </th>
+          <th>
+            <p class="table-header-paragraph">Стандарт</p>
+            <p class="table-header-price">3,99 USD</p>
+          </th>
+          <th>
+            <p class="table-header-paragraph">Анлим</p>
+            <p class="table-header-price">9,99 USD</p>
+          </th>
+          <tr>
+            <td class="filter-option-basic">Розовой фильтр</td>
+            <td class="filter-option-standard">Розовой фильтр</td>
+            <td class="filter-option-unlimited">Розовой фильтр</td>
+          </tr>
+          <tr>
+            <td class="smiley-option-basic">Смайлики</td>
+            <td class="smiley-option-standard">Смайлики</td>
+            <td class="smiley-option-comments">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="comments-option-basic">Комментарии</td>
+            <td class="comments-option-standard">Комментарии</td>
+            <td class="comments-option-comments">Комментарии</td>
+          </tr>
+        </table>
+        <ul class="price-slider-button-list">
+          <li><button class="price-slider-button-1" aria-label="Кнопка просмотра первого тарифа"></button></li>
+          <li><button class="price-slider-button-2" aria-label="Кнопка просмотра второго отзыва"></button></li>
+          <li><button class="price-slider-button-3" aria-label="Кнопка просмотра третьего отзыва"></button></li>
+        </ul>
+      </section>
+      <section class="contact-us-section">
+        <h3 class="visually-hidden">Наши контакты</h3>
+        <p class="contact-us-intro-paragraph">Остались вопросы? Свяжитесь с нами</p>
+        <p class="contact-option-heading-paragraph">Звоните:</p>
+        <p class="contact-option-address-paragraph"><a href="tel:+78125556666">+7(812)555-66-66</a></p>
+        <p class="contact-option-heading-paragraph">Пишите:</p>
+        <p class="contact-option-address-paragraph"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p class="contact-option-heading-paragraph">Приезжайте в гости:</p>
+        <p class="contact-option-address-paragraph">ул. Большая Конюшенная, 19/8</p>
+      </section>
+      <section class="map-section"></section>
+      <footer class="mobile-footer">
+      <a><!-- logo image goes here --></a>
+      <ul class="mobile-social-media-list">
+        <li><a class="mobile-logo-twitter"><!-- logo image goes here --></a></li>
+        <li><a class="mobile-logo-facebook"><!-- logo image goes here --></a></li>
+        <li><a class="mobile-logo-youtube"><!-- logo image goes here --></a></li>
+      </ul>
+      <p class="developer-copyrights-paragraph">Разработано</p>
+      <a class="developer-copyrights-logo"><!-- logo image goes here --></a>
+    </footer>
+    </main>
   </body>
 </html>
