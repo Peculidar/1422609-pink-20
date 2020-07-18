@@ -1,51 +1,49 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="page__body">
+  <body>
     <header class="page-header">
-      <a href="/source/index.html" class="page-header__logo">
+      <a class="page-header__logo" href="/source/index.html">
         <img src="#" width="74" height="23" alt="Логотип PINK">
       </a>
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню сайта"></button>
+      <button class="page-header__menu-toggle" type="button" aria-label="Открыть меню сайта"></button>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="/source/index.html">Главная</a></li>
-            <li class="site-list__item"><a href="/source/photo.html">Фотографии</a></li>
-            <li class="site-list__item site-list__item--active"><a>Конкурс</a></li>
-            <li class="site-list__item"><a href="#">HTML Academy</a></li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="/source/index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="/source/photo.html">Фотографии</a></li>
+          <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
-      <section class="main-intro main-intro--form-page">
+      <section class="main-intro">
         <h1 class="visually-hidden">Конкурс фотографий Pink</h1>
-        <p class="main-intro__description">Конкурс на самое безбашенное путешествие с Пинк</p>
+        <p class="main-intro__header">Конкурс на самое безбашенное путешествие с Пинк</p>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <a class="page-footer__logo--link" href="#">
+        <a class="page-footer__logo-link" href="#">
           <img src="#" width="145" height="40" alt="Логотип PINK">
         </a>
       </div>
-      <div class="page-footer__social-media social-media">
-        <ul class="page-footer__social-media-list">
-          <li class="social-media__item">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
             <a class="social__link social__link--twitter">
               <!-- Тут будет <svg></svg> -->
             </a>
           </li>
-          <li class="social-media__item">
+          <li class="social__item">
             <a class="social__link social__link--facebook">
               <!-- Тут будет <svg></svg> -->
             </a>
           </li>
-          <li class="social-media__item">
+          <li class="social__item">
             <a class="social__link social__link--youtube">
               <!-- Тут будет <svg></svg> -->
             </a>
@@ -54,7 +52,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__logo-link" href="#">
+        <a class="copyright__link" href="#">
           <img src="#" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>

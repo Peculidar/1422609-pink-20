@@ -1,129 +1,102 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="page__body">
+  <body>
     <header class="page-header">
-      <a href="/source/index.html" class="page-header__logo">
+      <a class="page-header__logo">
         <img src="#" width="74" height="23" alt="Логотип PINK">
       </a>
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню сайта"></button>
+      <button class="page-header__menu-toggle" type="button" aria-label="Открыть меню сайта"></button>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="/source/index.html">Главная</a></li>
-            <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
-            <li class="site-list__item"><a href="/source/form.html">Конкурс</a></li>
-            <li class="site-list__item"><a href="#">HTML Academy</a></li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="/source/photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="/source/form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
-      <section class="main-intro">
-        <div class="main-intro--photo-page">
-          <h1 class="main-intro__description">Фотографии пользователей</h1>
-        </div>
-        <div class="main-intro__promo">
-          <p class="promo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        </div>
+      <section class="index-intro">
+        <h1 class="visually-hidden">Мобильное приложение Pink</h1>
+        <p class="index-intro__header">Взгляните на жизнь иначе!</p>
       </section>
-      <section class="user-photos">
-        <h2 class="visually-hidden">Лента фотографий пользователей</h2>
-        <div class="user-photos__list">
-          <blockquote class="user-photos__items user-photos--panorama-of-the-day">
-            <p class="panorama-of-the-day__label">Панорама дня</p>
-            <img src="#" class="user-photos__submission" width="320" height="137" alt="Летняя фотография гор снята с горнолыжного подъемника">
-            <div class="user-photos__author-post">
-              <cite class="author-post__name-and-time"><span class="author-post__name">Анна</span> <span class="author-post__time">(5 минут назад)</span></cite>
-              <p class="author-post__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <p class="author-post__rating">Нравится: 225</p>
-            </div>
-          </blockquote>
-          <blockquote class="user-photos__items">
-            <img src="#" class="user-photos__submission" width="280" height="180" alt="Фотография видеосъемки рекламы белого автомобиля">
-            <div class="user-photos__author-post">
-              <cite class="author-post__name-and-time"><span class="author-post__name">Левон</span> <span class="author-post__time">(5 часов назад)</span></cite>
-              <p class="author-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="author-post__rating">Нравится: 356</p>
-            </div>
-          </blockquote>
-          <blockquote class="user-photos__items">
-            <img src="#" class="user-photos__submission" width="280" height="180" alt="Фотография ударной установки барабанщика">
-            <div class="user-photos__author-post">
-              <cite class="author-post__name-and-time"><span class="author-post__name">Антон</span> <span class="author-post__time">(12 часов назад)</span></cite>
-              <p class="author-post__text">Соседи будут рады!</p>
-              <p class="author-post__rating">Нравится: 666</p>
-            </div>
-          </blockquote>
-          <blockquote class="user-photos__items">
-            <img src="#" class="user-photos__submission" width="280" height="180" alt="Фотография стеклянного потолка">
-            <div class="user-photos__author-post">
-              <cite class="author-post__name-and-time"><span class="author-post__name">Борис</span> <span class="author-post__time">(20 часов назад)</span></cite>
-              <p class="author-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="author-post__rating">Нравится: 356</p>
-            </div>
-          </blockquote>
-          <blockquote class="user-photos__items">
-            <img src="#" class="user-photos__submission" width="280" height="180" alt="Фотография ярмарки Кубанская Бахча">
-            <div class="user-photos__author-post">
-              <cite class="author-post__name-and-time"><span class="author-post__name">Сергей</span> <span class="author-post__time">(25 часов назад)</span></cite>
-              <p class="author-post__text">Самая кубанская в мире!</p>
-              <p class="author-post__rating">Нравится: 4</p>
-            </div>
-          </blockquote>
-          <blockquote class="user-photos__items">
-            <img src="#" class="user-photos__submission" width="280" height="180" alt="Снимок ног фотографа над горным обрывом">
-            <div class="user-photos__author-post">
-              <cite class="author-post__name-and-time"><span class="author-post__name">Сергей</span> <span class="author-post__time">(40 часов назад)</span></cite>
-              <p class="author-post__text">Где снег-то?</p>
-              <p class="author-post__rating">Нравится: 150</p>
-            </div>
-          </blockquote>
-          <blockquote class="user-photos__items">
-            <img src="#" class="user-photos__submission" width="280" height="180" alt="Фотография крыла самолета, снята из окна самолета во время полета">
-            <div class="user-photos__author-post">
-              <cite class="author-post__name-and-time"><span class="author-post__name">Надежда</span> <span class="author-post__time">(45 часов назад)</span></cite>
-              <p class="author-post__text">Всем GM и взаимные лайки!</p>
-              <p class="author-post__rating">Нравится: 2560</p>
-            </div>
-          </blockquote>
-        </div>
+      <section class="app-store">
+        <h2 class="visually-hidden">Скачайте наше приложение</h2>
+        <a  class="app-store__download-link" href="#">Скачать приложение</a>
+        <ul class="app-store__logo-list logo-list">
+          <li class="logo-list__item">
+            <a class="logo-list__link logo-list__link--apple" href="#">
+              <img src="#" width="47" height="56" alt="Логотип Apple">
+            </a>
+          </li>
+          <li class="logo-list__item">
+            <a class="logo-list__link logo-list__link--android" href="#">
+              <img src="#" width="43" height="47" alt="Логотип Android">
+            </a>
+          </li>
+          <li class="logo-list__item">
+            <a class="logo-list__link logo-list__link--windows" href="#">
+              <img src="#" width="44" height="41" alt="Логотип Windows">
+            </a>
+          </li>
+        </ul>
+        <p class="app-store__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="advantages__introduction-part1">Устали от серости мегаполиса?</p>
+        <p class="advantages__introduction-part2">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
       </section>
     </main>
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="page-footer__logo">
-        <a class="page-footer__logo--link" href="#">
+        <a class="page-footer__logo-link" href="#">
           <img src="#" width="145" height="40" alt="Логотип PINK">
         </a>
       </div>
-      <div class="page-footer__social-media social-media">
-        <ul class="page-footer__social-media-list">
-          <li class="social-media__item">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
             <a class="social__link social__link--twitter">
-              <!-- Тут будет <svg></svg> -->
+              Тут будет <svg></svg>
             </a>
           </li>
-          <li class="social-media__item">
+          <li class="social__item">
             <a class="social__link social__link--facebook">
-              <!-- Тут будет <svg></svg> -->
+              Тут будет <svg></svg>
             </a>
           </li>
-          <li class="social-media__item">
+          <li class="social__item">
             <a class="social__link social__link--youtube">
-              <!-- Тут будет <svg></svg> -->
+              Тут будет <svg></svg>
             </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__logo-link" href="#">
+        <a class="copyright__link" href="#">
           <img src="#" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
