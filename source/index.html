@@ -5,8 +5,96 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="#" width="74" height="23" alt="Логотип PINK">
+      </a>
+      <button class="page-header__menu-toggle" type="button" aria-label="Открыть меню сайта"></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="/source/photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="/source/form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="index-intro">
+        <h1 class="visually-hidden">Мобильное приложение Pink</h1>
+        <p class="index-intro__header">Взгляните на жизнь иначе!</p>
+      </section>
+      <section class="app-store">
+        <h2 class="visually-hidden">Скачайте наше приложение</h2>
+        <a  class="app-store__download-link" href="#">Скачать приложение</a>
+        <ul class="app-store__list">
+          <li class="app-store__item">
+            <a class="app-store__link app-store__link--apple" href="#"></a>
+          </li>
+          <li class="app-store__item">
+            <a class="app-store__link app-store__link--android" href="#">
+              <img src="#" width="43" height="47" alt="Логотип Android">
+            </a>
+          </li>
+          <li class="app-store__item">
+            <a class="app-store__link app-store__link--windows" href="#">
+              <img src="#" width="44" height="41" alt="Логотип Windows">
+            </a>
+          </li>
+        </ul>
+        <p class="app-store__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="advantages__introduction">Устали от серости мегаполиса?</p>
+        <p class="advantages__promo">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- <footer class="page-footer">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link" href="#">
+          <img src="#" width="145" height="40" alt="Логотип PINK">
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter">
+              Тут будет <svg></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook">
+              Тут будет <svg></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube">
+              Тут будет <svg></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="#">
+          <img src="#" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer> -->
   </body>
 </html>
