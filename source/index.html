@@ -69,77 +69,83 @@
             <p class="review__text">Это приложение переаернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
           </li>
         </ul>
-        <ul class="reviews__slider-button-list review-slider">
-          <li class="review-slider__item">
-            <button class="review-slider__button review-slider__button--active" aria-label="Кнопка отображает первый отзыв в слайдере"></button>
-          </li>
-          <li class="review-slider__item">
-            <button class="review-slider__button" aria-label="Кнопка отображает второй отзыв в слайдере"></button>
-          </li>
-          <li class="review-slider__item">
-            <button class="review-slider__button" aria-label="Кнопка отображает третий отзыв в слайдере"></button>
-          </li>
-        </ul>
+        <div class="reviews__toggle slider-toggle">
+          <button class="slider-toggle__button slider-toggle__button--current" type="button" aria-label="Кнопка отображает первый отзыв в слайдере"></button>
+          <button class="slider-toggle__button" type="button" aria-label="Кнопка отображает второй отзыв в слайдере"></button>
+          <button class="slider-toggle__button" type="button" aria-label="Кнопка отображает третий отзыв в слайдере"></button>
+        </div>
       </section>
       <section class="price">
         <table class="price__table subscription">
           <tr class="subscription__header-row">
-            <th class="subscription__plan plan plan--basic">
+            <th class="subscription__plan plan">
               <p class="plan__title">База</p>
               <p class="plan__cost">1,99 USD</p>
             </th>
-            <th class="subscription__plan plan plan--standart">
+            <th class="subscription__plan plan">
               <p class="plan__title">Стандарт</p>
               <p class="plan__cost">3,99 USD</p>
             </th>
-            <th class="subscription__plan plan plan--unlimited">
+            <th class="subscription__plan plan">
               <p class="plan__title">Анлим</p>
               <p class="plan__cost">9,99 USD</p>
             </th>
           </tr>
-          <tr class="subscription__feature feature feature--pink">
-            <td class="feature__basic feature__basic--yes">Розовой фильтр</td>
-            <td class="feature__standard feature__standard--yes">Розовой фильтр</td>
-            <td class="feature__unlimited feature__standard--yes">Розовой фильтр</td>
+          <tr class="subscription__features feature">
+            <td class="feature__type feature__type--yes">Розовой фильтр
+              <span class="visually-hidden">Входит в подписку</span>
+            </td>
+            <td class="feature__type feature__type--yes">Розовой фильтр
+              <span class="visually-hidden">Входит в подписку</span>
+            </td>
+            <td class="feature__type feature__type--yes">Розовой фильтр
+              <span class="visually-hidden">Входит в подписку</span>
+            </td>
           </tr>
-          <tr class="subscription__feature feature feature--smileys">
-            <td class="feature__basic feature__basic--no">Смайлики</td>
-            <td class="feature__standard feature__standard--yes">Смайлики</td>
-            <td class="feature__unlimited feature__unlimited--yes">Смайлики</td>
+          <tr class="subscription__features feature">
+            <td class="feature__type feature__type--no">Смайлики
+              <span class="visually-hidden">Не входит в подписку</span>
+            </td>
+            <td class="feature__type feature__type--yes">Смайлики
+              <span class="visually-hidden">Входит в подписку</span>
+            </td>
+            <td class="feature__type feature__type--yes">Смайлики
+              <span class="visually-hidden">Входит в подписку</span>
+            </td>
           </tr>
-          <tr class="subscription__feature feature feature--comments">
-            <td class="feature__basic feature__basic--no">Комментарии</td>
-            <td class="feature__standard feature__standard--no">Комментарии</td>
-            <td class="feature__unlimited feature__unlimited--yes">Комментарии</td>
+          <tr class="subscription__features feature">
+            <td class="feature__type feature__type--no">Комментарии
+              <span class="visually-hidden">Не входит в подписку</span>
+            </td>
+            <td class="feature__type feature__type--no">Комментарии
+              <span class="visually-hidden">Не входит в подписку</span>
+            </td>
+            <td class="feature__type feature__type--yes">Комментарии
+              <span class="visually-hidden">Входит в подписку</span>
+            </td>
           </tr>
         </table>
-        <ul class="price__slider-button-list price-slider">
-          <li class="price-slider__item">
-            <button class="price-slider__button price-slider__button--active" aria-label="Кнопка отображает первый план подписки в слайдере"></button>
-          </li>
-          <li class="price-slider__item">
-            <button class="price-slider__button" aria-label="Кнопка отображает второй план подписки в слайдере"></button>
-          </li>
-          <li class="price-slider__item">
-            <button class="price-slider__button" aria-label="Кнопка отображает третий план подписки в слайдере"></button>
-          </li>
-        </ul>
+        <div class="price__toggle slider-toggle">
+          <button class="slider-toggle__button" type="button" aria-label="Кнопка отображает первый план подписки в слайдере"></button>
+          <button class="slider-toggle__button slider-toggle__button--active" type="button" aria-label="Кнопка отображает второй план подписки в слайдере"></button>
+          <button class="slider-toggle__button" type="button" aria-label="Кнопка отображает третий план подписки в слайдере"></button>
+        </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <p class="contacts__intro">Остались вопросы? Свяжитесь с нами</p>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <p class="contacts__heading contacts__heading--call">Звоните:</p>
+            <p class="contacts__heading">Звоните:</p>
             <a class="contacts__link contacts__info contacts__info--phone" href="tel:+78125556666">+7(812)555-66-66</a>
           </li>
           <li class="contacts__item">
-            <p class="contacts__heading contacts__heading--write contacts__info">Пишите:</p>
-            <a class="contacts__link contacts__info contacts__info--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <p class="contacts__heading">Пишите:</p>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
-            <p class="contacts__heading contacts__heading--address">Приезжайте в гости:</p>
-            <p class="contacts__info contacts__info--address">ул. Большая Конюшенная, 19/8</p>
+            <p class="contacts__heading">Приезжайте в гости:</p>
+            <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
       </section>
