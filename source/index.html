@@ -26,28 +26,26 @@
       </section>
       <section class="app-store">
         <h2 class="visually-hidden">Скачайте наше приложение</h2>
-        <a  class="app-store__download-link" href="#">Скачать приложение</a>
+        <a class="app-store__download-link" href="#">Скачать приложение</a>
         <ul class="app-store__list">
           <li class="app-store__item">
-            <a class="app-store__link app-store__link--apple" href="#"></a>
+            <a class="app-store__link app-store__link--apple" href="#" aria-label="Логотип Apple"></a>
           </li>
           <li class="app-store__item">
-            <a class="app-store__link app-store__link--android" href="#">
-              <img src="#" width="43" height="47" alt="Логотип Android">
-            </a>
+            <a class="app-store__link app-store__link--android" href="#" aria-label="Логотип Android"></a>
           </li>
           <li class="app-store__item">
-            <a class="app-store__link app-store__link--windows" href="#">
-              <img src="#" width="44" height="41" alt="Логотип Windows">
-            </a>
+            <a class="app-store__link app-store__link--windows" href="#" aria-label="Логотип Windows"></a>
           </li>
         </ul>
         <p class="app-store__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="advantages__introduction">Устали от серости мегаполиса?</p>
-        <p class="advantages__promo">Нам есть, что вам предложить!</p>
+        <div class="advantages__promo">
+          <p class="advantages__promo-intro">Устали от серости мегаполиса?</p>
+          <p class="advantages__promo-end">Нам есть, что вам предложить!</p>
+        </div>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
@@ -62,6 +60,97 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы клиентов</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item review">
+            <p class="review__author">Николай Петров</p>
+            <p class="review__text">Это приложение переаернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+          </li>
+        </ul>
+        <div class="reviews__toggle slider-toggle">
+          <button class="slider-toggle__button slider-toggle__button--current" type="button" aria-label="Кнопка отображает первый отзыв в слайдере"></button>
+          <button class="slider-toggle__button" type="button" aria-label="Кнопка отображает второй отзыв в слайдере"></button>
+          <button class="slider-toggle__button" type="button" aria-label="Кнопка отображает третий отзыв в слайдере"></button>
+        </div>
+      </section>
+      <section class="price">
+        <table class="price__table subscription">
+          <tr class="subscription__header-row">
+            <th class="subscription__plan plan">
+              <p class="plan__title">База</p>
+              <p class="plan__cost">1,99 USD</p>
+            </th>
+            <th class="subscription__plan plan">
+              <p class="plan__title">Стандарт</p>
+              <p class="plan__cost">3,99 USD</p>
+            </th>
+            <th class="subscription__plan plan">
+              <p class="plan__title">Анлим</p>
+              <p class="plan__cost">9,99 USD</p>
+            </th>
+          </tr>
+          <tr class="subscription__features feature">
+            <td class="feature__type feature__type--yes">Розовой фильтр
+              <span class="visually-hidden">Входит в подписку</span>
+            </td>
+            <td class="feature__type feature__type--yes">Розовой фильтр
+              <span class="visually-hidden">Входит в подписку</span>
+            </td>
+            <td class="feature__type feature__type--yes">Розовой фильтр
+              <span class="visually-hidden">Входит в подписку</span>
+            </td>
+          </tr>
+          <tr class="subscription__features feature">
+            <td class="feature__type feature__type--no">Смайлики
+              <span class="visually-hidden">Не входит в подписку</span>
+            </td>
+            <td class="feature__type feature__type--yes">Смайлики
+              <span class="visually-hidden">Входит в подписку</span>
+            </td>
+            <td class="feature__type feature__type--yes">Смайлики
+              <span class="visually-hidden">Входит в подписку</span>
+            </td>
+          </tr>
+          <tr class="subscription__features feature">
+            <td class="feature__type feature__type--no">Комментарии
+              <span class="visually-hidden">Не входит в подписку</span>
+            </td>
+            <td class="feature__type feature__type--no">Комментарии
+              <span class="visually-hidden">Не входит в подписку</span>
+            </td>
+            <td class="feature__type feature__type--yes">Комментарии
+              <span class="visually-hidden">Входит в подписку</span>
+            </td>
+          </tr>
+        </table>
+        <div class="price__toggle slider-toggle">
+          <button class="slider-toggle__button" type="button" aria-label="Кнопка отображает первый план подписки в слайдере"></button>
+          <button class="slider-toggle__button slider-toggle__button--active" type="button" aria-label="Кнопка отображает второй план подписки в слайдере"></button>
+          <button class="slider-toggle__button" type="button" aria-label="Кнопка отображает третий план подписки в слайдере"></button>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <p class="contacts__intro">Остались вопросы? Свяжитесь с нами</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__heading">Звоните:</p>
+            <a class="contacts__link contacts__info contacts__info--phone" href="tel:+78125556666">+7(812)555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__heading">Пишите:</p>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__heading">Приезжайте в гости:</p>
+            <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта проезда</h2>
       </section>
     </main>
     <!-- <footer class="page-footer">
