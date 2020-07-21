@@ -129,23 +129,24 @@
         <div class="upload__submit-photo">
           <img class="upload__img" src="#" alt="Превью вашей фотографии">
         </div>
-        <ul class="upload__filters filters">
-          <li class="filters__item">
-            <button class="filters__button filters__button--crop filters__button--active" aria-label="Обрезать фотографию"></button>
-          </li>
-          <li class="filters__item">
-            <button class="filters__button filters__button--color" type="submit" aria-label="Залить фотографию фильтром Pink"></button>
-          </li>
-          <li class="filters__item">
-            <button class="filters__button filters__button--contrast" type="submit" aria-label="Редактировать насыщенность фотографии"></button>
-          </li>
-        </ul>
         <form class="upload__form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="upload__filter-intensity">
-            <input class="upload__input-range" type="range">
+          <fieldset class="upload__filters-field">
+            <ul class="upload__controls-list controls">
+              <li class="controls__item">
+                <button class="controls__button controls__button--crop controls__button--current" type="button" aria-label="Обрезать фотографию"></button>
+                <input class="controls__input-range" type="range">
+              </li>
+              <li class="controls__item">
+                <button class="controls__button controls__button--color" type="button" aria-label="Залить фотографию фильтром Pink"></button>
+                <input class="controls__input-range" type="range">
+              </li>
+              <li class="controls__item">
+                <button class="controls__button controls__button--contrast" type="button" aria-label="Редактировать насыщенность фотографии"></button>
+              </li>
+            </ul>
           </fieldset>
-          <button class="upload__button upload__button--post" type="button">Запостить</button>
-          <button class="upload__button upload__button--cancel" type="button">Отмена</button>
+          <button class="upload__button upload__button--post" type="submit">Запостить</button>
+          <button class="upload__button upload__button--cancel" type="reset">Отмена</button>
         </form>
       </section>
     </main>
