@@ -1,0 +1,12 @@
+.page-body {
+  @include nullify-position;
+  @include font-style(14px, 24px, 400);
+  font-family: "Open Sans", "Arial", sans-serif;
+  min-width: 320px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}

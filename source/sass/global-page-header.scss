@@ -1,0 +1,34 @@
+.page-header {
+  @include color-style($color: $basic-white, $bgc: $theme-black);
+  position: relative;
+  z-index: 100;
+}
+
+.page-header__logo {
+  @include inline;
+  padding: 22px 20px 21px;
+}
+
+.main-nav {
+  @include nullify-position;
+  @include font-style(18px, 32px, 700);
+  text-transform: uppercase;
+}
+
+.main-nav__list {
+  @include nullify-position;
+  @include list-style;
+}
+
+.main-nav__item {
+  padding: 25px 0;
+  text-align: center;
+  box-shadow: 0 1px 0 $basic-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  a {
+    @include link-style;
+    display: block;
+    width: 100%;
+  }
+}
+

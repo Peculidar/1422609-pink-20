@@ -1,0 +1,42 @@
+.social__list {
+  @include list-style;
+}
+
+.social__item {
+  @include inline;
+  position: relative;
+}
+
+.social__link {
+  @include element-size(48px);
+  border: 3px solid $theme-black-opacity-ten;
+  display: block;
+  border-radius: 50%;
+}
+
+.social__svg {
+  @include centerer;
+
+  path {
+    fill: $theme-pink;
+  }
+
+  &--youtube {
+    margin-left: 2px;
+  }
+}
+
+.copyright__text {
+  @include font-style($line: 18px);
+  @include color-style;
+  text-align: center;
+}
+
+.copyright__link {
+  @include element-size(27px, 34px);
+  @include inline;
+
+  path {
+    fill: $theme-pink;
+  }
+}

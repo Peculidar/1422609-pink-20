@@ -1,4 +1,27 @@
-//Nothing here
+//VARIABLES etc.
+@import "all-fonts";
+@import "all-variables";
+@import "all-mixins";
 
-@import "variables.scss";
-@import "page-header.scss"
+//GLOBAL
+@import "global-page-body";
+@import "global-page-header";
+@import "global-main-intro";
+@import "global-page-footer";
+@import "global-intro-text";
+
+//PHOTO
+@import "photo-user-photos";
+@import "photo-upload";
+
+//FORM
+@import "form-contest-form";
+
+//INDEX
+@import "index-advantages";
+@import "index-app-store";
+@import "index-contacts";
+@import "index-intro";
+@import "index-map";
+@import "index-price";
+@import "index-reviews";

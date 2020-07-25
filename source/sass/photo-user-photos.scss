@@ -1,0 +1,49 @@
+.user-photos__list {
+  @include list-style;
+  @include nullify-position;
+  position: relative;
+}
+
+.user-photos__item {
+  @include color-style($bgc: $theme-grey);
+  position: relative;
+  display: block;
+  width: 280px;
+  margin-bottom: 20px;
+
+  .user-photos__label {
+    @include color-style($basic-white, $theme-pink);
+    @include font-style($size: 12px, $weight: 700);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    margin: 0;
+    padding: 10px 20px 10px 19px;
+    text-transform: uppercase;
+  }
+}
+
+.post {
+  padding: 0 17px 15px;
+}
+
+.post__signature {
+  .post__author {
+    @include font-style($weight: 700);
+  }
+
+  .post__time {
+    @include font-style($size: 12, $weight: 300);
+    text-transform: uppercase;
+  }
+}
+
+.post__like-button {
+  @include font-style($size: 12);
+  @include color-style($theme-pink, transparent);
+  @include nullify-position;
+  padding-left: 18px;
+  text-transform: uppercase;
+  border: none;
+}

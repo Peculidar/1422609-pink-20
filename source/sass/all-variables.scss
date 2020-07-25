@@ -8,6 +8,7 @@ $basic-gray: #e5e5e5;
 //THEME
 $theme-pink: #d22856;
 $theme-black: #283645;
+$theme-dark-black: #1d2631;
 $theme-grey: #f2f2f2;
 $theme-green: #2aab6d;
 $theme-darker-green: #1c9b5e;
@@ -18,9 +19,10 @@ $special-red: #f25b26;
 $special-black: #252527;
 
 //OPACITY
+$basic-black-opacity-thirty: rgba(0, 0, 0, 0.3);
 $basic-white-opacity-thirty: rgba(255, 255, 255, 0.3);
 $theme-pink-opacity-thirty: rgba(210, 40, 86, 0.3);
 $theme-black-opacity-sixty: rgba(40, 54, 69, 0.6);
 $theme-black-opacity-fifty: rgba(40, 54, 69, 0.5);
 $theme-black-opacity-thirty: rgba(40, 54, 69, 0.3);
-$theme-black-opacity-teb: rgba(40, 54, 69, 0.1);
+$theme-black-opacity-ten: rgba(40, 54, 69, 0.1);
