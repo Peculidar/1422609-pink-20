@@ -1,27 +1,32 @@
-//VARIABLES etc.
-@import "all-fonts";
-@import "all-variables";
-@import "all-mixins";
+//UNIVERSAL
 
-//GLOBAL
-@import "global-page-body";
-@import "global-page-header";
-@import "global-main-intro";
-@import "global-page-footer";
-@import "global-intro-text";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/main.scss";
 
-//PHOTO
-@import "photo-user-photos";
-@import "photo-upload";
+//ALL PAGES
 
-//FORM
-@import "form-contest-form";
+@import "global/page-header.scss";
+@import "global/page-footer.scss";
+@import "global/banner-intro.scss";
+@import "global/intro-text.scss";
 
 //INDEX
-@import "index-advantages";
-@import "index-app-store";
-@import "index-contacts";
-@import "index-intro";
-@import "index-map";
-@import "index-price";
-@import "index-reviews";
+
+@import "index/index-intro.scss";
+@import "index/app-store.scss";
+@import "index/advantages.scss";
+@import "index/reviews.scss";
+@import "index/price.scss";
+@import "index/contacts.scss";
+@import "index/map.scss";
+
+//FORM
+
+@import "form/contest-form.scss";
+
+//PHOTO
+
+@import "photo/user-photos.scss";
+@import "photo/upload.scss";
