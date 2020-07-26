@@ -1,3 +1,9 @@
+.page-footer {
+  @include color-style($bgc: $basic-white);
+  position: relative;
+  z-index: 100;
+}
+
 .social__list {
   @include list-style;
 }
