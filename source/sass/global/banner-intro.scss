@@ -1,9 +1,9 @@
-.main-intro {
+.banner-intro {
   @include background-img($theme-black, "../img/bg-back-mobile@1x.jpg", 50% 0, no-repeat);
   min-height: 150px; //временно, для видимости
 }
 
-.main-intro__header {
+.banner-intro__header {
   @include font-style(24px, 120%, 300);
   @include color-style($basic-white, transparent);
   @include nullify-position;
