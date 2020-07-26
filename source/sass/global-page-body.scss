@@ -10,3 +10,8 @@
 .visually-hidden {
   @include visually-hidden;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
