@@ -33,7 +33,7 @@
 
 .page-header__logo {
   @include inline;
-  
+
 
   @media (min-width: $tablet-breakpoint) {
     padding: 45px 0;
@@ -78,8 +78,4 @@
     display: block;
     width: 100%;
   }
-}
-
-.page-header__menu-toggle {
-  @include visually-hidden;
 }
