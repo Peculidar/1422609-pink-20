@@ -1,1 +1,36 @@
-// Начните писать стили здесь
+//GLOBAL
+
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/main.scss";
+
+//LAYOUT
+
+@import "layout/page-header.scss";
+@import "layout/main-nav.scss";
+@import "layout/page-footer.scss";
+@import "layout/banner-intro.scss";
+@import "layout/intro-text.scss";
+@import "layout/social.scss";
+@import "layout/copyright.scss";
+
+//INDEX
+
+@import "index/index-intro.scss";
+@import "index/app-store.scss";
+@import "index/advantages.scss";
+@import "index/reviews.scss";
+@import "index/price.scss";
+@import "index/contacts.scss";
+@import "index/map.scss";
+
+//FORM
+
+@import "form/contest-form.scss";
+
+//PHOTO
+
+@import "photo/user-photos.scss";
+@import "photo/upload.scss";
+@import "photo/post.scss";

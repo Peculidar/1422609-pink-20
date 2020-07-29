@@ -1,0 +1,14 @@
+.copyright__text {
+  @include font-style($line: 18px);
+  @include color-style;
+  text-align: center;
+}
+
+.copyright__link {
+  @include element-size(27px, 34px);
+  @include inline;
+
+  path {
+    fill: $theme-pink;
+  }
+}

@@ -1,0 +1,32 @@
+.advantages {
+  position: relative;
+  margin-top: 50px;
+}
+
+.advantages__promo {
+  @include font-style(24px, 120%, 300);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.advantages__list {
+  @include list-style;
+  @include nullify-position;
+  @include color-style($bgc: $theme-grey);
+  min-height: 650px; //временно, для видимости
+  padding-top: 50px;
+  text-align: center;
+
+  &::after {
+    @include pseudo(100%, 320px);
+    @include background-img(transparent, "../img/iphone-screen-mobile@1x.png", center);
+    @include nullify-position;
+    bottom: -35px;
+    left: 0;
+  }
+}
+
+.advantages__title {
+  @include font-style(18px, 24px, 700);
+  @include color-style($color: $basic-black);
+}

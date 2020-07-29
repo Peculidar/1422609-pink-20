@@ -1,0 +1,20 @@
+.index-intro {
+  @include background-img($theme-black, "../img/bg-back-mobile@1x.jpg", 50% 0, no-repeat);
+  position: relative;
+  min-height: 462px;
+
+  &::after {
+    @include pseudo(100%, 286px);
+    @include background-img(transparent, "../img/iphone-hand-mobile@1x.png", center);
+    display: block;
+    bottom: 0;
+  }
+}
+
+.index-intro__header {
+  @include font-style(24px, 120%, 300);
+  @include color-style($basic-white, transparent);
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 92px; // временно, для видимости
+}

@@ -1,0 +1,5 @@
+.page-footer {
+  @include color-style($bgc: $basic-white);
+  position: relative;
+  z-index: 100;
+}

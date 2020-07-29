@@ -1,0 +1,25 @@
+.user-photos__list {
+  @include list-style;
+  @include nullify-position;
+  position: relative;
+}
+
+.user-photos__item {
+  @include color-style($bgc: $theme-grey);
+  position: relative;
+  display: block;
+  width: 280px;
+  margin-bottom: 20px;
+
+  .user-photos__label {
+    @include color-style($basic-white, $theme-pink);
+    @include font-style($size: 12px, $weight: 700);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    margin: 0;
+    padding: 10px 20px 10px 19px;
+    text-transform: uppercase;
+  }
+}
