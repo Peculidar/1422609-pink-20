@@ -1,9 +1,3 @@
-.page-footer {
-  @include color-style($bgc: $basic-white);
-  position: relative;
-  z-index: 100;
-}
-
 .social__list {
   @include list-style;
 }
@@ -29,20 +23,5 @@
 
   &--youtube {
     margin-left: 2px;
-  }
-}
-
-.copyright__text {
-  @include font-style($line: 18px);
-  @include color-style;
-  text-align: center;
-}
-
-.copyright__link {
-  @include element-size(27px, 34px);
-  @include inline;
-
-  path {
-    fill: $theme-pink;
   }
 }

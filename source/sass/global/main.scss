@@ -1,4 +1,4 @@
-.page-body {
+body {
   @include nullify-position;
   @include font-style(14px, 24px, 400);
   font-family: "Open Sans", "Arial", sans-serif;

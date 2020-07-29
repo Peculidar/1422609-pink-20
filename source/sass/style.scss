@@ -1,16 +1,19 @@
-//UNIVERSAL
+//GLOBAL
 
 @import "global/mixins.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/main.scss";
 
-//ALL PAGES
+//LAYOUT
 
-@import "global/page-header.scss";
-@import "global/page-footer.scss";
-@import "global/banner-intro.scss";
-@import "global/intro-text.scss";
+@import "layout/page-header.scss";
+@import "layout/main-nav.scss";
+@import "layout/page-footer.scss";
+@import "layout/banner-intro.scss";
+@import "layout/intro-text.scss";
+@import "layout/social.scss";
+@import "layout/copyright.scss";
 
 //INDEX
 
@@ -30,3 +33,4 @@
 
 @import "photo/user-photos.scss";
 @import "photo/upload.scss";
+@import "photo/post.scss";

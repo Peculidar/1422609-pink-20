@@ -1,14 +1,3 @@
-.page-header {
-  @include color-style($color: $basic-white, $bgc: $theme-black);
-  position: relative;
-  z-index: 100;
-}
-
-.page-header__logo {
-  @include inline;
-  padding: 22px 20px 21px;
-}
-
 .main-nav {
   @include nullify-position;
   @include font-style(18px, 32px, 700);

@@ -1,0 +1,23 @@
+.post {
+  padding: 0 17px 15px;
+}
+
+.post__signature {
+  .post__author {
+    @include font-style($weight: 700);
+  }
+
+  .post__time {
+    @include font-style($size: 12, $weight: 300);
+    text-transform: uppercase;
+  }
+}
+
+.post__like-button {
+  @include font-style($size: 12);
+  @include color-style($theme-pink, transparent);
+  @include nullify-position;
+  padding-left: 18px;
+  text-transform: uppercase;
+  border: none;
+}
