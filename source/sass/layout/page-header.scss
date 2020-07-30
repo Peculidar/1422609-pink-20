@@ -4,6 +4,19 @@
   z-index: 100;
 }
 
+.page-header__wrapper {
+  @include color-style($basic-white, $theme-black);
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+}
+
 .page-header__logo {
   @include inline;
   padding: 22px 20px 21px;
