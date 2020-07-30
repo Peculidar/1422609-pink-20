@@ -24,3 +24,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+//CONTAINERS
+
+.page-header__wrapper {
+  @media (min-width: $desktop-breakpoint) {
+    width: $desktop-width;
+  }
+}
+
