@@ -1,18 +1,23 @@
 
 .index-intro {
-  @include background-img($theme-black, "../img/bg-back-mobile@1x.jpg", 50% 0, no-repeat);
   margin-top: -69px;
+  background: {
+    color: $theme-black;
+    image: url("../img/bg-back-mobile@1x.jpg");
+    repeat: no-repeat;
+    position: 50% 0;
+  }
 
   @media (min-width: $tablet-breakpoint) {
     position: relative;
     min-height: 729px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
     margin-top: -110px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
   @media (min-width: $desktop-breakpoint) {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
     min-height: 853px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }
 
@@ -29,37 +34,36 @@
     right: 25%;
     height: 400px;
     width: $tablet-width;
-    margin-left: -330px;
-    padding: 0 20px;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
+    margin-left: -($tablet-width / 2);
+    padding: 0 20px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     position: absolute;
     bottom: 130px;
-    margin-left: -470px;
-    padding: 0 10px;
-    height: 500px;
     width: $desktop-width;
+    height: 500px;
     grid-template-rows: 1fr 1fr;
+    margin-left: -($desktop-width / 2);
+    padding: 0 10px;
   }
 }
 
 .index-intro__header {
   @include font-style(24px, 120%, 300);
   @include color-style($basic-white, transparent);
-  text-align: center;
-  margin: 0 auto;
   width: 280px;
+  margin: 0 auto;
   padding: 98px 20px 0;
-
+  text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
     @include font-style(40px, 120%, 300);
-    margin: 0;
     width: 240px;
+    margin: 0;
     padding: 0 30px 0;
   }
 
@@ -67,44 +71,3 @@
     @include font-style(50px, auto, 300);
   }
 }
-
-.app-store {
-  @include color-style($basic-white, $theme-dark-black);
-  text-align: center;
-
-  @media (min-width: $tablet-breakpoint) {
-    background-color: transparent;
-    grid-row: 2 / 3;
-  }
-}
-
-.app-store__list {
-  @include list-style;
-  @include nullify-position;
-  margin-top: 32px;
-
-  .app-store__item {
-    @include inline;
-  }
-}
-
-.app-store__description {
-  @include font-style($weight: 300);
-  padding: 0 20px 38px;
-
-  @media (min-width: $tablet-breakpoint) {
-    @include font-style(18px, 24px, 300);
-    padding: 0;
-  }
-}
-
-.app-store__download-link {
-  @include link-style;
-  @include font-style(18px, 18px, 700);
-  @include inline;
-  padding: 21px 38px;
-  border: 3px solid $basic-white;
-  border-radius: 29px;
-  margin-top: 28px;
-}
-

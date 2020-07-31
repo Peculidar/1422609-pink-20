@@ -2,6 +2,11 @@
   @include color-style($color: $basic-white, $bgc: $theme-black);
   position: relative;
   z-index: 100;
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 100%;
+    background-color: $basic-black-opacity-thirty;
+  }
 }
 
 .page-header__wrapper {
@@ -10,6 +15,7 @@
   flex-direction: column;
 
   @media (min-width: $desktop-breakpoint) {
+    width: $desktop-width;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
@@ -18,5 +24,9 @@
 }
 
 .page-header__logo {
+  height: 69px;
 
+  @media (min-width: $tablet-breakpoint) {
+    height: 110px;
+  }
 }

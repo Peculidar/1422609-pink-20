@@ -1,6 +1,7 @@
 .main-nav {
-  @include nullify-position;
   @include font-style(18px, 32px, 700);
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
 
 
@@ -11,24 +12,25 @@
   }
 }
 
-@media (min-width: $desktop-breakpoint) {
-  .main-nav__list {
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-breakpoint) {
     display: flex;
     justify-content: space-between;
   }
 }
 
-.main-nav__list {
-  @include nullify-position;
-  @include list-style;
-}
-
 .main-nav__item {
+  @include color-style($basic-white, $theme-black);
   padding: 25px 0;
   text-align: center;
   box-shadow: 0 1px 0 $basic-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
   @media (min-width: $desktop-breakpoint) {
+    background-color: transparent;
     box-shadow: none;
   }
 

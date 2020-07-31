@@ -1,14 +1,20 @@
 .social__list {
-  @include list-style;
+  width: 172px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .social__item {
-  @include inline;
   position: relative;
 }
 
 .social__link {
-  @include element-size(48px);
+  width: 48px;
+  height: 48px;
   border: 3px solid $theme-black-opacity-ten;
   display: block;
   border-radius: 50%;

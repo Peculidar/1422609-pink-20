@@ -2,4 +2,24 @@
   @include color-style($bgc: $basic-white);
   position: relative;
   z-index: 100;
+  width: $mobile-width;
+  height: 204px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: $tablet-width;
+    height: 127px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: $desktop-width;
+    height: 200px;
+    padding: 0 10px;
+  }
 }

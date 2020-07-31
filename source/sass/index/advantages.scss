@@ -5,28 +5,89 @@
 
 .advantages__promo {
   @include font-style(24px, 120%, 300);
+  width: $mobile-width;
+  padding: 0 20px;
+  margin: 0 auto 50px;
   text-align: center;
-  padding-bottom: 20px;
+
+  @media (min-width: $tablet-breakpoint) {
+    @include font-style(40px, auto, 300);
+    width: 588px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    @include font-style(50px, auto, 300);
+    width: 780px;
+  }
+}
+
+.advantages__promo-end {
+  @media (min-width: $tablet-breakpoint) {
+    width: 350px;
+    margin: -38px auto 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 480px;
+    margin-top: -50px;
+  }
+}
+
+.advantages__wrapper {
+  @include color-style($bgc: $theme-grey);
 }
 
 .advantages__list {
-  @include list-style;
-  @include nullify-position;
-  @include color-style($bgc: $theme-grey);
-  min-height: 650px; //временно, для видимости
-  padding-top: 50px;
+  width: $mobile-width;
+  padding: 0 20px;
+  margin: 0 auto 50px;
   text-align: center;
+  list-style: none;
 
-  &::after {
-    @include pseudo(100%, 320px);
-    @include background-img(transparent, "../img/iphone-screen-mobile@1x.png", center);
-    @include nullify-position;
-    bottom: -35px;
-    left: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: grid;
+    grid-template-columns: 1fr 310px;
+    width: $tablet-width;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    grid-template-columns: repeat(3, 252px);
+    grid-column-gap: 94px;
+    grid-template-areas: "a b c";
+    width: $desktop-width;
+    padding: 0 10px;
+    text-align: center;
+  }
+}
+
+.advantages__item {
+  @media (min-width: $tablet-breakpoint) {
+    @include font-style(18px, 30px, 400);
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    &:first-of-type {
+      grid-area: a;
+    }
+
+    &:nth-of-type(2) {
+      grid-area: b;
+    }
+
+    &:nth-of-type(3) {
+      grid-area: c;
+    }
   }
 }
 
 .advantages__title {
   @include font-style(18px, 24px, 700);
   @include color-style($color: $basic-black);
+
+  @media (min-width: $desktop-breakpoint) {
+    @include font-style(30px, 30px, 700);
+  }
 }

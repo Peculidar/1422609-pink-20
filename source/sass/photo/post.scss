@@ -1,8 +1,46 @@
 .post {
-  padding: 0 17px 15px;
+  @include color-style($bgc: $theme-grey);
+  width: $mobile-width - 32px; //minus padding
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around; //temporary
+  padding: 0 15px 0 17px;
+  margin-bottom: 20px;
+
+
+  @media (min-width: $tablet-breakpoint) {
+    height: 155px;
+    width: 300px - 54px;
+    padding: 0 24px 0 30px;
+  }
+
+  &--panorama {
+    @media (min-width: $tablet-breakpoint) {
+      height: 121px;
+      width: $tablet-width - 54px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      height: 96px;
+      width: $desktop-width - 54px;
+    }
+  }
 }
 
 .post__signature {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    &--panorama {
+      order: 1;
+    }
+  }
+
   .post__author {
     @include font-style($weight: 700);
   }
@@ -13,11 +51,27 @@
   }
 }
 
+.post__text {
+  @media (min-width: $tablet-breakpoint) {
+    overflow: hidden;
+
+    &--panorama {
+      flex-grow: 1;
+      order: 3;
+    }
+  }
+}
+
 .post__like-button {
   @include font-style($size: 12);
   @include color-style($theme-pink, transparent);
-  @include nullify-position;
-  padding-left: 18px;
+  padding: 0;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    &--panorama {
+      order: 2;
+    }
+  }
 }

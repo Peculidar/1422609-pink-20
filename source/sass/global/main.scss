@@ -1,10 +1,10 @@
 body {
-  @include nullify-position;
   @include font-style(14px, 24px, 400);
-  font-family: "Open Sans", "Arial", sans-serif;
-  min-width: 320px;
-  height: 100%;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .visually-hidden {
@@ -24,12 +24,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-//CONTAINERS
-
-.page-header__wrapper {
-  @media (min-width: $desktop-breakpoint) {
-    width: $desktop-width;
-  }
-}
-

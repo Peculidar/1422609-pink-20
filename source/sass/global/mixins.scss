@@ -14,9 +14,9 @@
   text-decoration: none;
 }
 
-@mixin list-style {
-  list-style: none;
-}
+// @mixin list-style {
+//   list-style: none;
+// }
 
 @mixin color-style($color: $theme-black, $bgc: transparent) {
   color: $color;
@@ -25,15 +25,15 @@
 
 //POSITION & SIZE & VISIBILITY
 
-@mixin nullify-position {
-  margin: 0;
-  padding: 0;
-}
+// @mixin nullify-position {
+//   margin: 0;
+//   padding: 0;
+// }
 
-@mixin element-size($width, $height: $width) {
-  width: $width;
-  height: $height;
-}
+// @mixin element-size($width, $height: $width) {
+//   width: $width;
+//   height: $height;
+// }
 
 @mixin centerer {
   position: absolute;
@@ -42,25 +42,25 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin inline ($align: middle) {
-  display: inline-block;
-  vertical-align: $align;
-}
+// @mixin inline ($align: middle) {
+//   display: inline-block;
+//   vertical-align: $align;
+// }
 
 //DECORATION
 
-@mixin background-img($color, $imgpath, $position, $repeat: no-repeat) {
-  background: {
-    color: $color;
-    image: url($imgpath);
-    position: $position;
-    repeat: $repeat;
-  }
-}
+// @mixin background-img($color, $imgpath, $position, $repeat: no-repeat) {
+//   background: {
+//     color: $color;
+//     image: url($imgpath);
+//     position: $position;
+//     repeat: $repeat;
+//   }
+// }
 
-@mixin pseudo($width, $height) {
-  position: absolute;
-  content: "";
-  width: $width;
-  height: $height;
-}
+// @mixin pseudo($width, $height) {
+//   position: absolute;
+//   content: "";
+//   width: $width;
+//   height: $height;
+// }

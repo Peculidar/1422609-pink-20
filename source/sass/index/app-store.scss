@@ -1,0 +1,44 @@
+.app-store {
+  @include color-style($basic-white, $theme-dark-black);
+  text-align: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    background-color: transparent;
+    grid-row: 2 / 3;
+  }
+}
+
+.app-store__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 204px;
+  margin: 32px auto 0;
+  padding: 0 20px;
+  list-style: none;
+}
+
+.app-store__description {
+  @include font-style($weight: 300);
+  padding: 0 20px 38px;
+  width: $mobile-width;
+  margin: 20px auto 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    @include font-style(18px, 24px, 300);
+    padding: 0;
+    width: 300px;
+  }
+}
+
+.app-store__download-link {
+  @include link-style;
+  @include font-style(18px, 18px, 700);
+  display: inline-block;
+  vertical-align: middle;
+  border: 3px solid $basic-white;
+  border-radius: 29px;
+  margin-top: 28px;
+  padding: 21px 38px;
+}
