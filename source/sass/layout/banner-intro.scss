@@ -24,20 +24,17 @@
 .banner-intro__header {
   @include font-style(24px, normal, 300);
   @include color-style($basic-white, transparent);
-  margin: 0 auto  84px;
-  width: $mobile-width;
+  margin-bottom: 84px;
   padding: 99px 20px 0;
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
     @include font-style(50px, normal, 300);
-    width: $tablet-width;
     padding: 191px 20px 0;
     margin-bottom: 143px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    width: $desktop-width;
     margin-bottom: 104px;
   }
 }

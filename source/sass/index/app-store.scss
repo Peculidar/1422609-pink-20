@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-breakpoint) {
     background-color: transparent;
-    grid-row: 2 / 3;
+    grid-column: 1 / 2;
   }
 }
 
@@ -27,8 +27,12 @@
 
   @media (min-width: $tablet-breakpoint) {
     @include font-style(18px, 24px, 300);
-    padding: 0;
+    padding: 0 0 119px;
     width: 300px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-bottom: 130px;
   }
 }
 

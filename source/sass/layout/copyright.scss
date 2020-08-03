@@ -1,5 +1,10 @@
 .copyright {
   display: flex;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .copyright__text {

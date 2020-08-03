@@ -1,32 +1,21 @@
 .post {
   @include color-style($bgc: $theme-grey);
-  width: $mobile-width - 32px; //minus padding
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around; //temporary
-  padding: 0 15px 0 17px;
+  padding: 25px 15px 25px 17px;
+  margin-top: 0;
   margin-bottom: 20px;
 
-
   @media (min-width: $tablet-breakpoint) {
-    height: 155px;
-    width: 300px - 54px;
-    padding: 0 24px 0 30px;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 155px;
+    padding: 30px 24px 31px 30px;
   }
 
   &--panorama {
     @media (min-width: $tablet-breakpoint) {
-      height: 121px;
-      width: $tablet-width - 54px;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    @media (min-width: $desktop-breakpoint) {
-      height: 96px;
-      width: $desktop-width - 54px;
+      min-height: 50px;
+      grid-template-columns: 1fr 150px;
+      grid-template-rows: min-content min-content;
     }
   }
 }
@@ -37,7 +26,7 @@
 
   @media (min-width: $tablet-breakpoint) {
     &--panorama {
-      order: 1;
+      grid-column: 1 / 2;
     }
   }
 
@@ -56,8 +45,7 @@
     overflow: hidden;
 
     &--panorama {
-      flex-grow: 1;
-      order: 3;
+      grid-column: 1 / 3;
     }
   }
 }
@@ -66,12 +54,15 @@
   @include font-style($size: 12);
   @include color-style($theme-pink, transparent);
   padding: 0;
+  margin: 0;
+  text-align: left;
   text-transform: uppercase;
   border: none;
 
   @media (min-width: $tablet-breakpoint) {
     &--panorama {
-      order: 2;
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
     }
   }
 }

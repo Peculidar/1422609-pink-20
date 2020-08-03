@@ -1,5 +1,3 @@
-// TYPOGRAPHY
-
 @mixin font-style($size: 14px, $line: 24px, $weight: 400) {
   font: {
     size: $size;
@@ -14,26 +12,10 @@
   text-decoration: none;
 }
 
-// @mixin list-style {
-//   list-style: none;
-// }
-
 @mixin color-style($color: $theme-black, $bgc: transparent) {
   color: $color;
   background-color: $bgc;
 }
-
-//POSITION & SIZE & VISIBILITY
-
-// @mixin nullify-position {
-//   margin: 0;
-//   padding: 0;
-// }
-
-// @mixin element-size($width, $height: $width) {
-//   width: $width;
-//   height: $height;
-// }
 
 @mixin centerer {
   position: absolute;
@@ -41,26 +23,3 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-// @mixin inline ($align: middle) {
-//   display: inline-block;
-//   vertical-align: $align;
-// }
-
-//DECORATION
-
-// @mixin background-img($color, $imgpath, $position, $repeat: no-repeat) {
-//   background: {
-//     color: $color;
-//     image: url($imgpath);
-//     position: $position;
-//     repeat: $repeat;
-//   }
-// }
-
-// @mixin pseudo($width, $height) {
-//   position: absolute;
-//   content: "";
-//   width: $width;
-//   height: $height;
-// }

@@ -1,28 +1,65 @@
-.user-photos {
-  width: $mobile-width;
+.user-photos__list {
+  list-style: none;
   margin: 0 auto;
-  padding: 0 20px;
 
   @media (min-width: $tablet-breakpoint) {
-    width: $tablet-width;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    width: $desktop-width;
-    padding: 0 10px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.user-photos__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.user-photos__item {
+  &--panorama {
+    position: relative;
+    padding: 0;
 
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    @media (min-width: $tablet-breakpoint) {
+      grid-column: 1 / 3;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      grid-column: 1 / 4;
+    }
   }
+}
+
+.user-photos__label {
+  @include color-style($basic-white, $theme-pink);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  padding: 10px 20px;
+  margin: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: none; //temp
+  }
+}
+
+.user-photos__img {
+  display: block;
+
+  &--panorama {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    display: none; //временно, пока не знаю как заливать разные размеры в разметку
+  }
+}
+
+.user-photos__panorama {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
