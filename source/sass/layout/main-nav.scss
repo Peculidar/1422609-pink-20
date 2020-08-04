@@ -1,13 +1,28 @@
 .main-nav {
-  @include font-style(18px, 32px, 700);
   position: relative;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
 
+  &--open {
+    @media (max-width: $desktop-breakpoint) {
+      position: absolute;
+      top: 69px;
+      width: 100%;
+    }
+  }
+
+  &--nojs {
+    @media (max-width: $desktop-breakpoint) {
+      position: static;
+
+      .main-nav__toggle {
+        display: none;
+      }
+    }
+  }
 
   @media (min-width: $desktop-breakpoint) {
-    @include font-style($line: 18px, $weight: 400);
     width: 630px;
     text-transform: none;
   }
@@ -25,12 +40,24 @@
 }
 
 .main-nav__item {
+  @include font-style(18px, 32px, 700);
   @include color-style($basic-white, $theme-black);
   padding: 25px 0;
   text-align: center;
-  box-shadow: 0 1px 0 $basic-black, inset 0 1px 0 rgba($basic-white, 0.15);
+  box-shadow:
+    0 1px 0 $basic-black,
+    inset 0 1px 0 rgba($basic-white, 0.15);
+
+  &:hover {
+    color: $theme-pink;
+  }
+
+  &:active {
+    color: rgba($theme-pink, 0.3);
+  }
 
   @media (min-width: $desktop-breakpoint) {
+    @include font-style($line: 18px, $weight: 400);
     background-color: transparent;
     box-shadow: none;
   }
@@ -108,7 +135,7 @@
     background-color: $basic-white;
 
     @media (min-width: $tablet-breakpoint) {
-      top: 53px;
+      top: 72px;
     }
   }
 
@@ -129,5 +156,11 @@
   &:active::before,
   &:active::after {
     background-color: rgba($theme-pink, 0.3);
+  }
+}
+
+@media (max-width: $desktop-breakpoint) {
+  .main-nav--closed .main-nav__item {
+    display: none;
   }
 }

@@ -1,16 +1,20 @@
 .page-header {
-  @include color-style($color: $basic-white, $bgc: $theme-black);
+  background-color: rgba($basic-black, 0.3);
   position: relative;
   z-index: 100;
 
+  &--open {
+    @media (max-width: $desktop-breakpoint) {
+      background-color: $theme-black;
+    }
+  }
+
   @media (min-width: $desktop-breakpoint) {
     width: 100%;
-    background-color: rgba($basic-black, 0.3);
   }
 }
 
 .page-header__wrapper {
-  @include color-style($basic-white, $theme-black);
   display: flex;
   flex-direction: column;
 
