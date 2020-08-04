@@ -5,7 +5,7 @@
 
   @media (min-width: $desktop-breakpoint) {
     width: 100%;
-    background-color: $basic-black-opacity-thirty;
+    background-color: rgba($basic-black, 0.3);
   }
 }
 
@@ -29,8 +29,4 @@
   @media (min-width: $tablet-breakpoint) {
     height: 110px;
   }
-}
-
-.page-header__menu-toggle {
-  display: none; //временно
 }

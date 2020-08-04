@@ -1,5 +1,6 @@
 .main-nav {
   @include font-style(18px, 32px, 700);
+  position: relative;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -27,7 +28,7 @@
   @include color-style($basic-white, $theme-black);
   padding: 25px 0;
   text-align: center;
-  box-shadow: 0 1px 0 $basic-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 0 $basic-black, inset 0 1px 0 rgba($basic-white, 0.15);
 
   @media (min-width: $desktop-breakpoint) {
     background-color: transparent;
@@ -38,5 +39,95 @@
     @include link-style;
     display: block;
     width: 100%;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  z-index: 100;
+  top: -69px;
+  right: 0;
+  height: 69px;
+  width: 90px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-breakpoint) {
+    top: -110px;
+    height: 110px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    width: 50px;
+    height: 3px;
+    background-color: $basic-white;
+    box-shadow:
+      0 10px 0 0 $basic-white,
+      0 20px 0 0 $basic-white;
+
+    @media (min-width: $tablet-breakpoint) {
+      top: 43px;
+    }
+  }
+
+  &:hover::before {
+    background-color: $theme-pink;
+    box-shadow:
+      0 10px 0 0 $theme-pink,
+      0 20px 0 0 $theme-pink;
+  }
+
+  &:active::before {
+    background-color: rgba($theme-pink, 0.3);
+    box-shadow:
+      0 10px 0 0 rgba($theme-pink, 0.3),
+      0 20px 0 0 rgba($theme-pink, 0.3);
+  }
+}
+
+.main-nav--open .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 21px + (50px - 33px);
+    width: 33px;
+    height: 4px;
+    background-color: $basic-white;
+
+    @media (min-width: $tablet-breakpoint) {
+      top: 53px;
+    }
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $theme-pink;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba($theme-pink, 0.3);
   }
 }
