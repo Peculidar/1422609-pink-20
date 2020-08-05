@@ -1,11 +1,19 @@
-//COLORS
+//VIEWPORTS
 
-//BASIC
+$tablet-breakpoint: 660px;
+$desktop-breakpoint: 1200px;
+
+//CONTAINER SIZES
+
+$mobile-width: 280px;
+$tablet-width: 620px;
+$desktop-width: 940px;
+
+//COLORS
 $basic-black: #000000;
 $basic-white: #ffffff;
 $basic-gray: #e5e5e5;
 
-//THEME
 $theme-pink: #d22856;
 $theme-black: #283645;
 $theme-dark-black: #1d2631;
@@ -13,12 +21,10 @@ $theme-grey: #f2f2f2;
 $theme-green: #2aab6d;
 $theme-darker-green: #1c9b5e;
 
-//SPECIAL
 $special-green: #3dc644;
 $special-red: #f25b26;
 $special-black: #252527;
 
-//OPACITY
 $basic-black-opacity-thirty: rgba(0, 0, 0, 0.3);
 $basic-white-opacity-thirty: rgba(255, 255, 255, 0.3);
 $theme-pink-opacity-thirty: rgba(210, 40, 86, 0.3);

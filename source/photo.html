@@ -2,46 +2,51 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип PINK">
-      </a>
-      <button class="page-header__menu-toggle" type="button" aria-label="Открыть меню сайта"></button>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип PINK">
+        </a>
+        <button class="page-header__menu-toggle" type="button" aria-label="Открыть меню сайта"></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <section class="banner-intro">
-        <h1 class="banner-intro__header">Фотографии пользователей</h1>
-      </section>
-      <section class="intro-text">
-        <p class="intro-text__paragraph intro-text__paragraph--photo-page">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
+        <h1 class="banner-intro__header container">Фотографии<br> пользователей</h1>
+        <div class="banner-intro__text">
+          <p class="banner-intro__paragraph">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
       </section>
       <section class="user-photos">
         <h2 class="visually-hidden">Лента фотографий пользователей</h2>
-        <ul class="user-photos__list">
+        <ul class="user-photos__list container">
           <li class="user-photos__item user-photos__item--panorama">
             <p class="user-photos__label">Панорама дня</p>
-            <a class="user-photos__img-link" href="#">
-              <img class="user-photos__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Летняя фотография гор снята с горнолыжного подъемника">
-            </a>
-            <div class="user-photos__post post">
-              <p class="post__signature">
+            <div class="user-photos__panorama">
+              <a class="user-photos__img-link user-photos__img-link--panorama" href="#">
+                <img class="user-photos__img user-photos__img--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Летняя фотография гор снята с горнолыжного подъемника">
+              </a>
+            </div>
+            <div class="user-photos__post post post--panorama">
+              <p class="post__signature post__signature--panorama">
                 <span class="post__author">Анна</span>
                 <span class="post__time">(5 минут назад)</span>
               </p>
-              <p class="post__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <button type="submit" class="post__like-button">Нравится: 215</button>
+              <p class="post__text post__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <button type="submit" class="post__like-button post__like-button--panorama">Нравится: 215</button>
             </div>
           </li>
           <li class="user-photos__item">
@@ -124,7 +129,7 @@
           </li>
         </ul>
       </section>
-      <section class="upload visually-hidden">
+      <section class="upload">
         <h2 class="visually-hidden">Загрузите вашу фотографию</h2>
         <p class="upload__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <div class="upload__submit-photo">
@@ -152,7 +157,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="page-footer__logo">
         <a class="page-footer__logo-link" href="#">
           <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип PINK">

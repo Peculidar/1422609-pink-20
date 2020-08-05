@@ -7,8 +7,7 @@
 }
 
 .reviews__list {
-  @include list-style;
-  @include nullify-position;
+  list-style: none;
 }
 
 .reviews__author {

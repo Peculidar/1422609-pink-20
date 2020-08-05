@@ -2,9 +2,35 @@
   @include color-style($color: $basic-white, $bgc: $theme-black);
   position: relative;
   z-index: 100;
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 100%;
+    background-color: $basic-black-opacity-thirty;
+  }
+}
+
+.page-header__wrapper {
+  @include color-style($basic-white, $theme-black);
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-breakpoint) {
+    width: $desktop-width;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: transparent;
+  }
 }
 
 .page-header__logo {
-  @include inline;
-  padding: 22px 20px 21px;
+  height: 69px;
+
+  @media (min-width: $tablet-breakpoint) {
+    height: 110px;
+  }
+}
+
+.page-header__menu-toggle {
+  display: none; //временно
 }
