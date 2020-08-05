@@ -10,6 +10,9 @@
       top: 69px;
       width: 100%;
     }
+    @media (min-width: $tablet-breakpoint) {
+      top: 110px;
+    }
   }
 
   &--nojs {
@@ -104,7 +107,7 @@
       0 20px 0 0 $basic-white;
 
     @media (min-width: $tablet-breakpoint) {
-      top: 43px;
+      top: 47px;
     }
   }
 
@@ -128,14 +131,14 @@
   &::after {
     content: "";
     position: absolute;
-    top: 31px;
+    top: 50%;
     left: 21px + (50px - 33px);
     width: 33px;
     height: 4px;
     background-color: $basic-white;
 
     @media (min-width: $tablet-breakpoint) {
-      top: 72px;
+      top: 50%;
     }
   }
 

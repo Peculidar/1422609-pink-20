@@ -6,7 +6,7 @@
 .advantages__promo {
   @include font-style(24px, 120%, 300);
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
@@ -36,9 +36,9 @@
 }
 
 .advantages__list {
+  padding-top: 30px;
   text-align: center;
   list-style: none;
-
 
   @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
     text-align: left;
@@ -51,6 +51,7 @@
     grid-template-columns: repeat(3, 252px);
     grid-column-gap: 94px;
     text-align: center;
+    padding-top: 0;
   }
 }
 
@@ -62,6 +63,84 @@
   @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
     grid-column: 2 / 3;
   }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 270px;
+  }
+
+  &:first-of-type {
+    @media (min-width: $desktop-breakpoint) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 303px;
+        background-image: url("../img/iphone-screen-1-desktop@1x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        top: -30px;
+        left: 0;
+      }
+    }
+  }
+
+  &:nth-of-type(2) {
+    @media (min-width: $desktop-breakpoint) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 303px;
+        background-image: url("../img/iphone-screen-2-desktop@1x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        top: -30px;
+        left: 0;
+      }
+    }
+  }
+
+  &:last-of-type {
+    position: relative;
+    padding-bottom: 300px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 280px;
+      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+      bottom: 0;
+      left: 0;
+    }
+
+    @media (min-width: $tablet-breakpoint) {
+      padding-bottom: 50px;
+
+      &::after {
+        background-image: url("../img/iphone-screen-3-tablet@1x.png");
+        background-position: left top;
+        height: 480px;
+        margin-left: -($tablet-width - 280px);
+      }
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      &::after {
+        background-image: url("../img/iphone-screen-3-desktop@1x.png");
+        background-position: center;
+        top: -30px;
+        margin-left: 0;
+        height: 303px;
+      }
+    }
+  }
 }
 
 .advantages__title {
@@ -70,5 +149,76 @@
 
   @media (min-width: $desktop-breakpoint) {
     @include font-style(30px, 30px, 700);
+  }
+}
+
+.advantages__description {
+  @include font-style;
+
+  @media (min-width: $desktop-breakpoint) {
+    @include font-style(18px, 30px, 400);
+  }
+}
+
+.advantages__fast {
+  @media (min-width: $desktop-breakpoint) {
+    @include color-style($bgc: $theme-grey);
+  }
+}
+
+.advantages__fast-wrapper {
+  display: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    position: relative;
+    display: block;
+    width: 310px;
+
+    padding: {
+      left: $tablet-width - 280px;
+      top: 100px;
+      bottom: 100px;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 570px;
+    padding-left: $desktop-width - 570px;
+  }
+}
+
+.advantages__fast-header {
+  @media (min-width: $tablet-width) {
+    @include font-style(30px, 36px, 700);
+    @include color-style($color: $basic-black);
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    line-height: 30px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.advantages__fast-description {
+  @media (min-width: $tablet-breakpoint) {
+    @include font-style;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    @include font-style($size: 18px, $line: 30px);
+  }
+}
+
+.advantages__fast-link {
+  @media (min-width: $tablet-breakpoint) {
+    @include font-style;
+    @include color-style($color: $theme-pink);
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    @include font-style($size: 18px, $line: 30px);
   }
 }

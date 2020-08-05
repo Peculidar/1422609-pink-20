@@ -1,5 +1,8 @@
 .app-store {
   @include color-style($basic-white, $theme-dark-black);
+  position: relative;
+  z-index: 200;
+  margin-top: 0;
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
