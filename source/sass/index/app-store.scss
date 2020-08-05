@@ -1,7 +1,6 @@
 .app-store {
   @include color-style($basic-white, $theme-dark-black);
   position: relative;
-  z-index: 200;
   margin-top: 0;
   text-align: center;
 
@@ -45,7 +44,16 @@
   display: inline-block;
   vertical-align: middle;
   border: 3px solid $basic-white;
-  border-radius: 29px;
+  border-radius: 30px;
   margin-top: 28px;
   padding: 21px 38px;
+
+  &:hover {
+    @include color-style($theme-pink, $basic-white);
+    box-shadow: 0 5px 7px rgba(1, 1, 1, 0.75);
+  }
+
+  &:active {
+    color: rgba($theme-pink, 0.3);
+  }
 }

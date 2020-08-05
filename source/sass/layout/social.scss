@@ -18,6 +18,20 @@
   border: 3px solid rgba($theme-black, 0.1);
   display: block;
   border-radius: 50%;
+
+  &:hover {
+    border-color: $theme-black;
+  }
+
+  &:active {
+    border-color: rgba($theme-black, 0.1);
+
+    .social__svg {
+      path {
+        fill: rgba($theme-pink, 0.3);
+      }
+    }
+  }
 }
 
 .social__svg {

@@ -20,4 +20,16 @@
   path {
     fill: $theme-pink;
   }
+
+  &:hover {
+    path {
+      fill: $theme-black;
+    }
+  }
+
+  &:active {
+    path {
+      fill: rgba($theme-black, 0.3);
+    }
+  }
 }

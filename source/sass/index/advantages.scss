@@ -216,6 +216,14 @@
   @media (min-width: $tablet-breakpoint) {
     @include font-style;
     @include color-style($color: $theme-pink);
+
+    &:hover {
+      color: $theme-black;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-breakpoint) {
