@@ -6,8 +6,8 @@
 
   @media (min-width: $tablet-breakpoint) {
     margin-top: 3px;
-    background-color: transparent;
     grid-column: 1 / 2;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -36,8 +36,8 @@
 
 .app-store__description {
   @include font-style($weight: 300);
-  padding: 0 20px 31px;
   width: $mobile-width;
+  padding: 0 20px 31px;
   margin: 15px auto 0;
 
   @media (min-width: $tablet-breakpoint) {
@@ -58,10 +58,10 @@
   @include font-style(18px, 18px, 700);
   display: inline-block;
   vertical-align: middle;
-  border: 3px solid $basic-white;
-  border-radius: 30px;
   margin-top: 28px;
   padding: 16px 37px 15px;
+  border: 3px solid $basic-white;
+  border-radius: 30px;
 
   @media (min-width: $tablet-breakpoint) {
     padding: 16px 45px 15px;

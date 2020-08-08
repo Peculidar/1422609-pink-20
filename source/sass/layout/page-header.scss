@@ -1,7 +1,7 @@
 .page-header {
-  background-color: rgba($basic-black, 0.3);
   position: relative;
   z-index: 100;
+  background-color: rgba($basic-black, 0.3);
 
   &--open {
     @media (max-width: $desktop-breakpoint) {
@@ -25,9 +25,9 @@
   flex-direction: column;
 
   @media (min-width: $desktop-breakpoint) {
-    width: $desktop-width;
     flex-direction: row;
     justify-content: space-between;
+    width: $desktop-width;
     margin: 0 auto;
     background-color: transparent;
   }

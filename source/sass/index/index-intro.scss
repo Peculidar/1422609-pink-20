@@ -31,8 +31,8 @@
     &::before {
       content: "";
       position: absolute;
-      height: 545px;
       width: 100%;
+      height: 545px;
       bottom: 0;
       left: -20px;
       background-image: url("../img/iphone-hand-tablet@1x.png");
@@ -58,20 +58,23 @@
   position: relative;
   margin-top: -69px;
   margin-bottom: 0;
-  text-align: center;
   padding-top: 95px;
   padding-bottom: 314px;
+  text-align: center;
 
   &::before {
     content: "";
     position: absolute;
-    height: 286px;
-    width: 100%;
     bottom: 0;
     left: -31px;
-    background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 100%;
+    height: 286px;
+
+    background: {
+      image: url("../img/iphone-hand-mobile@1x.png");
+      repeat: no-repeat;
+      position: center;
+    }
 
     @media (min-width: $tablet-breakpoint) {
       display: none;

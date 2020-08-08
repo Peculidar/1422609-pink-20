@@ -52,9 +52,12 @@
   @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
     text-align: left;
     width: 307px;
-    padding-left: 307px;
-    padding-right: 0;
-    padding-top: 21px;
+
+    padding: {
+      left: 307px;
+      right: 0;
+      top: 21px;
+    }
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -94,9 +97,9 @@
       content: "";
       position: absolute;
       top: -8px;
+      left: 0;
       width: 100%;
       height: 303px;
-      left: 0;
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -121,8 +124,8 @@
       position: relative;
 
       &::after {
-        background-image: url("../img/iphone-screen-2-desktop@1x.png");
         left: 2px;
+        background-image: url("../img/iphone-screen-2-desktop@1x.png");
       }
     }
   }
@@ -134,24 +137,27 @@
     &::after {
       content: "";
       position: absolute;
-      width: 100%;
-      height: 280px;
-      background-image: url("../img/iphone-screen-mobile@1x.png");
-      background-repeat: no-repeat;
-      background-position: center top;
       bottom: 0;
       left: 0;
+      width: 100%;
+      height: 280px;
+
+      background: {
+        image: url("../img/iphone-screen-mobile@1x.png");
+        repeat: no-repeat;
+        position: center top;
+      }
     }
 
     @media (min-width: $tablet-breakpoint) {
       padding-bottom: 27px;
 
       &::after {
-        background-image: url("../img/iphone-screen-3-tablet@1x.png");
-        background-position: center;
         height: 480px;
         left: -330px;
         bottom: 0;
+        background-image: url("../img/iphone-screen-3-tablet@1x.png");
+        background-position: center;
       }
     }
 
@@ -161,10 +167,10 @@
       }
 
       &::after {
-        background-image: url("../img/iphone-screen-3-desktop@1x.png");
         margin-left: 0;
         left: 7px;
         height: 303px;
+        background-image: url("../img/iphone-screen-3-desktop@1x.png");
       }
     }
   }
@@ -219,9 +225,12 @@
 
   @media (min-width: $desktop-breakpoint) {
     width: 565px;
-    padding-left: $desktop-width - 565px;
-    padding-top: 70px;
-    padding-bottom: 110px;
+
+    padding: {
+      left: 375px;
+      top: 70px;
+      bottom: 110px;
+    }
   }
 }
 
@@ -233,8 +242,8 @@
   }
 
   @media (min-width: $desktop-breakpoint) {
-    line-height: 30px;
     margin-bottom: 25px;
+    line-height: 30px;
 
     br {
       display: none;
@@ -261,15 +270,15 @@
 
   @media (min-width: $tablet-breakpoint) {
     @include font-style;
+    width: 298px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 298px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     @include font-style($size: 18px, $line: 30px);
-    margin-bottom: 31px;
     width: 100%;
+    margin-bottom: 31px;
   }
 }
 
