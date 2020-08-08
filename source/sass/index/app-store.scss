@@ -5,8 +5,13 @@
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
+    margin-top: 3px;
     background-color: transparent;
     grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 8px;
   }
 }
 
@@ -16,25 +21,35 @@
   align-items: baseline;
   flex-wrap: wrap;
   width: 204px;
-  margin: 32px auto 0;
+  margin: 30px auto 0;
   padding: 0 20px;
   list-style: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 45px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 65px;
+  }
 }
 
 .app-store__description {
   @include font-style($weight: 300);
-  padding: 0 20px 38px;
+  padding: 0 20px 31px;
   width: $mobile-width;
-  margin: 20px auto 0;
+  margin: 15px auto 0;
 
   @media (min-width: $tablet-breakpoint) {
     @include font-style(18px, 24px, 300);
-    padding: 0 0 119px;
+    padding: 0 0 112px;
     width: 300px;
+    margin-top: 27px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    padding-bottom: 130px;
+    margin-top: 45px;
+    padding-bottom: 126px;
   }
 }
 
@@ -46,7 +61,16 @@
   border: 3px solid $basic-white;
   border-radius: 30px;
   margin-top: 28px;
-  padding: 21px 38px;
+  padding: 16px 37px 15px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding: 16px 45px 15px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    @include font-style(21px, 18px, 700);
+    padding: 16px 28px 16px 29px;
+  }
 
   &:hover {
     @include color-style($theme-pink, $basic-white);

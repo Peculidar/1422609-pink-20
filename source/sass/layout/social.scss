@@ -1,11 +1,19 @@
 .social__list {
-  width: 172px;
+  width: 176px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-left: -40px; //временно, после логотипа .copyrights должно встать ровно
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-left: -15px;
+  }
 }
 
 .social__item {
@@ -42,6 +50,10 @@
   }
 
   &--youtube {
-    margin-left: 2px;
+    margin-left: 3px;
+  }
+
+  &--twitter {
+    margin-left: -1px;
   }
 }

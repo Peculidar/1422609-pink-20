@@ -1,22 +1,20 @@
 .banner-intro {
   display: grid;
-  min-height: 462px;
   margin-top: -66px;
   background: {
     color: $theme-black;
     image: url("../img/bg-back-mobile@1x.jpg");
-    position: 50% 0;
+    position: center top;
+    size: cover;
     repeat: none;
   }
 
   @media (min-width: $tablet-breakpoint) {
-    min-height: 670px;
     margin-top: -110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
   @media (min-width: $desktop-breakpoint) {
-    min-height: 634px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }
@@ -24,30 +22,27 @@
 .banner-intro__header {
   @include font-style(24px, normal, 300);
   @include color-style($basic-white, transparent);
-  margin-bottom: 84px;
-  padding: 99px 20px 0;
+  padding: 92px 20px 78px;
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
     @include font-style(50px, normal, 300);
-    padding: 191px 20px 0;
-    margin-bottom: 143px;
+    padding: 175px 20px 129px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    margin-bottom: 104px;
+    padding: 170px 20px 88px;
   }
 }
 
 .banner-intro__text {
   @include color-style($theme-black, $basic-white);
-  width: 100%;
 }
 
 .banner-intro__paragraph {
   @include font-style($line: 30px);
   width: 250px;
-  margin: 54px auto 60px;
+  margin: 45px auto 49px;
   padding: 0 20px;
   text-align: center;
 
@@ -55,12 +50,12 @@
     @include font-style(18px, 30px, 400);
     width: 450px;
     padding: 0 40px;
-    margin: 100px auto 85px;
+    margin: 91px auto 77px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     width: 572px;
-    max-height: 240px;
-    margin-bottom: 97px;
+    // max-height: 240px;
+    margin-bottom: 89px;
   }
 }

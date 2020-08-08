@@ -9,6 +9,12 @@
     }
   }
 
+  &--nojs {
+    @media (max-width: $desktop-breakpoint) {
+      background-color: $theme-black;
+    }
+  }
+
   @media (min-width: $desktop-breakpoint) {
     width: 100%;
   }
@@ -28,7 +34,7 @@
 }
 
 .page-header__logo {
-  height: 69px;
+  height: 66px;
 
   @media (min-width: $tablet-breakpoint) {
     height: 110px;
