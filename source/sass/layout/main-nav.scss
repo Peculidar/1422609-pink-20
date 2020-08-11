@@ -4,18 +4,6 @@
   padding: 0;
   text-transform: uppercase;
 
-  &--open {
-    @media (max-width: $desktop-breakpoint) {
-      position: absolute;
-      top: 69px;
-      width: 100%;
-    }
-
-    @media (min-width: $tablet-breakpoint) {
-      top: 110px;
-    }
-  }
-
   &--nojs {
     @media (max-width: $desktop-breakpoint) {
       position: static;

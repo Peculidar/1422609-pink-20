@@ -57,6 +57,7 @@
 
 .post__text {
   margin-top: 0;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-breakpoint) {
     overflow: hidden;
@@ -75,7 +76,7 @@
   @include color-style($theme-pink, transparent);
   position: relative;
   padding: 0;
-  padding-left: 37px;
+  padding-left: 32px;
   margin: 0;
   text-align: left;
   text-transform: uppercase;

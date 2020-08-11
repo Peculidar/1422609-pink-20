@@ -1,6 +1,6 @@
 .banner-intro {
   display: grid;
-  margin-top: -66px;
+  margin-top: -69px;
   background: {
     color: $theme-black;
     image: url("../img/bg-back-mobile@1x.jpg");
@@ -22,7 +22,7 @@
 .banner-intro__header {
   @include font-style(24px, normal, 300);
   @include color-style($basic-white, transparent);
-  padding: 92px 20px 78px;
+  padding: 96px 20px 78px;
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {

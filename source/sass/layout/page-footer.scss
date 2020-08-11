@@ -6,20 +6,26 @@
   flex-direction: column;
   margin-top: 30px;
   margin-bottom: 40px;
-  min-height: 210px;
+  min-height: 212px;
 
   @media (min-width: $tablet-breakpoint) {
     flex-direction: row;
-    margin-top: 21px;
     margin-bottom: 0;
-    min-height: 130px;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
-    min-height: 197px;
+    min-height: 0;
   }
 }
 
 .page-footer__logo {
   min-height: 38px;
+
+  @media (min-width: $tablet-breakpoint) {
+    min-height: 0;
+    padding-top: 20px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
 }

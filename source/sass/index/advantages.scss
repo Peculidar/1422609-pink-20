@@ -132,7 +132,7 @@
 
   &:last-of-type {
     position: relative;
-    padding-bottom: 302px;
+    padding-bottom: 304px;
 
     &::after {
       content: "";
@@ -252,22 +252,6 @@
 }
 
 .advantages__fast-description {
-  br {
-    display: none;
-
-    @media (min-width: $desktop-breakpoint) {
-      display: inline;
-    }
-  }
-
-  span {
-    opacity: 0;
-
-    @media (min-width: $desktop-breakpoint) {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-breakpoint) {
     @include font-style;
     width: 298px;
@@ -298,5 +282,25 @@
 
   @media (min-width: $desktop-breakpoint) {
     @include font-style($size: 18px, $line: 30px);
+  }
+}
+
+.advantages__br {
+  display: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    &--two {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    &--one {
+      display: inline;
+    }
+
+    &--two {
+      display: none;
+    }
   }
 }

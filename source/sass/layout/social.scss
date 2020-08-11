@@ -2,17 +2,22 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 176px;
+  width: 178px;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-breakpoint) {
-    margin-left: -40px; //временно, после логотипа .copyrights должно встать ровно
+    margin-left: -15px;
+    padding-top: 32px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    margin-left: -15px;
+    margin-left: 6px;
+    width: 174px;
+    padding-top: 60px;
+    padding-bottom: 75px;
   }
 }
 
