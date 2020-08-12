@@ -13,7 +13,7 @@
     background-size: 320px auto;
   }
 
-  @media (min-width: 321px) {
+  @media (min-width: $tablet-breakpoint) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
