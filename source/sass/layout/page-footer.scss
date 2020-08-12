@@ -1,28 +1,31 @@
 .page-footer {
   @include color-style($bgc: $basic-white);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin-top: 7px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  min-height: 212px;
 
   @media (min-width: $tablet-breakpoint) {
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 21px;
-    padding-top: 36px;
-    padding-bottom: 51px;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
-    padding-top: 70px;
-    padding-bottom: 87px;
+    margin-bottom: 0;
+    min-height: 0;
   }
 }
 
 .page-footer__logo {
-  @media (max-width: $tablet-breakpoint) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  min-height: 38px;
+
+  @media (min-width: $tablet-breakpoint) {
+    min-height: 0;
+    padding-top: 20px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 0;
+    padding-bottom: 20px;
   }
 }

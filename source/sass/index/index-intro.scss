@@ -3,8 +3,9 @@
   background: {
     color: $theme-black;
     image: url("../img/bg-back-mobile@1x.jpg");
+    size: cover;
     repeat: no-repeat;
-    position: 50% 0;
+    position: center top;
   }
 
   @media (min-width: $tablet-breakpoint) {
@@ -18,6 +19,7 @@
 
 .index-intro__wrapper {
   @media (min-width: $tablet-breakpoint) {
+    position: relative;
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr min-content;
@@ -25,32 +27,73 @@
     margin: 0 auto;
     margin-top: -110px;
     padding: 0 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 545px;
+      bottom: 0;
+      left: -20px;
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      background-repeat: no-repeat;
+    }
   }
 
   @media (min-width: $desktop-breakpoint) {
     width: $desktop-width;
     padding: 0 10px;
+
+    &::before {
+      height: 645px;
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      left: 26px;
+    }
   }
 }
 
 .index-intro__header {
   @include font-style(24px, 120%, 300);
   @include color-style($basic-white, transparent);
+  position: relative;
   margin-top: -69px;
+  margin-bottom: 0;
+  padding-top: 95px;
+  padding-bottom: 314px;
   text-align: center;
-  padding-top: 98px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -31px;
+    width: 100%;
+    height: 286px;
+
+    background: {
+      image: url("../img/iphone-hand-mobile@1x.png");
+      repeat: no-repeat;
+      position: center;
+    }
+
+    @media (min-width: $tablet-breakpoint) {
+      display: none;
+    }
+  }
+
 
   @media (min-width: $tablet-breakpoint) {
     @include font-style(40px, 120%, 300);
     grid-column: 1 / 2;
-    padding-top: 212px;
+    padding-top: 202px;
+    padding-bottom: 0;
     width: 240px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    @include font-style(50px, auto, 300);
-    padding-top: 224px;
+    @include font-style(50px, normal, 300);
+    padding-top: 209px;
     width: 100%;
   }
 

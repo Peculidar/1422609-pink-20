@@ -1,36 +1,49 @@
 .page-header {
-  @include color-style($color: $basic-white, $bgc: $theme-black);
   position: relative;
   z-index: 100;
+  background-color: rgba($basic-black, 0.3);
+
+  &--open {
+    @media (max-width: $desktop-breakpoint) {
+      background-color: $theme-black;
+    }
+  }
+
+  &--nojs {
+    @media (max-width: $desktop-breakpoint) {
+      background-color: $theme-black;
+    }
+  }
 
   @media (min-width: $desktop-breakpoint) {
     width: 100%;
-    background-color: $basic-black-opacity-thirty;
   }
 }
 
 .page-header__wrapper {
-  @include color-style($basic-white, $theme-black);
   display: flex;
   flex-direction: column;
 
   @media (min-width: $desktop-breakpoint) {
-    width: $desktop-width;
     flex-direction: row;
     justify-content: space-between;
+    width: $desktop-width;
     margin: 0 auto;
     background-color: transparent;
   }
 }
 
 .page-header__logo {
-  height: 69px;
+  height: 69px - 23px;
+  padding-left: 20px;
+  padding-top: 23px;
 
   @media (min-width: $tablet-breakpoint) {
-    height: 110px;
+    height: 110px - 43px;
+    padding-top: 43px;
   }
-}
 
-.page-header__menu-toggle {
-  display: none; //временно
+  @media (min-width: $desktop-breakpoint) {
+    padding-left: 0;
+  }
 }

@@ -1,12 +1,20 @@
 .advantages {
   position: relative;
-  margin-top: 50px;
+  margin-top: 42px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 66px;
+  }
 }
 
 .advantages__promo {
   @include font-style(24px, 120%, 300);
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 65px;
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
@@ -19,11 +27,12 @@
 }
 
 .advantages__promo-end {
-  margin-top: 25px;
+  margin-top: 31px;
 
   @media (min-width: $tablet-breakpoint) {
     width: 350px;
-    margin-top: 0;
+    margin-top: 2px;
+    line-height: normal;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -36,39 +45,262 @@
 }
 
 .advantages__list {
+  padding-top: 30px;
   text-align: center;
   list-style: none;
 
-
   @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
     text-align: left;
-    width: 310px;
-    padding-left: $tablet-width - 280px;
+    width: 307px;
+
+    padding: {
+      left: 307px;
+      right: 0;
+      top: 21px;
+    }
   }
 
   @media (min-width: $desktop-breakpoint) {
     display: grid;
-    grid-template-columns: repeat(3, 252px);
-    grid-column-gap: 94px;
+    grid-template-columns: 1fr 249px 1fr;
+    grid-column-gap: 44px;
     text-align: center;
+    padding-top: 0;
+    padding-right: 10px;
   }
 }
 
 .advantages__item {
+  margin-bottom: 29px;
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+      display: inline;
+    }
+  }
+
   @media (min-width: $tablet-breakpoint) {
     @include font-style(18px, 30px, 400);
+    margin-bottom: 35px;
   }
 
   @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
     grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 320px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 0;
+      width: 100%;
+      height: 303px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &:first-of-type {
+    @media (min-width: $desktop-breakpoint) {
+      position: relative;
+
+      .advantages__description {
+        width: 252px;
+      }
+
+      &::after {
+        background-image: url("../img/iphone-screen-1-desktop@1x.png");
+      }
+    }
+  }
+
+  &:nth-of-type(2) {
+    @media (min-width: $desktop-breakpoint) {
+      position: relative;
+
+      &::after {
+        left: 2px;
+        background-image: url("../img/iphone-screen-2-desktop@1x.png");
+      }
+    }
+  }
+
+  &:last-of-type {
+    position: relative;
+    padding-bottom: 304px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 280px;
+
+      background: {
+        image: url("../img/iphone-screen-mobile@1x.png");
+        repeat: no-repeat;
+        position: center top;
+      }
+    }
+
+    @media (min-width: $tablet-breakpoint) {
+      padding-bottom: 27px;
+
+      &::after {
+        height: 480px;
+        left: -330px;
+        bottom: 0;
+        background-image: url("../img/iphone-screen-3-tablet@1x.png");
+        background-position: center;
+      }
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      .advantages__description {
+        width: 249px;
+      }
+
+      &::after {
+        margin-left: 0;
+        left: 7px;
+        height: 303px;
+        background-image: url("../img/iphone-screen-3-desktop@1x.png");
+      }
+    }
   }
 }
 
 .advantages__title {
   @include font-style(18px, 24px, 700);
   @include color-style($color: $basic-black);
+  margin-bottom: 0;
 
   @media (min-width: $desktop-breakpoint) {
     @include font-style(30px, 30px, 700);
+    width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.advantages__description {
+  @include font-style;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 12px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    @include font-style(18px, 30px, 400);
+    margin: 24px auto 0;
+  }
+}
+
+.advantages__fast {
+  @media (min-width: $desktop-breakpoint) {
+    @include color-style($bgc: $theme-grey);
+  }
+}
+
+.advantages__fast-wrapper {
+  display: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    position: relative;
+    display: block;
+    width: 300px;
+
+    padding: {
+      left: 320px;
+      top: 31px;
+      bottom: 100px;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 565px;
+
+    padding: {
+      left: 375px;
+      top: 70px;
+      bottom: 110px;
+    }
+  }
+}
+
+.advantages__fast-header {
+  @media (min-width: $tablet-width) {
+    @include font-style(30px, 36px, 700);
+    @include color-style($color: $basic-black);
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 25px;
+    line-height: 30px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.advantages__fast-description {
+  @media (min-width: $tablet-breakpoint) {
+    @include font-style;
+    width: 298px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    @include font-style($size: 18px, $line: 30px);
+    width: 100%;
+    margin-bottom: 31px;
+  }
+}
+
+.advantages__fast-link {
+  @media (min-width: $tablet-breakpoint) {
+    @include font-style;
+    @include color-style($color: $theme-pink);
+
+    &:hover {
+      color: $theme-black;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    @include font-style($size: 18px, $line: 30px);
+  }
+}
+
+.advantages__br {
+  display: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    &--two {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    &--one {
+      display: inline;
+    }
+
+    &--two {
+      display: none;
+    }
   }
 }
