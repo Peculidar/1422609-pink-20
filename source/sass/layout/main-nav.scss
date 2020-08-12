@@ -118,7 +118,7 @@
     content: "";
     position: absolute;
     top: 21px;
-    left: 21px;
+    left: 20px;
     width: 50px;
     height: 3px;
     background-color: $basic-white;
@@ -127,7 +127,7 @@
       0 20px 0 0 $basic-white;
 
     @media (min-width: $tablet-breakpoint) {
-      top: 47px;
+      top: 43px;
     }
   }
 
