@@ -9,8 +9,12 @@
   <body>
     <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип PINK">
+        <a href="index.html" class="page-header__logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип PINK">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню сайта"></button>
@@ -37,7 +41,11 @@
             <p class="user-photos__label">Панорама дня</p>
             <div class="user-photos__panorama">
               <a class="user-photos__img-link user-photos__img-link--panorama" href="#">
-                <img class="user-photos__img user-photos__img--panorama" src="img/panorama-desktop@1x.jpg" width="320" height="137" alt="Летняя фотография гор снята с горнолыжного подъемника">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                  <img class="user-photos__img user-photos__img--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фотография летних гор снята с подъемника">
+                </picture>
               </a>
             </div>
             <div class="user-photos__post post post--panorama">
@@ -51,7 +59,11 @@
           </li>
           <li class="user-photos__item">
             <a class="user-photos__img-link" href="#">
-              <img class="user-photos__img" src="img/photo-car-desktop@1x.jpg" width="280" height="180" alt="Фотография видеосъемки рекламы белого автомобиля">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="user-photos__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография видеосъемки рекламы белого автомобиля">
+              </picture>
             </a>
             <div class="user-photos__post post">
               <p class="post__signature">
@@ -64,7 +76,11 @@
           </li>
           <li class="user-photos__item">
             <a class="user-photos__img-link" href="#">
-              <img class="user-photos__img" src="img/photo-drumset-desktop@1x.jpg" width="280" height="180" alt="Фотография ударной установки барабанщика">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="user-photos__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография ударной установки барабанщика">
+              </picture>
             </a>
             <div class="user-photos__post post">
               <p class="post__signature">
@@ -77,7 +93,11 @@
           </li>
           <li class="user-photos__item">
             <a class="user-photos__img-link" href="#">
-              <img class="user-photos__img" src="img/photo-window-desktop@1x.jpg" width="280" height="180" alt="Фотография стеклянного потолка">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="user-photos__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография стеклянного потолка">
+              </picture>
             </a>
             <div class="user-photos__post post">
               <p class="post__signature">
@@ -90,7 +110,11 @@
           </li>
           <li class="user-photos__item">
             <a class="user-photos__img-link" href="#">
-              <img class="user-photos__img" src="img/photo-fair-desktop@1x.jpg" width="280" height="180" alt="Фотография ярмарки Кубанская Бахча">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="user-photos__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография ярмарки Кубанская Бахча">
+              </picture>
             </a>
             <div class="user-photos__post post">
               <p class="post__signature">
@@ -103,7 +127,11 @@
           </li>
           <li class="user-photos__item">
             <a class="user-photos__img-link" href="#">
-              <img class="user-photos__img" src="img/photo-pov-desktop@1x.jpg" width="280" height="180" alt="Снимок ног фотографа над горным обрывом">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="user-photos__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Снимок ног фотографа над горным обрывом">
+              </picture>
             </a>
             <div class="user-photos__post post">
               <p class="post__signature">
@@ -116,7 +144,11 @@
           </li>
           <li class="user-photos__item">
             <a class="user-photos__img-link" href="#">
-              <img class="user-photos__img" src="img/photo-wing-desktop@1x.jpg" width="280" height="180" alt="Фотография крыла самолета, снята из окна самолета во время полета">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="user-photos__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография крыла самолета, снята из окна самолета во время полета">
+              </picture>
             </a>
             <div class="user-photos__post post">
               <p class="post__signature">
@@ -160,7 +192,10 @@
     <footer class="page-footer container">
       <div class="page-footer__logo">
         <a class="page-footer__logo-link" href="#">
-          <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип PINK">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип PINK">
+          </picture>
         </a>
       </div>
       <div class="page-footer__social social">
