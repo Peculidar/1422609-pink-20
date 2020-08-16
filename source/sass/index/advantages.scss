@@ -91,7 +91,7 @@
   }
 
   @media (min-width: $desktop-breakpoint) {
-    padding-top: 320px;
+    padding-top: 321px;
 
     &::after {
       content: "";
@@ -223,7 +223,7 @@
 
   @media (min-width: $desktop-breakpoint) {
     @include font-style(18px, 30px, 400);
-    margin: 24px auto 0;
+    margin: 22px auto 0;
   }
 }
 
@@ -237,34 +237,88 @@
   display: none;
 
   @media (min-width: $tablet-breakpoint) {
-    position: relative;
-    display: block;
-    width: 300px;
-
-    padding: {
-      left: 320px;
-      top: 31px;
-      bottom: 100px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    width: 565px;
+    padding-bottom: 111px;
+  }
+}
 
-    padding: {
-      left: 375px;
-      top: 70px;
-      bottom: 110px;
+.advantages__fast-24 {
+  @include font-style(96px, 163px, 700);
+  position: relative;
+  margin: 0;
+  padding-top: 72px;
+  color: $theme-pink;
+  text-align: center;
+  width: 238px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    width: 170px;
+    height: 170px;
+    left: 18px;
+    top: 56px;
+    background-color: transparent;
+    border: 16px solid $theme-pink;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 276px;
+    left: 0;
+    top: 0;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 120px;
+    padding-top: 88px;
+    margin-left: 31px;
+    margin-top: 2px;
+
+    &::before {
+      width: 216px;
+      height: 216px;
+      top: 47px;
+      left: -7px;
+      border-width: 18px;
+    }
+
+    &::after {
+      width: 298px;
+      height: 345px;
+      left: -30px;
+      top: -24px;
     }
   }
 }
 
-.advantages__fast-header {
-  @media (min-width: $tablet-width) {
-    @include font-style(30px, 36px, 700);
-    @include color-style($color: $basic-black);
-    margin-bottom: 0;
+.advantages__fast-text {
+  width: 310px;
+  padding-top: 31px;
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 570px;
+    padding-top: 71px;
   }
+}
+
+.advantages__fast-header {
+  @include font-style(30px, 36px, 700);
+  @include color-style($color: $basic-black);
+  margin-bottom: 10px;
 
   @media (min-width: $desktop-breakpoint) {
     margin-bottom: 25px;
@@ -277,12 +331,10 @@
 }
 
 .advantages__fast-description {
-  @media (min-width: $tablet-breakpoint) {
-    @include font-style;
-    width: 298px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+  @include font-style;
+  width: 298px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   @media (min-width: $desktop-breakpoint) {
     @include font-style($size: 18px, $line: 30px);
@@ -292,17 +344,15 @@
 }
 
 .advantages__fast-link {
-  @media (min-width: $tablet-breakpoint) {
-    @include font-style;
-    @include color-style($color: $theme-pink);
+  @include font-style;
+  @include color-style($color: $theme-pink);
 
-    &:hover {
-      color: $theme-black;
-    }
+  &:hover {
+    color: $theme-black;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $desktop-breakpoint) {
