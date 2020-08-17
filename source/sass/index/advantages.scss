@@ -13,8 +13,9 @@
 
 .advantages__promo {
   @include font-style(24px, 120%, 300);
+  position: relative;
+  z-index: 150;
   margin: 0;
-  margin-bottom: 65px;
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
@@ -42,10 +43,29 @@
 
 .advantages__wrapper {
   @include color-style($bgc: $theme-grey);
+  margin-top: 36px;
+  padding-top: 60px;
+  position: relative;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 36px;
+    margin-top: 29px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 55px;
+    padding-top: 10px;
+  }
+}
+
+.advantages__bg {
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 100%;
 }
 
 .advantages__list {
-  padding-top: 30px;
   text-align: center;
   list-style: none;
 
