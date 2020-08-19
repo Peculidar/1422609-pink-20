@@ -34,13 +34,15 @@
 }
 
 .page-header__logo {
-  height: 69px - 23px;
-  padding-left: 20px;
-  padding-top: 23px;
+  height: 69px - 6px;
+  padding-top: 6px;
+  margin-left: -52px;
 
   @media (min-width: $tablet-breakpoint) {
     height: 110px - 27px;
     padding-top: 27px;
+    margin-left: 0;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-breakpoint) {

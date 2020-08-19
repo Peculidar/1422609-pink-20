@@ -1,0 +1,106 @@
+.logo--top {
+  .logo__plain-glasses,
+  .logo__star-glasses,
+  .logo__stars {
+    display: none;
+  }
+
+  .logo__letters {
+    fill: $basic-white;
+  }
+
+  &[href] {
+    cursor: pointer;
+
+    &:hover {
+      .logo__plain-glasses,
+      .logo__letters,
+      .logo__star-glasses {
+        fill: $theme-pink;
+      }
+
+      .logo__stars,
+      .logo__stars-i {
+        fill: $basic-white;
+      }
+    }
+
+    &:active {
+      .logo__plain-glasses,
+      .logo__letters,
+      .logo__star-glasses,
+      .logo__stars,
+      .logo__stars-i {
+        fill: rgba($basic-white, 0.3);
+      }
+    }
+  }
+
+  @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+    .logo__plain-glasses {
+      display: inline-block;
+      fill: $basic-white;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    .logo__star-glasses,
+    .logo__stars {
+      display: inline-block;
+    }
+
+    .logo__star-glasses {
+      fill: $basic-white;
+    }
+
+    .logo__stars {
+      fill: $theme-pink;
+    }
+  }
+}
+
+.logo--bottom {
+  .logo__star-glasses,
+  .logo__stars {
+    display: none;
+
+    @media (min-width: $desktop-breakpoint) {
+      display: inline-block;
+    }
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    .logo__plain-glasses {
+      fill: $theme-pink;
+    }
+  }
+
+  &[href] {
+    cursor: pointer;
+
+    &:hover {
+      .logo__letters,
+      .logo__stars {
+        fill: $theme-pink;
+      }
+    }
+
+    &:active {
+      .logo__letters,
+      .logo__stars {
+        fill: rgba($theme-black, 0.3);
+      }
+
+      .logo__stars-i,
+      .logo__star-glasses {
+        fill: rgba($theme-pink, 0.3);
+      }
+
+      @media (max-width: $desktop-breakpoint) {
+        .logo__plain-glasses {
+          fill: rgba($theme-pink, 0.3);
+        }
+      }
+    }
+  }
+}
