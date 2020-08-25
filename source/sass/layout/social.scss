@@ -40,9 +40,7 @@
     border-color: rgba($theme-black, 0.1);
 
     .social__svg {
-      path {
-        fill: rgba($theme-pink, 0.3);
-      }
+      opacity: 0.3;
     }
   }
 }
