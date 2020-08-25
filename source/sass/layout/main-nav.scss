@@ -44,15 +44,6 @@
     0 1px 0 $basic-black,
     inset 0 1px 0 rgba($basic-white, 0.15);
 
-  &--homepage,
-  &--active {
-    &:hover,
-    &:active {
-      color: $basic-white;
-      cursor: default;
-    }
-  }
-
   @media (min-width: $desktop-breakpoint) {
     @include font-style(18px, 18px, 400);
     margin-right: 79px;
@@ -61,18 +52,6 @@
 
     &:last-child {
       margin-right: 0;
-    }
-
-    &--active {
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 4px;
-        width: 100%;
-        height: 2px;
-        background-color: $basic-white;
-      }
     }
   }
 }
@@ -96,6 +75,32 @@
 
     @media (min-width: $desktop-breakpoint) {
       color: rgba($basic-white, 0.3);
+    }
+  }
+
+  &--active {
+    &:hover,
+    &:active {
+      color: $basic-white;
+      cursor: default;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background-color: $basic-white;
+      }
+    }
+  }
+
+  &--homepage {
+    &::after {
+      display: none;
     }
   }
 }
