@@ -95,6 +95,7 @@ img {
       padding-top: 27px;
       margin-left: 0;
       padding-left: 20px; } }
+
   @media (min-width: 959px) {
     .page-header__logo {
       padding-left: 0; } }
@@ -203,17 +204,20 @@ img {
   .main-nav__item--homepage:hover, .main-nav__item--homepage:active, .main-nav__item--active:hover, .main-nav__item--active:active {
     color: #ffffff;
     cursor: default; }
+
   @media (min-width: 959px) {
     .main-nav__item {
       font-size: 18px;
       font-weight: 400;
       font-family: inherit;
       line-height: 18px;
+
       margin-right: 79px;
       background-color: transparent;
       box-shadow: none; }
       .main-nav__item:last-child {
         margin-right: 0; }
+
       .main-nav__item--active::after {
         content: "";
         position: absolute;
@@ -662,6 +666,7 @@ img {
       padding: 0 0 113px;
       width: 300px;
       margin-top: 27px; } }
+
   @media (min-width: 959px) {
     .app-store__description {
       margin-top: 45px;
