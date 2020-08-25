@@ -13,7 +13,6 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify");
-const pipeline = require('readable-stream').pipeline;
 
 // Styles
 
@@ -47,13 +46,15 @@ exports.html = html;
 
 //JS
 
-const javascript = () => {
-  return pipeline(
-    gulp.src("source/*.js"),
-    uglify(),
-    gulp.dest("build")
-);
+const scripts = () => {
+  return gulp.src("source/js/all-scripts.js")
+    .pipe(uglify())
+    .pipe(rename("scripts.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("source/js"));
 }
+
+exports.scripts = scripts;
 
 //Images
 
@@ -144,5 +145,5 @@ exports.default = gulp.series(
 // Build
 
 exports.build = gulp.series(
-  clean, copy, styles, sprite, javascript, html
+  clean, copy, styles, sprite, scripts, html
 );
