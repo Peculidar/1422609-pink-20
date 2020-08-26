@@ -1,0 +1,36 @@
+.table {
+  margin: 50px auto;
+  padding-top: 50px; //temp
+}
+
+.table__header {
+  @include color-style($basic-white, $theme-black);
+
+  &--empty {
+    @include color-style;
+  }
+}
+
+.table__col-header {
+  @include font-style(16px, 30px, 700);
+  text-transform: uppercase;
+}
+
+.table__col-subheader {
+  @include font-style(18px, 30px, 300);
+}
+
+.table__cell {
+  background-color: $basic-white;
+}
+
+.table__row-header {
+  @include font-style(14px, 30px, 400);
+  @include color-style($theme-black, $basic-white);
+}
+
+.table__cell-text {
+  @include font-style(14px, 30px, 400);
+  color: $theme-black;
+  text-transform: uppercase;
+}

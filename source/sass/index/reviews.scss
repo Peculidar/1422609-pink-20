@@ -1,8 +1,4 @@
 .reviews {
-  @include color-style($bgc: $basic-white);
-  position: relative;
-  z-index: 150;
-  margin-top: -20px;
   text-align: center;
 }
 
@@ -12,6 +8,10 @@
 
 .reviews__author {
   @include font-style(18px, 30px, 700);
-  @include color-style($color: $basic-black);
-  padding-top: 20px;
+  color: $basic-black;
+}
+
+.reviews__text {
+  @include font-style($line: 30px);
+  color: $theme-black;
 }
