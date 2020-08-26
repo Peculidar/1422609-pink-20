@@ -55,20 +55,28 @@
       <section class="form">
         <h2 class="visually-hidden">Форма конкурса</h2>
         <form class="form__contest-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__field">
-            <label class="form__label">Фамилия:
-              <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
-            </label>
-            <label class="form__label">Имя:
-              <input class="form__input" type="text" name="first-name" placeholder="Введите ваше имя*" required>
-            </label>
-            <label class="form__label">Отчество:
-              <input class="form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-            </label>
+          <fieldset class="form__field container">
+            <ul class="form__list form__list--username">
+              <li class="form__item">
+                <label class="form__label form__label--fill">Фамилия:
+                  <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label form__label--fill">Имя:
+                  <input class="form__input" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label form__label--fill">Отчество:
+                  <input class="form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+                </label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="form__field">
-            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="form__list">
+          <fieldset class="form__field form__field--checkbox">
+            <legend class="form__legend container">Ваши безбашенные<br> достижения в путешествии</legend>
+            <ul class="form__list container">
               <li class="form__item">
                 <label class="form__label">Сделал селфи с акулой
                   <input class="form__input" type="checkbox" name="achievements" id="sharks" value="swam-with-sharks" checked>
@@ -101,17 +109,17 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__field">
-            <label class="form__label">Номер телефона
+          <fieldset class="form__field container">
+            <label class="form__label form__label--fill">Номер телефона
               <input class="form__input" type="tel" placeholder="Номер, пожалуйста">
             </label>
-            <label class="form__label">Адрес почты
+            <label class="form__label form__label--fill">Адрес почты
               <input class="form__input" type="email" placeholder="Введите почту*" required>
             </label>
           </fieldset>
-          <fieldset class="form__field">
-            <legend class="form__legend">С каким приложением путешествовали?</legend>
-            <ul class="form__list">
+          <fieldset class="form__field form__field--radio">
+            <legend class="form__legend container">С каким приложением путешествовали?</legend>
+            <ul class="form__list container">
               <li class="form__item">
                 <label class="form__label">Pink для iOS
                   <input class="form__input" type="radio" name="application" id="ios" value="apple-application" checked>
@@ -129,7 +137,7 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__field">
+          <div class="form__field container">
             <label class="form__label" for="message">Опишите свои эмоции</label>
             <textarea name="message" id="message" rows="5" cols="25" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
