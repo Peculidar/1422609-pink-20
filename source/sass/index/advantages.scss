@@ -125,7 +125,7 @@
     }
   }
 
-  &:first-of-type {
+  &--grey {
     @media (min-width: $desktop-breakpoint) {
       position: relative;
 
@@ -144,7 +144,7 @@
     }
   }
 
-  &:nth-of-type(2) {
+  &--pink {
     @media (min-width: $desktop-breakpoint) {
       position: relative;
 
@@ -160,7 +160,7 @@
     }
   }
 
-  &:last-of-type {
+  &--pink-smiley {
     position: relative;
     padding-bottom: 304px;
 
@@ -366,13 +366,16 @@
 .advantages__fast-link {
   @include font-style;
   @include color-style($color: $theme-pink);
+  text-decoration: none;
 
   &:hover {
     color: $theme-black;
+    text-decoration: underline;
   }
 
   &:active {
     opacity: 0.3;
+    text-decoration: none;
   }
 
   @media (min-width: $desktop-breakpoint) {
