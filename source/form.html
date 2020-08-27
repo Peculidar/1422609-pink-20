@@ -7,7 +7,7 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header page-header--nojs">
@@ -59,17 +59,17 @@
             <ul class="form__list form__list--username">
               <li class="form__item">
                 <label class="form__label form__label--fill">Фамилия:
-                  <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
+                  <input class="form__input form__input--fill" type="text" name="surname" placeholder="Укажите фамилию*" required>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__label form__label--fill">Имя:
-                  <input class="form__input" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+                  <input class="form__input form__input--fill" type="text" name="first-name" placeholder="Введите ваше имя*" required>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__label form__label--fill">Отчество:
-                  <input class="form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+                  <input class="form__input form__input--fill" type="text" name="patronymic" placeholder="Ну и отчество тоже">
                 </label>
               </li>
             </ul>
@@ -110,12 +110,18 @@
             </ul>
           </fieldset>
           <fieldset class="form__field container">
-            <label class="form__label form__label--fill">Номер телефона
-              <input class="form__input" type="tel" placeholder="Номер, пожалуйста">
-            </label>
-            <label class="form__label form__label--fill">Адрес почты
-              <input class="form__input" type="email" placeholder="Введите почту*" required>
-            </label>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label form__label--fill">Номер телефона
+                  <input class="form__input form__input--fill" type="tel" placeholder="Номер, пожалуйста">
+                </label>
+              </li>
+              <li class="form__item">
+              <label class="form__label form__label--fill">Адрес почты
+                <input class="form__input form__input--fill" type="email" placeholder="Введите почту*" required>
+              </label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__field form__field--radio">
             <legend class="form__legend container">С каким приложением путешествовали?</legend>
@@ -137,16 +143,15 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__field container">
+          <div class="form__text-field container">
             <label class="form__label" for="message">Опишите свои эмоции</label>
             <textarea name="message" id="message" rows="5" cols="25" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
-          <button class="form__button" type="submit">Отправить форму</button>
+          <div class="form__button-wrapper container">
+            <button class="form__button" type="submit">Отправить форму</button>
+          </div>
         </form>
-        <p class="form__conditions">
-          <span><sup>*</sup></span>
-          &mdash; Обязательные
-        </p>
+        <p class="form__conditions container"><sup>*</sup>&mdash; Обязательные</p>
       </section>
       <section class="modal">
         <div class="modal__sent">

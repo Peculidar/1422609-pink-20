@@ -1177,6 +1177,13 @@ img {
   text-align: center;
   padding-top: 70px; }
 
+.form__list {
+  list-style: none;
+  padding: 0; }
+
+.form__item {
+  margin-bottom: 20px; }
+
 .form__label {
   font-size: 18px;
   font-weight: 400;
@@ -1189,11 +1196,77 @@ img {
     font-family: inherit;
     line-height: 18px;
     color: #d22856;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-left: 20px; }
 
-.form__list {
-  list-style: none;
-  padding: 0; }
+.form__input {
+  border: 2px solid #e5e5e5;
+  border-radius: 1px; }
+  .form__input--fill {
+    width: 270px;
+    height: 59px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: "Open Sans", "Arial", sans-serif; }
+    .form__input--fill::-moz-placeholder {
+      opacity: 1; }
+    .form__input--fill::-webkit-input-placeholder {
+      color: #283645;
+      font-family: "Open Sans", "Arial", sans-serif; }
+
+.form__text-field {
+  text-align: center;
+  margin-top: 20px; }
+  .form__text-field .form__label {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: inherit;
+    line-height: 18px;
+    color: #d22856;
+    text-transform: uppercase; }
+  .form__text-field textarea {
+    resize: none;
+    width: 240px;
+    height: 197px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px; }
+    .form__text-field textarea::-moz-placeholder {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 18px;
+      color: #283645; }
+    .form__text-field textarea::placeholder {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 18px;
+      color: #283645; }
+    .form__text-field textarea::-moz-placeholder {
+      opacity: 1; }
+
+.form__button {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #2aab6d;
+  padding: 18px 0;
+  width: 280px;
+  text-transform: uppercase;
+  border: none; }
+
+.form__conditions {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: inherit;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase; }
+  .form__conditions sup {
+    color: #d22856; }
+
+.modal {
+  display: none; }
 
 .user-photos__list {
   list-style: none; }
