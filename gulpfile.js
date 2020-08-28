@@ -143,12 +143,14 @@ const watcher = () => {
   gulp.watch("source/css/*.css").on("change", sync.reload);
 }
 
-exports.default = gulp.series(
-  styles, server, watcher
-);
-
 // Build
 
-exports.build = gulp.series(
+const build = gulp.series(
   clean, copy, styles, sprite, scripts, html
+);
+
+exports.build = build;
+
+exports.default = gulp.series(
+  build, server, watcher
 );
