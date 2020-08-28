@@ -238,11 +238,11 @@
       <section class="upload">
         <h2 class="visually-hidden">Загрузите вашу фотографию</h2>
         <p class="upload__intro container">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="upload__submit-photo">
-          <img class="upload__img" src="img/photo-road-mobile@1x.jpg" alt="Превью вашей фотографии">
-        </div>
         <form class="upload__form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="upload__filters-field container">
+            <div class="upload__submit-photo">
+              <img class="upload__img" src="img/photo-road-mobile@1x.jpg" alt="Превью вашей фотографии">
+            </div>
             <ul class="upload__controls-list controls">
               <li class="controls__item">
                 <button class="controls__button controls__button--crop controls__button--current" type="button" aria-label="Обрезать фотографию"></button>
@@ -258,7 +258,7 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__button-wrapper container">
+          <div class="upload__button-wrapper container">
             <button class="upload__button upload__button--post" type="submit">Запостить</button>
             <button class="upload__button upload__button--cancel" type="reset">Отмена</button>
           </div>
