@@ -1262,7 +1262,9 @@ img {
   .contacts__item--write {
     width: auto;
     order: 3;
-    padding-right: 40px; } }
+    padding-right: 40px; }
+  .contacts__item--visit {
+    margin-top: 0; } }
 
 .contacts__heading {
   font-size: 18px;
@@ -1291,6 +1293,12 @@ img {
   background-repeat: no-repeat;
   background-color: #e5e5e5;
   background-position: center; }
+  @media (min-width: 660px) {
+    .contacts__map {
+      height: 374px; } }
+  @media (min-width: 959px) {
+    .contacts__map {
+      height: 502px; } }
 
 .contacts__map-iframe {
   width: 100%; }

@@ -55,6 +55,10 @@
       order: 3;
       padding-right: 40px;
     }
+
+    &--visit {
+      margin-top: 0;
+    }
   }
 }
 
@@ -87,6 +91,14 @@
   background-repeat: no-repeat;
   background-color: $basic-gray;
   background-position: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    height: 502px;
+  }
 }
 
 .contacts__map-iframe {
