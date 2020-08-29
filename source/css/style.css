@@ -1061,6 +1061,33 @@ img {
   font-family: inherit;
   line-height: 30px;
   color: #000000; }
+  @media (min-width: 660px) {
+    .reviews__author--top {
+      display: none; } }
+  .reviews__author--bottom {
+    display: none; }
+    @media (min-width: 660px) {
+      .reviews__author--bottom {
+        display: block;
+        font-size: 20px; } }
+    @media (min-width: 959px) {
+      .reviews__author--bottom {
+        font-size: 24px; } }
+
+.reviews__author-info {
+  display: none; }
+  @media (min-width: 660px) {
+    .reviews__author-info {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: inherit;
+      line-height: normal;
+      display: block;
+      color: #283645;
+      margin-top: -15px; } }
+  @media (min-width: 959px) {
+    .reviews__author-info {
+      font-size: 18px; } }
 
 .reviews__text {
   font-size: 14px;
@@ -1068,6 +1095,13 @@ img {
   font-family: inherit;
   line-height: 30px;
   color: #283645; }
+  @media (min-width: 660px) {
+    .reviews__text {
+      font-size: 18px; } }
+  @media (min-width: 959px) {
+    .reviews__text {
+      width: 688px;
+      margin: 50px auto 0; } }
 
 .price {
   background-color: #e5e5e5;
@@ -1227,6 +1261,10 @@ img {
 
 .contacts__map-iframe {
   width: 100%; }
+
+@media (min-width: 959px) {
+  .slider__toggles--review {
+    display: none; } }
 
 .form__field {
   border: none; }
