@@ -2,12 +2,60 @@
   @include font-style(24px, 120%, 300);
   color: $theme-black;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: auto;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 50px;
+  }
 }
 
 .contacts__list {
   list-style: none;
   text-align: center;
   padding: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    justify-content: space-between;
+  }
+}
+
+.contacts__item {
+  @media (min-width: $tablet-breakpoint) {
+    &--write,
+    &--call {
+      width: 50%;
+    }
+
+    &--visit {
+      width: 215px;
+      margin: 20px auto 0;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    &--call {
+      width: auto;
+      padding-left: 40px;
+    }
+
+    &--write {
+      width: auto;
+      order: 3;
+      padding-right: 40px;
+    }
+  }
 }
 
 .contacts__heading {

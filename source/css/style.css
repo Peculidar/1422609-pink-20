@@ -1224,12 +1224,45 @@ img {
   font-family: inherit;
   line-height: 120%;
   color: #283645;
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+  @media (min-width: 660px) {
+    .contacts__intro {
+      margin-bottom: 40px;
+      font-size: 40px;
+      line-height: auto; } }
+  @media (min-width: 959px) {
+    .contacts__intro {
+      font-size: 50px; } }
 
 .contacts__list {
   list-style: none;
   text-align: center;
   padding: 0; }
+  @media (min-width: 660px) {
+    .contacts__list {
+      display: flex;
+      flex-wrap: wrap; } }
+  @media (min-width: 959px) {
+    .contacts__list {
+      justify-content: space-between; } }
+
+@media (min-width: 660px) {
+  .contacts__item--write, .contacts__item--call {
+    width: 50%; }
+  .contacts__item--visit {
+    width: 215px;
+    margin: 20px auto 0; } }
+
+@media (min-width: 959px) {
+  .contacts__item--call {
+    width: auto;
+    padding-left: 40px; }
+  .contacts__item--write {
+    width: auto;
+    order: 3;
+    padding-right: 40px; } }
 
 .contacts__heading {
   font-size: 18px;
