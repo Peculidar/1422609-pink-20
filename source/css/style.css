@@ -1070,53 +1070,62 @@ img {
   color: #283645; }
 
 .price {
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  overflow: hidden; }
 
 .price__toggle {
   text-align: center; }
 
 .table {
-  margin: 50px auto;
-  padding-top: 50px; }
+  width: 832px;
+  display: flex;
+  margin-left: 50%;
+  transform: translateX(-50%); }
 
-.table__header {
-  color: #ffffff;
-  background-color: #283645; }
-  .table__header--empty {
-    color: #283645;
-    background-color: transparent; }
+.table__row-headers {
+  display: none;
+  padding: 0;
+  margin: 0; }
+
+.table__col {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 276px; }
 
 .table__col-header {
+  color: #ffffff;
+  background-color: #283645;
+  border: 2px solid #e5e5e5;
+  text-align: center; }
+
+.table__col-title {
   font-size: 16px;
   font-weight: 700;
   font-family: inherit;
   line-height: 30px;
   text-transform: uppercase; }
 
-.table__col-subheader {
+.table__col-price {
   font-size: 18px;
   font-weight: 300;
   font-family: inherit;
   line-height: 30px; }
 
-.table__cell {
-  background-color: #ffffff; }
-
-.table__row-header {
-  font-size: 14px;
-  font-weight: 400;
-  font-family: inherit;
-  line-height: 30px;
+.table__col-cell {
   color: #283645;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding: 24px 19px 25px 20px;
+  border: 2px solid #e5e5e5; }
 
-.table__cell-text {
-  font-size: 14px;
-  font-weight: 400;
-  font-family: inherit;
-  line-height: 30px;
-  color: #283645;
-  text-transform: uppercase; }
+.table__feature {
+  position: relative;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0; }
+  .table__feature .table__icon {
+    position: absolute;
+    right: 0; }
 
 .contacts__intro {
   font-size: 24px;
