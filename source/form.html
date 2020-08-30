@@ -49,33 +49,35 @@
       <section class="banner-intro">
         <h1 class="banner-intro__header container">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <div class="banner-intro__text">
-          <p class="banner-intro__paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
+          <p class="banner-intro__paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!<br>
+          <span class="banner-intro__extra-paragraph banner-intro__extra-paragraph--form-page">Пожалуйста, заполните форму ниже:</span>
+          </p>
         </div>
       </section>
       <section class="form">
         <h2 class="visually-hidden">Форма конкурса</h2>
         <form class="form__contest-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__field container">
-            <ul class="form__list form__list--username">
-              <li class="form__item">
-                <label class="form__label form__label--fill">Фамилия:
-                  <input class="form__input form__input--fill" type="text" name="surname" placeholder="Укажите фамилию*" required>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label form__label--fill">Имя:
-                  <input class="form__input form__input--fill" type="text" name="first-name" placeholder="Введите ваше имя*" required>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label form__label--fill">Отчество:
-                  <input class="form__input form__input--fill" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__field form__field--checkbox">
-            <legend class="form__legend container">Ваши безбашенные<br> достижения в путешествии</legend>
+          <div class="form__field-wrapper form__field-wrapper--username">
+            <fieldset class="form__field container">
+              <ul class="form__list form__list--username">
+                <li class="form__item">
+                  <label class="form__label form__label--fill" for="surname">Фамилия:</label>
+                  <input class="form__input form__input--fill" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+                </li>
+                <li class="form__item">
+                  <label class="form__label form__label--fill" for="name">Имя:</label>
+                  <input class="form__input form__input--fill" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+                </li>
+                <li class="form__item">
+                  <label class="form__label form__label--fill" for="patronymic">Отчество:</label>
+                  <input class="form__input form__input--fill" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form__field-wrapper form__field-wrapper--checkbox">
+          <fieldset class="form__field form__field--checkbox form__field--bordered">
+            <legend class="form__legend form__legend--checkbox container">Ваши безбашенные<br> достижения в путешествии</legend>
             <ul class="form__list container">
               <li class="form__item">
                 <label class="form__label">Сделал селфи с акулой
@@ -109,49 +111,55 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__field container">
-            <ul class="form__list">
-              <li class="form__item">
-                <label class="form__label form__label--fill">Номер телефона
-                  <input class="form__input form__input--fill" type="tel" placeholder="Номер, пожалуйста">
-                </label>
-              </li>
-              <li class="form__item">
-              <label class="form__label form__label--fill">Адрес почты
-                <input class="form__input form__input--fill" type="email" placeholder="Введите почту*" required>
-              </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__field form__field--radio">
-            <legend class="form__legend container">С каким приложением путешествовали?</legend>
-            <ul class="form__list container">
-              <li class="form__item">
-                <label class="form__label">Pink для iOS
-                  <input class="form__input" type="radio" name="application" id="ios" value="apple-application" checked>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label">Pink на Android
-                  <input class="form__input" type="radio" name="application" id="android" value="android-application">
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label">Windows Phone
-                  <input class="form__input" type="radio" name="application" id="windows" value="windows-application">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <div class="form__text-field container">
-            <label class="form__label" for="message">Опишите свои эмоции</label>
-            <textarea name="message" id="message" rows="5" cols="25" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+          <div class="form__field-wrapper form__field-wrapper--contacts">
+            <fieldset class="form__field form__field--contacts form__field--bordered container">
+              <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+              <ul class="form__list">
+                <li class="form__item form__item--contacts">
+                  <label class="form__label form__label--fill form__label--contacts" for="tel">Номер телефона</label>
+                  <input class="form__input form__input--fill" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+                </li>
+                <li class="form__item form__item--contacts">
+                <label class="form__label form__label--fill form__label--contacts" for="email">Адрес почты</label>
+                <input class="form__input form__input--fill" type="email" name="email" id="email" placeholder="Введите почту*" required>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form__field-wrapper form__field-wrapper--radio"></div>
+            <fieldset class="form__field form__field--radio form__field--bordered">
+              <legend class="form__legend container">С каким приложением путешествовали?</legend>
+              <ul class="form__list container">
+                <li class="form__item">
+                  <label class="form__label">Pink для iOS
+                    <input class="form__input" type="radio" name="application" id="ios" value="apple-application" checked>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">Pink на Android
+                    <input class="form__input" type="radio" name="application" id="android" value="android-application">
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">Windows Phone
+                    <input class="form__input" type="radio" name="application" id="windows" value="windows-application">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form__field-wrapper form__field-wrapper--textarea">
+            <fieldset class="form__field form__field--textarea form__field--bordered form__field--fill container">
+              <legend class="form__legend">Опишите свои эмоции</legend>
+              <textarea name="message" id="message" rows="5" cols="25" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
           </div>
           <div class="form__button-wrapper container">
             <button class="form__button" type="submit">Отправить форму</button>
+            <p class="form__conditions"><sup>*</sup>&mdash; Обязательные поля</p>
           </div>
         </form>
-        <p class="form__conditions container"><sup>*</sup>&mdash; Обязательные</p>
       </section>
       <section class="modal">
         <div class="modal__sent">

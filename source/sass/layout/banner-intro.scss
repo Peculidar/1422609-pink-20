@@ -71,3 +71,13 @@
     padding-bottom: 39px;
   }
 }
+
+.banner-intro__extra-paragraph {
+  display: none;
+
+  &--form-page {
+    @media (min-width: $tablet-breakpoint) {
+      display: inline;
+    }
+  }
+}
