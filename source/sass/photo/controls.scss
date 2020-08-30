@@ -1,1 +1,20 @@
-//
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.controls__button {
+  border: none;
+  background-color: transparent;
+
+  &--current {
+    svg {
+      fill: $theme-pink;
+      opacity: 1;
+    }
+  }
+}

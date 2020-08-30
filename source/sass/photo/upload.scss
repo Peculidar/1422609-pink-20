@@ -22,11 +22,6 @@
   border: none;
 }
 
-.upload__controls-list {
-  list-style: none;
-  display: none; //временно
-}
-
 .upload__button {
   @include font-style(18px, 18px, 700);
   margin-bottom: 10px;

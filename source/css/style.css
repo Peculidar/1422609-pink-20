@@ -1714,10 +1714,6 @@ img {
 .upload__filters-field {
   border: none; }
 
-.upload__controls-list {
-  list-style: none;
-  display: none; }
-
 .upload__button {
   font-size: 18px;
   font-weight: 700;
@@ -1848,3 +1844,18 @@ img {
   @media (min-width: 959px) {
     .post__heart-icon {
       padding-right: 7px; } }
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0; }
+
+.controls__button {
+  border: none;
+  background-color: transparent; }
+  .controls__button--current svg {
+    fill: #d22856;
+    opacity: 1; }
