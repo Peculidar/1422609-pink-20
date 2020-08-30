@@ -69,6 +69,10 @@
   @media (min-width: $desktop-breakpoint) {
     width: 572px;
     padding-bottom: 39px;
+
+    br {
+      display: none;
+    }
   }
 }
 

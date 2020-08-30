@@ -58,8 +58,8 @@
         <h2 class="visually-hidden">Форма конкурса</h2>
         <form class="form__contest-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__field-wrapper form__field-wrapper--username">
-            <fieldset class="form__field container">
-              <ul class="form__list form__list--username">
+            <fieldset class="form__field form__field--username container">
+              <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label form__label--fill" for="surname">Фамилия:</label>
                   <input class="form__input form__input--fill" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
@@ -77,34 +77,34 @@
           </div>
           <div class="form__field-wrapper form__field-wrapper--checkbox">
           <fieldset class="form__field form__field--checkbox form__field--bordered">
-            <legend class="form__legend form__legend--checkbox container">Ваши безбашенные<br> достижения в путешествии</legend>
-            <ul class="form__list container">
-              <li class="form__item">
+            <legend class="form__legend container">Ваши безбашенные<br> достижения в путешествии</legend>
+            <ul class="form__list form__list--checkbox container">
+              <li class="form__item form__item--checkbox">
                 <label class="form__label">Сделал селфи с акулой
                   <input class="form__input" type="checkbox" name="achievements" id="sharks" value="swam-with-sharks" checked>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <label class="form__label">Обгорел на пляже
                   <input class="form__input" type="checkbox" name="achievements" id="sunburn" value="got-sunburnt" checked>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <label class="form__label">Видел Чака Норриса
                   <input class="form__input" type="checkbox" name="achievements" id="chuck-norris" value="saw-chuck-norris">
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <label class="form__label">Накупил сувениров
                   <input class="form__input" type="checkbox" name="achievements" id="souvenir" value="bought-souvenirs">
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <label class="form__label">Удержал башню
                   <input class="form__input" type="checkbox" name="achievements" id="tower" value="held-the-tower" checked>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <label class="form__label">Разгромил отель
                   <input class="form__input" type="checkbox" name="achievements" id="hotel" value="wrecked-the-hotel">
                 </label>
@@ -115,7 +115,7 @@
           <div class="form__field-wrapper form__field-wrapper--contacts">
             <fieldset class="form__field form__field--contacts form__field--bordered container">
               <legend class="form__legend form__legend--contacts">Контактная информация</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--contacts">
                 <li class="form__item form__item--contacts">
                   <label class="form__label form__label--fill form__label--contacts" for="tel">Номер телефона</label>
                   <input class="form__input form__input--fill" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
@@ -127,10 +127,10 @@
               </ul>
             </fieldset>
           </div>
-          <div class="form__field-wrapper form__field-wrapper--radio"></div>
+          <div class="form__field-wrapper form__field-wrapper--radio">
             <fieldset class="form__field form__field--radio form__field--bordered">
-              <legend class="form__legend container">С каким приложением путешествовали?</legend>
-              <ul class="form__list container">
+              <legend class="form__legend form__legend--radio">С каким приложением путешествовали?</legend>
+              <ul class="form__list form__list--radio">
                 <li class="form__item">
                   <label class="form__label">Pink для iOS
                     <input class="form__input" type="radio" name="application" id="ios" value="apple-application" checked>
