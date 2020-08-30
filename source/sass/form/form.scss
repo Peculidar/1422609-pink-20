@@ -306,4 +306,12 @@
   sup {
     color: $theme-pink;
   }
+
+  span {
+    display: none;
+
+    @media (min-width: $desktop-breakpoint) {
+      display: inline;
+    }
+  }
 }
