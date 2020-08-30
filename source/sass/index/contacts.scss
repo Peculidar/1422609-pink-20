@@ -1,1 +1,46 @@
-//
+.contacts__intro {
+  @include font-style(24px, 120%, 300);
+  color: $theme-black;
+  text-align: center;
+}
+
+.contacts__list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.contacts__heading {
+  @include font-style(18px, auto, 700);
+}
+
+.contacts__method {
+  @include font-style(24px, auto, 300);
+  color: $theme-pink;
+  text-decoration: none;
+
+  &--link {
+    &:hover {
+      color: $theme-black;
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.3;
+      text-decoration: none;
+    }
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/bg-map-and-marker-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-color: $basic-gray;
+  background-position: center;
+}
+
+.contacts__map-iframe {
+  width: 100%;
+}

@@ -7,7 +7,7 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header page-header--nojs">
@@ -119,96 +119,138 @@
           </div>
         </div>
       </section>
-      <section class="reviews slider visually-hidden">
+      <section class="reviews slider">
         <h2 class="visually-hidden">Отзывы клиентов</h2>
-        <ul class="reviews__list slider__list">
+        <ul class="reviews__list slider__list container">
           <li class="reviews__item slider__item">
             <p class="reviews__author">Николай Петров</p>
             <p class="reviews__text">«Это приложение переаернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
         </ul>
         <div class="slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button" aria-label="Кнопка отображает первый отзыв в слайдере"></button>
-          <button class="slider__toggle" type="button" aria-label="Кнопка отображает второй отзыв в слайдере"></button>
-          <button class="slider__toggle" type="button" aria-label="Кнопка отображает третий отзыв в слайдере"></button>
+          <button class="slider__button slider__button--current" type="button" aria-label="Кнопка отображает первый отзыв в слайдере"></button>
+          <button class="slider__button" type="button" aria-label="Кнопка отображает второй отзыв в слайдере"></button>
+          <button class="slider__button" type="button" aria-label="Кнопка отображает третий отзыв в слайдере"></button>
         </div>
       </section>
-      <section class="price slider visually-hidden">
-        <table class="price__table subscription">
-          <tr class="subscription__header-row">
-            <th class="subscription__plan plan">
-              <p class="plan__title">База</p>
-              <p class="plan__cost">1,99 USD</p>
+      <section class="price slider">
+        <table class="price__table table">
+          <thead>
+            <tr class="table__row">
+            <th class="table__header table__header--empty">
             </th>
-            <th class="subscription__plan plan">
-              <p class="plan__title">Стандарт</p>
-              <p class="plan__cost">3,99 USD</p>
+            <th class="table__header">
+              <p class="table__col-header">База</p>
+              <p class="table__col-subheader">1,99 USD</p>
             </th>
-            <th class="subscription__plan plan">
-              <p class="plan__title">Анлим</p>
-              <p class="plan__cost">9,99 USD</p>
+            <th class="table__header">
+              <p class="table__col-header">Стандарт</p>
+              <p class="table__col-subheader">3,99 USD</p>
+            </th>
+            <th class="table__header">
+              <p class="table__col-header">Анлим</p>
+              <p class="table__col-subheader">19,99 USD</p>
             </th>
           </tr>
-          <tr class="subscription__features feature">
-            <td class="feature__type feature__type--yes">Розовой фильтр
-              <span class="visually-hidden">Входит в подписку</span>
+          </thead>
+          <tr class="table__row">
+            <td class="table__row-header">
+              <p class="table__header-text">Розовой фильтр</p>
             </td>
-            <td class="feature__type feature__type--yes">Розовой фильтр
-              <span class="visually-hidden">Входит в подписку</span>
+            <td class="table__cell">
+              <p class="visually-hidden">Есть</p>
+              <svg fill="#3DC644" width="31" height="21">
+                <use xlink:href="img/sprite.svg#icon-yes"></use>
+              </svg>
             </td>
-            <td class="feature__type feature__type--yes">Розовой фильтр
-              <span class="visually-hidden">Входит в подписку</span>
+            <td class="table__cell">
+              <p class="visually-hidden">Есть</p>
+              <p class="table__cell-text">Розовой фильтр</p>
+              <svg fill="#3DC644" width="31" height="21">
+                <use xlink:href="img/sprite.svg#icon-yes"></use>
+              </svg>
+            </td>
+            <td class="table__cell">
+              <p class="visually-hidden">Есть</p>
+              <svg fill="#3DC644" width="31" height="21">
+                <use xlink:href="img/sprite.svg#icon-yes"></use>
+              </svg>
             </td>
           </tr>
-          <tr class="subscription__features feature">
-            <td class="feature__type feature__type--no">Смайлики
-              <span class="visually-hidden">Не входит в подписку</span>
+          <tr class="table__row">
+            <td class="table__row-header">Смайлики
             </td>
-            <td class="feature__type feature__type--yes">Смайлики
-              <span class="visually-hidden">Входит в подписку</span>
+            <td class="table__cell">
+              <p class="visually-hidden">Нет</p>
+              <svg fill="#F25B26" width="31" height="21">
+                <use xlink:href="img/sprite.svg#icon-no"></use>
+              </svg>
             </td>
-            <td class="feature__type feature__type--yes">Смайлики
-              <span class="visually-hidden">Входит в подписку</span>
+            <td class="table__cell">
+              <p class="visually-hidden">Есть</p>
+              <p class="table__cell-text">Смайлики</p>
+              <svg fill="#3DC644" width="31" height="21">
+                <use xlink:href="img/sprite.svg#icon-yes"></use>
+              </svg>
+            </td>
+            <td class="table__cell">
+              <p class="visually-hidden">Есть</p>
+              <svg fill="#3DC644" width="31" height="21">
+                <use xlink:href="img/sprite.svg#icon-yes"></use>
+              </svg>
             </td>
           </tr>
-          <tr class="subscription__features feature">
-            <td class="feature__type feature__type--no">Комментарии
-              <span class="visually-hidden">Не входит в подписку</span>
+          <tr class="table__row">
+            <td class="table__row-header">Комментарии
             </td>
-            <td class="feature__type feature__type--no">Комментарии
-              <span class="visually-hidden">Не входит в подписку</span>
+            <td class="table__cell">
+              <p class="visually-hidden">Нет</p>
+              <svg fill="#F25B26" width="31" height="21">
+                <use xlink:href="img/sprite.svg#icon-no"></use>
+              </svg>
             </td>
-            <td class="feature__type feature__type--yes">Комментарии
-              <span class="visually-hidden">Входит в подписку</span>
+            <td class="table__cell">
+              <p class="visually-hidden">Нет</p>
+              <p class="table__cell-text">Комментарии</p>
+              <svg fill="#F25B26" width="31" height="21">
+                <use xlink:href="img/sprite.svg#icon-no"></use>
+              </svg>
+            </td>
+            <td class="table__cell">
+              <p class="visually-hidden">Есть</p>
+              <svg fill="#3DC644" width="31" height="21">
+                <use xlink:href="img/sprite.svg#icon-yes"></use>
+              </svg>
             </td>
           </tr>
         </table>
-        <div class="price__toggle slider-toggles">
-          <button class="slider__toggle" type="button" aria-label="Кнопка отображает первый план подписки в слайдере"></button>
-          <button class="slider__toggle slider__toggle--current" type="button" aria-label="Кнопка отображает второй план подписки в слайдере"></button>
-          <button class="slider__toggle" type="button" aria-label="Кнопка отображает третий план подписки в слайдере"></button>
+        <div class="price__toggle slider__toggles">
+          <button class="slider__button" type="button" aria-label="Кнопка отображает первый план подписки в слайдере"></button>
+          <button class="slider__button slider__button--current" type="button" aria-label="Кнопка отображает второй план подписки в слайдере"></button>
+          <button class="slider__button" type="button" aria-label="Кнопка отображает третий план подписки в слайдере"></button>
         </div>
       </section>
-      <section class="contacts visually-hidden">
+      <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__intro">Остались вопросы? Свяжитесь с нами</p>
-        <ul class="contacts__list">
+        <p class="contacts__intro container">Остались вопросы? Свяжитесь с нами</p>
+        <ul class="contacts__list container">
           <li class="contacts__item">
             <p class="contacts__heading">Звоните:</p>
-            <a class="contacts__link contacts__info contacts__info--phone" href="tel:+78125556666">+7(812)555-66-66</a>
+            <a class="contacts__method contacts__method--link" href="tel:+78125556666">+7(812)555-66-66</a>
           </li>
           <li class="contacts__item">
             <p class="contacts__heading">Пишите:</p>
-            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="contacts__method contacts__method--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
             <p class="contacts__heading">Приезжайте в гости:</p>
-            <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+            <p class="contacts__method">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
-      </section>
-      <section class="map visually-hidden">
-        <h2 class="visually-hidden">Карта проезда</h2>
+        <div class="contacts__map">
+          <h2 class="visually-hidden">Карта проезда</h2>
+          <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6138220012976!2d30.320661316364117!3d59.93854998187616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE4LjgiTiAzMMKwMTknMjIuMyJF!5e0!3m2!1sen!2sru!4v1598456238556!5m2!1sen!2sru" width="320" height="200" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
       </section>
     </main>
     <footer class="page-footer container">

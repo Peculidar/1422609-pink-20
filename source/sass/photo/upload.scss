@@ -1,3 +1,46 @@
-.upload {
+.upload__intro {
+  @include font-style(14px, 30px, 400);
+  color: $theme-black;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.upload__submit-photo {
+  background-color: $basic-gray;
+  text-align: center;
+
+  .upload__img {
+    margin-top: 20px;
+  }
+}
+
+.upload__form {
+  background-color: $basic-gray;
+}
+
+.upload__filters-field {
+  border: none;
+}
+
+.upload__controls-list {
+  list-style: none;
   display: none; //временно
+}
+
+.upload__button {
+  @include font-style(18px, 18px, 700);
+  margin-bottom: 10px;
+  width: $mobile-width;
+  padding: 15px 0;
+  border: 3px solid $theme-pink;
+  border-radius: 30px;
+
+  &--post {
+    color: $theme-pink;
+  }
+
+  &--cancel {
+    color: rgba($basic-black, 0.1);
+    border-color: rgba($basic-black, 0.1);
+  }
 }
