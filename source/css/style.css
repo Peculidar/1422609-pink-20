@@ -1535,6 +1535,13 @@ img {
   width: 280px;
   text-transform: uppercase;
   border: none; }
+  .form__button:hover {
+    background-color: #1c9b5e; }
+  .form__button:active {
+    color: rgba(255, 255, 255, 0.3); }
+  .form__button:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5; }
 
 .form__conditions {
   font-size: 14px;
@@ -1597,6 +1604,13 @@ img {
   text-transform: uppercase;
   border: 2px solid #2aab6d;
   border-radius: 1px; }
+  .modal__button:hover {
+    background-color: #1c9b5e; }
+  .modal__button:active {
+    color: rgba(255, 255, 255, 0.3); }
+  .modal__button:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5; }
   @media (min-width: 660px) and (max-width: 959px) {
     .modal__button--error {
       margin-top: 10px; } }
@@ -1716,9 +1730,21 @@ img {
   border-radius: 30px; }
   .upload__button--post {
     color: #d22856; }
+    .upload__button--post:hover {
+      color: #ffffff;
+      background-color: #d22856; }
+    .upload__button--post:active {
+      color: rgba(255, 255, 255, 0.3); }
   .upload__button--cancel {
     color: rgba(0, 0, 0, 0.1);
     border-color: rgba(0, 0, 0, 0.1); }
+    .upload__button--cancel:hover {
+      color: rgba(40, 54, 69, 0.3);
+      border-color: rgba(40, 54, 69, 0.3); }
+    .upload__button--cancel:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(40, 54, 69, 0.3);
+      border-color: transparent; }
 
 .post {
   color: #283645;

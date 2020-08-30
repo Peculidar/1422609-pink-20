@@ -295,6 +295,18 @@
   width: $mobile-width;
   text-transform: uppercase;
   border: none;
+
+  &:hover {
+    background-color: $theme-darker-green;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
+
+  &:disabled {
+    @include color-style($basic-white, $basic-gray);
+  }
 }
 
 .form__conditions {
