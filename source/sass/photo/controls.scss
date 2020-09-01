@@ -42,6 +42,16 @@
     opacity: 1;
   }
 
+  &:hover {
+    fill: rgba($theme-black, 0.5);
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $theme-pink;
+    opacity: 1;
+  }
+
   &--crop {
     @media (min-width: $tablet-breakpoint) {
       width: 22px;
