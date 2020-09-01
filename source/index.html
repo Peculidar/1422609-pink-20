@@ -119,23 +119,35 @@
           </div>
         </div>
       </section>
-      <section class="reviews slider">
+      <section class="reviews">
         <h2 class="visually-hidden">Отзывы клиентов</h2>
-        <ul class="reviews__list slider__list container">
-          <li class="reviews__item slider__item">
+        <ul class="reviews__list container">
+          <li class="reviews__item reviews__item--current">
             <p class="reviews__author reviews__author--top">Николай Петров</p>
-            <p class="reviews__text">«Это приложение переаернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             <p class="reviews__author reviews__author--bottom">Николай Петров</p>
             <p class="reviews__author-info">25 лет, водитель трамвая</p>
           </li>
+          <li class="reviews__item">
+            <p class="reviews__author reviews__author--top">Анна Ишниязова</p>
+            <p class="reviews__text">«Наткнулась на приложение случайно, теперь не могу без него жить. Лучше Instagram и других аналогов! Рекомендую!»</p>
+            <p class="reviews__author reviews__author--bottom">Анна Ишниязова</p>
+            <p class="reviews__author-info">14 лет, школьница</p>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__author reviews__author--top">Валерия Павленко</p>
+            <p class="reviews__text">«Познакомилась с будущим котом в комментариях фоток приюта. Назвала его в честь приложения - Пинки!»</p>
+            <p class="reviews__author reviews__author--bottom">Валерия Павленко</p>
+            <p class="reviews__author-info">35 лет, пекарь</p>
+          </li>
         </ul>
-        <div class="slider__toggles slider__toggles--review">
-          <button class="slider__button slider__button--current" type="button" aria-label="Кнопка отображает первый отзыв в слайдере"></button>
-          <button class="slider__button" type="button" aria-label="Кнопка отображает второй отзыв в слайдере"></button>
-          <button class="slider__button" type="button" aria-label="Кнопка отображает третий отзыв в слайдере"></button>
+        <div class="review__toggles">
+          <button class="review__toggle-button review__toggle-button--current" type="button" aria-label="Кнопка отображает первый отзыв в слайдере"></button>
+          <button class="review__toggle-button" type="button" aria-label="Кнопка отображает второй отзыв в слайдере"></button>
+          <button class="review__toggle-button" type="button" aria-label="Кнопка отображает третий отзыв в слайдере"></button>
         </div>
       </section>
-      <section class="price slider">
+      <section class="price">
         <div class="price__table table">
           <ul class="table__col table__col--title">
             <li class="table__col-cell table__col-cell--title">
@@ -248,10 +260,10 @@
             </li>
           </ul>
         </div>
-        <div class="price__toggle slider__toggles">
-          <button class="slider__button" type="button" aria-label="Кнопка отображает первый план подписки в слайдере"></button>
-          <button class="slider__button slider__button--current" type="button" aria-label="Кнопка отображает второй план подписки в слайдере"></button>
-          <button class="slider__button" type="button" aria-label="Кнопка отображает третий план подписки в слайдере"></button>
+        <div class="price__toggle">
+          <button class="price__toggle-button" type="button" aria-label="Кнопка отображает первый план подписки в слайдере"></button>
+          <button class="price__toggle-button price__toggle-button--current" type="button" aria-label="Кнопка отображает второй план подписки в слайдере"></button>
+          <button class="price__toggle-button" type="button" aria-label="Кнопка отображает третий план подписки в слайдере"></button>
         </div>
       </section>
       <section class="contacts">
@@ -260,7 +272,7 @@
         <ul class="contacts__list container">
           <li class="contacts__item contacts__item--call">
             <p class="contacts__heading">Звоните:</p>
-            <a class="contacts__method contacts__method--link" href="tel:+78125556666">+7(812)555-66-66</a>
+            <a class="contacts__method contacts__method--link" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item contacts__item--write">
             <p class="contacts__heading">Пишите:</p>
