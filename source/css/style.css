@@ -1058,10 +1058,16 @@ img {
       display: none; } }
 
 .reviews {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 50px; }
 
 .reviews__list {
   list-style: none; }
+
+.reviews__item {
+  display: none; }
+  .reviews__item--current {
+    display: block; }
 
 .reviews__author {
   font-size: 18px;
@@ -1313,10 +1319,6 @@ img {
   height: 100%; }
 
 @media (min-width: 959px) {
-  .slider__toggles--review {
-    display: none; } }
-
-@media (min-width: 959px) {
   .form {
     width: 940px;
     margin: 0 auto; } }
@@ -1470,6 +1472,11 @@ img {
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   display: none; }
+  .form__input:hover {
+    border-color: #283645; }
+  .form__input:focus {
+    border-color: #d22856;
+    outline: none; }
   .form__input--fill {
     display: block;
     width: 100%;
@@ -1860,6 +1867,14 @@ img {
     width: 380px; } }
 
 .controls__icon--current {
+  fill: #d22856;
+  opacity: 1; }
+
+.controls__icon:hover {
+  fill: rgba(40, 54, 69, 0.5);
+  opacity: 1; }
+
+.controls__icon:active {
   fill: #d22856;
   opacity: 1; }
 

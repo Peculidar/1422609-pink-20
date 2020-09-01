@@ -218,6 +218,15 @@
   border-radius: 1px;
   display: none;
 
+  &:hover {
+    border-color: $theme-black;
+  }
+
+  &:focus {
+    border-color: $theme-pink;
+    outline: none;
+  }
+
   &--fill {
     display: block;
     width: 100%;
