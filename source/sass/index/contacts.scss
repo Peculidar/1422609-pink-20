@@ -6,9 +6,10 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-breakpoint) {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
+    margin-top: 42px;
+    line-height: normal;
     font-size: 40px;
-    line-height: auto;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -24,9 +25,6 @@
   @media (min-width: $tablet-breakpoint) {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
     justify-content: space-between;
   }
 }
@@ -39,12 +37,12 @@
   @media (min-width: $tablet-breakpoint) {
     &--write,
     &--call {
-      width: 50%;
+      width: 299px;
     }
 
     &--visit {
       width: 215px;
-      margin: 20px auto 0;
+      margin: 24px auto 0;
     }
   }
 
@@ -70,8 +68,16 @@
   @include font-style(18px, auto, 700);
   margin-bottom: 5px;
 
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 9px;
+  }
+
   &--visit {
     margin-bottom: 0;
+
+    @media (min-width: $tablet-breakpoint) {
+      margin-bottom: 4px;
+    }
   }
 }
 
@@ -84,6 +90,10 @@
     margin-top: 0;
     padding-bottom: 10px;
     line-height: normal;
+
+    @media (min-width: $tablet-breakpoint) {
+      padding-bottom: 0;
+    }
   }
 
   &--link {

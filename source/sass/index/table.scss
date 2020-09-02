@@ -1,5 +1,5 @@
 .table {
-  margin-top: 102px;
+  margin-top: 111px;
   margin-bottom: 36px;
   display: flex;
 
@@ -11,7 +11,7 @@
 
   @media (min-width: $tablet-breakpoint) {
     width: $tablet-width;
-    padding: 0 20px;
+    padding: 0 20px 68px;
     margin: 0 auto;
   }
 
@@ -35,7 +35,7 @@
   width: 278px;
 
   @media (min-width: $tablet-breakpoint) {
-    width: 153px;
+    width: 155px;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -67,7 +67,18 @@
       height: 74px;
       background-image: url("../img/bg-hit-ribbon.svg");
       left: -2px;
+
+      @media (min-width: $tablet-breakpoint) {
+        background-image: url("../img/bg-hit-ribbon-tablet.svg");
+        width: 59px;
+        height: 59px;
+        left: 0;
+      }
     }
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-bottom: 0;
   }
 }
 
@@ -85,6 +96,11 @@
   @include font-style(18px, normal, 300);
   margin-top: 4px;
 
+  @media (min-width: $tablet-breakpoint) {
+    padding-bottom: 13px;
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktop-breakpoint) {
     font-size: 24px;
   }
@@ -97,19 +113,12 @@
   border: 1px solid $basic-gray;
 
   @media (min-width: $tablet-breakpoint) {
-    padding: 8px 0;
-
-    &--title {
-      padding: 7px 0;
-    }
+    padding: 0;
+    height: 44px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    padding: 15px 0;
-
-    &--title {
-      padding: 14px 0;
-    }
+    padding: 0;
   }
 
   &--pink {
@@ -126,7 +135,8 @@
 
   &--title {
     @include font-style(14px, 30px, 400);
-    padding-left: 10px;
+    padding-left: 16px;
+    padding-top: 7px;
     text-transform: none;
 
     @media (min-width: $desktop-breakpoint) {
@@ -152,7 +162,12 @@
 
     @media (min-width: $tablet-breakpoint) {
       position: relative;
-      padding-left: 60px;
+      padding-top: 9px;
+      padding-left: 65px;
+
+      &--yes {
+        padding-left: 61px;
+      }
     }
 
     @media (min-width: $desktop-breakpoint) {
@@ -168,4 +183,9 @@
   transform: rotate(-45deg);
   top: 0;
   left: 13px;
+
+  @media (min-width: $tablet-breakpoint) {
+    top: -5px;
+    left: 7px;
+  }
 }

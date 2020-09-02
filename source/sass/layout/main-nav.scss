@@ -63,7 +63,7 @@
   padding: 17px 0 15px;
 
   @media (min-width: $tablet-breakpoint) {
-    padding: 16px 0;
+    padding: 15px 0 17px;
   }
 
   &:hover {
@@ -160,7 +160,6 @@
 }
 
 .main-nav--open .main-nav__toggle {
-  outline: 1px solid white;
   &::before,
   &::after {
     content: "";

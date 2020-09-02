@@ -1,23 +1,15 @@
 .social__list {
   display: flex;
+  width: 175px;
   justify-content: space-between;
-  flex-wrap: wrap;
-  width: 178px;
   margin: 30px auto 33px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-breakpoint) {
-    margin-left: -15px;
-    padding-top: 32px;
-    padding-bottom: 40px;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
-    margin-left: 6px;
-    width: 174px;
-    padding-top: 60px;
-    padding-bottom: 75px;
+    margin: 0;
+    margin-left: -16px;
+    padding-top: 5px;
   }
 }
 
@@ -57,6 +49,6 @@
   }
 
   &--twitter {
-    margin-left: -1px;
+    margin-left: -2px;
   }
 }
