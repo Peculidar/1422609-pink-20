@@ -1,6 +1,7 @@
 .reviews {
+  background-color: $basic-white;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 27px;
 }
 
 .reviews__list {
@@ -20,6 +21,8 @@
   color: $basic-black;
 
   &--top {
+    margin-top: 41px;
+    margin-bottom: 0;
     @media (min-width: $tablet-breakpoint) {
       display: none;
     }
@@ -55,6 +58,8 @@
 }
 
 .reviews__text {
+  margin-top: 13px;
+
   @include font-style($line: 30px);
   color: $theme-black;
 
@@ -65,5 +70,38 @@
   @media (min-width: $desktop-breakpoint) {
     width: 688px;
     margin: 50px auto 0;
+  }
+}
+
+.reviews__toggles {
+  margin-top: 27px;
+}
+
+.reviews__toggle-button {
+  position: relative;
+  width: 21px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: rgba($theme-black, 0.3);
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  &--current {
+    &::before {
+      background-color: transparent;
+      border: 3px solid $theme-black;
+    }
   }
 }

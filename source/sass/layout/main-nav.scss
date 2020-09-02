@@ -160,12 +160,13 @@
 }
 
 .main-nav--open .main-nav__toggle {
+  outline: 1px solid white;
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
-    right: 18px;
+    top: 33px;
+    right: 17px;
     width: 29px;
     height: 3px;
     background-color: $basic-white;

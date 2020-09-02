@@ -1,4 +1,6 @@
 .table {
+  margin-top: 102px;
+  margin-bottom: 36px;
   display: flex;
 
   @media (max-width: 659px) {
@@ -19,11 +21,18 @@
   }
 }
 
+.price__bg {
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 100%;
+}
+
 .table__col {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 276px;
+  width: 278px;
 
   @media (min-width: $tablet-breakpoint) {
     width: 153px;
@@ -45,13 +54,27 @@
 
 .table__col-header {
   @include color-style($basic-white, $theme-black);
-  border: 2px solid $basic-gray;
+  position: relative;
+  border: 1px solid $basic-gray;
   text-align: center;
+  padding-bottom: 14px;
+
+  &--standard {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      background-image: url("../img/bg-hit-ribbon.svg");
+      left: -2px;
+    }
+  }
 }
 
 .table__col-title {
   @include font-style(16px, normal, 700);
   text-transform: uppercase;
+  margin-bottom: 0;
 
   @media (min-width: $desktop-breakpoint) {
     font-size: 18px;
@@ -60,7 +83,7 @@
 
 .table__col-price {
   @include font-style(18px, normal, 300);
-  margin-top: -10px;
+  margin-top: 4px;
 
   @media (min-width: $desktop-breakpoint) {
     font-size: 24px;
@@ -69,8 +92,9 @@
 
 .table__col-cell {
   @include color-style($theme-black, $basic-white);
-  padding: 24px 19px 25px 20px;
-  border: 2px solid $basic-gray;
+  padding: 16px 17px 18px 20px;
+  margin-bottom: 1px;
+  border: 1px solid $basic-gray;
 
   @media (min-width: $tablet-breakpoint) {
     padding: 8px 0;
@@ -86,6 +110,10 @@
     &--title {
       padding: 14px 0;
     }
+  }
+
+  &--pink {
+    border-top: transparent;
   }
 }
 
@@ -114,7 +142,13 @@
 
   .table__icon {
     position: absolute;
-    right: 0;
+    right: 2px;
+    top: -1px;
+
+    &--yes {
+      top: 2px;
+      right: 0;
+    }
 
     @media (min-width: $tablet-breakpoint) {
       position: relative;
@@ -125,4 +159,13 @@
       padding-left: 100px;
     }
   }
+}
+
+.table__col-banner {
+  @include font-style(14px, 30px, 400);
+  position: absolute;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  top: 0;
+  left: 13px;
 }

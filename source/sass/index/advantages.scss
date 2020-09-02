@@ -91,7 +91,7 @@
 }
 
 .advantages__item {
-  margin-bottom: 29px;
+  margin-bottom: 33px;
 
   br {
     display: none;
@@ -162,7 +162,8 @@
 
   &--pink-smiley {
     position: relative;
-    padding-bottom: 304px;
+    margin-bottom: 0;
+    padding-bottom: 305px;
 
     &::after {
       content: "";
@@ -175,7 +176,7 @@
       background: {
         image: url("../img/iphone-screen-mobile@1x.png");
         repeat: no-repeat;
-        position: center top;
+        position: center top 4px;
       }
 
       @media (min-resolution: 2dppx) {
@@ -236,6 +237,7 @@
 
 .advantages__description {
   @include font-style;
+  margin-top: 10px;
 
   @media (min-width: $tablet-breakpoint) {
     margin-top: 12px;

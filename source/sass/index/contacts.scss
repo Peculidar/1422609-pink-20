@@ -2,8 +2,8 @@
   @include font-style(24px, 120%, 300);
   color: $theme-black;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 42px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-breakpoint) {
     margin-bottom: 40px;
@@ -32,6 +32,10 @@
 }
 
 .contacts__item {
+  &--visit {
+    margin-top: 22px;
+  }
+
   @media (min-width: $tablet-breakpoint) {
     &--write,
     &--call {
@@ -64,12 +68,23 @@
 
 .contacts__heading {
   @include font-style(18px, auto, 700);
+  margin-bottom: 5px;
+
+  &--visit {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__method {
   @include font-style(24px, auto, 300);
   color: $theme-pink;
   text-decoration: none;
+
+  &--visit {
+    margin-top: 0;
+    padding-bottom: 10px;
+    line-height: normal;
+  }
 
   &--link {
     &:hover {
@@ -85,6 +100,7 @@
 }
 
 .contacts__map {
+  position: relative;
   width: 100%;
   height: 200px;
   background-image: url("../img/bg-map-and-marker-mobile@1x.png");
@@ -104,4 +120,12 @@
 .contacts__map-iframe {
   width: 100%;
   height: 100%;
+  border: none;
+}
+
+.contacts__bg {
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 100%;
 }
