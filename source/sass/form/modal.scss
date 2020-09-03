@@ -1,3 +1,80 @@
-.modal {
-  display: none;
+// .modal {
+//   display: none;
+// }
+
+
+.modal__window {
+  width: 460px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 780px;
+  }
+}
+
+
+.modal__header {
+  @include font-style(30px, 40px, 700);
+  padding-top: 49px;
+
+  br {
+    @media (min-width: $desktop-breakpoint) {
+      display: none;
+    }
+  }
+}
+
+.modal__text {
+  @include font-style(18px, 24px, 400);
+  color: $theme-black;
+  width: 320px;
+  margin: 0 auto 20px;
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 378px;
+  }
+}
+
+.modal__button {
+  @include color-style($basic-white, $theme-green);
+  @include font-style(18px, 30px, 700);
+  width: 296px;
+  margin-top: 52px;
+  padding: 16px 0;
+  text-transform: uppercase;
+  border: 2px solid $theme-green;
+  border-radius: 1px;
+
+  &:hover {
+    background-color: $theme-darker-green;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
+
+  &:disabled {
+    @include color-style($basic-white, $basic-gray);
+  }
+
+  &--error {
+    @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.modal__button-wrapper {
+  height: 163px;
+  background-color: $theme-grey;
+
+  &--error {
+    @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+      background-color: $basic-white;
+      height: 120px;
+    }
+  }
 }

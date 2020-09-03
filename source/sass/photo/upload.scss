@@ -3,10 +3,14 @@
   color: $theme-black;
   text-align: center;
   margin: 40px auto;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 18px;
+  }
 }
 
 .upload__submit-photo {
-  background-color: $basic-gray;
+  background-color: $theme-grey;
   text-align: center;
 
   .upload__img {
@@ -14,33 +18,18 @@
   }
 }
 
+.upload__form-wrapper {
+  background-color: $theme-grey;
+}
+
 .upload__form {
-  background-color: $basic-gray;
-}
-
-.upload__filters-field {
-  border: none;
-}
-
-.upload__controls-list {
-  list-style: none;
-  display: none; //временно
-}
-
-.upload__button {
-  @include font-style(18px, 18px, 700);
-  margin-bottom: 10px;
-  width: $mobile-width;
-  padding: 15px 0;
-  border: 3px solid $theme-pink;
-  border-radius: 30px;
-
-  &--post {
-    color: $theme-pink;
+  @media (min-width: $tablet-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  &--cancel {
-    color: rgba($basic-black, 0.1);
-    border-color: rgba($basic-black, 0.1);
+  @media (min-width: $desktop-breakpoint) {
+    width: 800px;
   }
 }

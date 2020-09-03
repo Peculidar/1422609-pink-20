@@ -119,130 +119,166 @@
           </div>
         </div>
       </section>
-      <section class="reviews slider">
+      <section class="reviews">
         <h2 class="visually-hidden">Отзывы клиентов</h2>
-        <ul class="reviews__list slider__list container">
-          <li class="reviews__item slider__item">
-            <p class="reviews__author">Николай Петров</p>
-            <p class="reviews__text">«Это приложение переаернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <ul class="reviews__list container">
+          <li class="reviews__item reviews__item--current">
+            <p class="reviews__author reviews__author--top">Николай Петров</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews__author reviews__author--bottom">Николай Петров</p>
+            <p class="reviews__author-info">25 лет, водитель трамвая</p>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__author reviews__author--top">Анна Ишниязова</p>
+            <p class="reviews__text">«Наткнулась на приложение случайно, теперь не могу без него жить. Лучше Instagram и других аналогов! Рекомендую!»</p>
+            <p class="reviews__author reviews__author--bottom">Анна Ишниязова</p>
+            <p class="reviews__author-info">14 лет, школьница</p>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__author reviews__author--top">Валерия Павленко</p>
+            <p class="reviews__text">«Познакомилась с будущим котом в комментариях фоток приюта. Назвала его в честь приложения - Пинки!»</p>
+            <p class="reviews__author reviews__author--bottom">Валерия Павленко</p>
+            <p class="reviews__author-info">35 лет, пекарь</p>
           </li>
         </ul>
-        <div class="slider__toggles">
-          <button class="slider__button slider__button--current" type="button" aria-label="Кнопка отображает первый отзыв в слайдере"></button>
-          <button class="slider__button" type="button" aria-label="Кнопка отображает второй отзыв в слайдере"></button>
-          <button class="slider__button" type="button" aria-label="Кнопка отображает третий отзыв в слайдере"></button>
+        <div class="review__toggles">
+          <button class="review__toggle-button review__toggle-button--current" type="button" aria-label="Кнопка отображает первый отзыв в слайдере"></button>
+          <button class="review__toggle-button" type="button" aria-label="Кнопка отображает второй отзыв в слайдере"></button>
+          <button class="review__toggle-button" type="button" aria-label="Кнопка отображает третий отзыв в слайдере"></button>
         </div>
       </section>
-      <section class="price slider">
-        <table class="price__table table">
-          <thead>
-            <tr class="table__row">
-            <th class="table__header table__header--empty">
-            </th>
-            <th class="table__header">
-              <p class="table__col-header">База</p>
-              <p class="table__col-subheader">1,99 USD</p>
-            </th>
-            <th class="table__header">
-              <p class="table__col-header">Стандарт</p>
-              <p class="table__col-subheader">3,99 USD</p>
-            </th>
-            <th class="table__header">
-              <p class="table__col-header">Анлим</p>
-              <p class="table__col-subheader">19,99 USD</p>
-            </th>
-          </tr>
-          </thead>
-          <tr class="table__row">
-            <td class="table__row-header">
-              <p class="table__header-text">Розовой фильтр</p>
-            </td>
-            <td class="table__cell">
-              <p class="visually-hidden">Есть</p>
-              <svg fill="#3DC644" width="31" height="21">
-                <use xlink:href="img/sprite.svg#icon-yes"></use>
-              </svg>
-            </td>
-            <td class="table__cell">
-              <p class="visually-hidden">Есть</p>
-              <p class="table__cell-text">Розовой фильтр</p>
-              <svg fill="#3DC644" width="31" height="21">
-                <use xlink:href="img/sprite.svg#icon-yes"></use>
-              </svg>
-            </td>
-            <td class="table__cell">
-              <p class="visually-hidden">Есть</p>
-              <svg fill="#3DC644" width="31" height="21">
-                <use xlink:href="img/sprite.svg#icon-yes"></use>
-              </svg>
-            </td>
-          </tr>
-          <tr class="table__row">
-            <td class="table__row-header">Смайлики
-            </td>
-            <td class="table__cell">
-              <p class="visually-hidden">Нет</p>
-              <svg fill="#F25B26" width="31" height="21">
-                <use xlink:href="img/sprite.svg#icon-no"></use>
-              </svg>
-            </td>
-            <td class="table__cell">
-              <p class="visually-hidden">Есть</p>
-              <p class="table__cell-text">Смайлики</p>
-              <svg fill="#3DC644" width="31" height="21">
-                <use xlink:href="img/sprite.svg#icon-yes"></use>
-              </svg>
-            </td>
-            <td class="table__cell">
-              <p class="visually-hidden">Есть</p>
-              <svg fill="#3DC644" width="31" height="21">
-                <use xlink:href="img/sprite.svg#icon-yes"></use>
-              </svg>
-            </td>
-          </tr>
-          <tr class="table__row">
-            <td class="table__row-header">Комментарии
-            </td>
-            <td class="table__cell">
-              <p class="visually-hidden">Нет</p>
-              <svg fill="#F25B26" width="31" height="21">
-                <use xlink:href="img/sprite.svg#icon-no"></use>
-              </svg>
-            </td>
-            <td class="table__cell">
-              <p class="visually-hidden">Нет</p>
-              <p class="table__cell-text">Комментарии</p>
-              <svg fill="#F25B26" width="31" height="21">
-                <use xlink:href="img/sprite.svg#icon-no"></use>
-              </svg>
-            </td>
-            <td class="table__cell">
-              <p class="visually-hidden">Есть</p>
-              <svg fill="#3DC644" width="31" height="21">
-                <use xlink:href="img/sprite.svg#icon-yes"></use>
-              </svg>
-            </td>
-          </tr>
-        </table>
-        <div class="price__toggle slider__toggles">
-          <button class="slider__button" type="button" aria-label="Кнопка отображает первый план подписки в слайдере"></button>
-          <button class="slider__button slider__button--current" type="button" aria-label="Кнопка отображает второй план подписки в слайдере"></button>
-          <button class="slider__button" type="button" aria-label="Кнопка отображает третий план подписки в слайдере"></button>
+      <section class="price">
+        <div class="price__table table">
+          <ul class="table__col table__col--title">
+            <li class="table__col-cell table__col-cell--title">
+              <p class="table__feature table__feature--title">Розовый фильтр</p>
+            </li>
+            <li class="table__col-cell table__col-cell--title">
+              <p class="table__feature table__feature--title">Смайлики</p>
+            </li>
+            <li class="table__col-cell table__col-cell--title">
+              <p class="table__feature table__feature--title">Комментарии</p>
+            </li>
+          </ul>
+          <ul class="table__col table__col--basic">
+            <li class="table__col-header">
+              <p class="table__col-title">База</p>
+              <p class="table__col-price">1,99 USD</p>
+            </li>
+            <li class="table__col-cell">
+              <p class="table__feature">
+                <span class="table__feature-name">Розовый фильтр</span>
+                <span class="visually-hidden"> - есть</span>
+                <svg class="table__icon" fill="#3DC644" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </p>
+            </li>
+            <li class="table__col-cell">
+              <p class="table__feature">
+                <span class="table__feature-name">Смайлики</span>
+                <span class="visually-hidden"> - нет</span>
+                <svg class="table__icon" fill="#F25B26" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#icon-no"></use>
+                </svg>
+              </p>
+            </li>
+            <li class="table__col-cell">
+              <p class="table__feature">
+                <span class="table__feature-name">Комментарии</span>
+                <span class="visually-hidden"> - нет</span>
+                <svg class="table__icon" fill="#F25B26" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#icon-no"></use>
+                </svg>
+              </p>
+            </li>
+          </ul>
+          <ul class="table__col table__col--standard">
+            <li class="table__col-header">
+              <p class="table__col-title">Стандарт</p>
+              <p class="table__col-price">3,99 USD</p>
+            </li>
+            <li class="table__col-cell">
+              <p class="table__feature">
+                <span class="table__feature-name">Розовый фильтр</span>
+                <span class="visually-hidden"> - есть</span>
+                <svg class="table__icon" fill="#3DC644" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </p>
+            </li>
+            <li class="table__col-cell">
+              <p class="table__feature">
+                <span class="table__feature-name">Смайлики</span>
+                <span class="visually-hidden"> - есть</span>
+                <svg class="table__icon" fill="#3DC644" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </p>
+            </li>
+            <li class="table__col-cell">
+              <p class="table__feature">
+                <span class="table__feature-name">Комментарии</span>
+                <span class="visually-hidden"> - нет</span>
+                <svg class="table__icon" fill="#F25B26" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#icon-no"></use>
+                </svg>
+              </p>
+            </li>
+          </ul>
+          <ul class="table__col table__col--unlimited">
+            <li class="table__col-header">
+              <p class="table__col-title">Анлим</p>
+              <p class="table__col-price">9,99 USD</p>
+            </li>
+            <li class="table__col-cell">
+              <p class="table__feature">
+                <span class="table__feature-name">Розовый фильтр</span>
+                <span class="visually-hidden"> - есть</span>
+                <svg class="table__icon" fill="#3DC644" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </p>
+            </li>
+            <li class="table__col-cell">
+              <p class="table__feature">
+                <span class="table__feature-name">Смайлики</span>
+                <span class="visually-hidden"> - есть</span>
+                <svg class="table__icon" fill="#3DC644" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </p>
+            </li>
+            <li class="table__col-cell">
+              <p class="table__feature">
+                <span class="table__feature-name">Комментарии</span>
+                <span class="visually-hidden"> - есть</span>
+                <svg class="table__icon" fill="#3DC644" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="price__toggle">
+          <button class="price__toggle-button" type="button" aria-label="Кнопка отображает первый план подписки в слайдере"></button>
+          <button class="price__toggle-button price__toggle-button--current" type="button" aria-label="Кнопка отображает второй план подписки в слайдере"></button>
+          <button class="price__toggle-button" type="button" aria-label="Кнопка отображает третий план подписки в слайдере"></button>
         </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__intro container">Остались вопросы? Свяжитесь с нами</p>
+        <p class="contacts__intro container">Остались вопросы?<br> Свяжитесь с нами!</p>
         <ul class="contacts__list container">
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--call">
             <p class="contacts__heading">Звоните:</p>
-            <a class="contacts__method contacts__method--link" href="tel:+78125556666">+7(812)555-66-66</a>
+            <a class="contacts__method contacts__method--link" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--write">
             <p class="contacts__heading">Пишите:</p>
             <a class="contacts__method contacts__method--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--visit">
             <p class="contacts__heading">Приезжайте в гости:</p>
             <p class="contacts__method">ул. Большая Конюшенная, 19/8</p>
           </li>

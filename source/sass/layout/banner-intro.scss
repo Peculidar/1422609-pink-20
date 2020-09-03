@@ -69,5 +69,19 @@
   @media (min-width: $desktop-breakpoint) {
     width: 572px;
     padding-bottom: 39px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.banner-intro__extra-paragraph {
+  display: none;
+
+  &--form-page {
+    @media (min-width: $tablet-breakpoint) {
+      display: inline;
+    }
   }
 }
