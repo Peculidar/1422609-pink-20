@@ -35,11 +35,11 @@
   width: 278px;
 
   @media (min-width: $tablet-breakpoint) {
-    width: 155px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    width: 233px;
+    width: 100%;
   }
 
   &--title {
@@ -68,10 +68,14 @@
       background-image: url("../img/bg-hit-ribbon.svg");
       left: -2px;
 
-      @media (min-width: $tablet-breakpoint) {
+      @media (min-width: $tablet-breakpoint) and (max-width: 959px) {
         background-image: url("../img/bg-hit-ribbon-tablet.svg");
         width: 59px;
         height: 59px;
+        left: 0;
+      }
+
+      @media (min-width: $desktop-breakpoint) {
         left: 0;
       }
     }
@@ -103,6 +107,7 @@
 
   @media (min-width: $desktop-breakpoint) {
     font-size: 24px;
+    padding-bottom: 19px;
   }
 }
 
@@ -187,5 +192,10 @@
   @media (min-width: $tablet-breakpoint) {
     top: -5px;
     left: 7px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    top: 1px;
+    left: 15px;
   }
 }

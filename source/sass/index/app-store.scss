@@ -70,7 +70,8 @@
 
   @media (min-width: $desktop-breakpoint) {
     @include font-style(21px, 18px, 700);
-    padding: 16px 28px 16px 29px;
+    margin-top: 28px;
+    padding-top: 16px;
   }
 
   &:hover {
