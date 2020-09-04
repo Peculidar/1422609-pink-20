@@ -13,6 +13,11 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: $desktop-width;
+    margin-top: 63px;
+  }
 }
 
 .page-footer__logo {
@@ -26,6 +31,5 @@
 
   @media (min-width: $desktop-breakpoint) {
     padding-top: 0;
-    padding-bottom: 20px;
   }
 }

@@ -1,10 +1,10 @@
 .table {
-  margin-top: 111px;
+  margin-top: 112px;
   margin-bottom: 36px;
   display: flex;
 
   @media (max-width: 659px) {
-    width: 832px;
+    width: 834px;
     margin-left: 50%;
     transform: translateX(-50%);
   }
@@ -33,7 +33,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 278px;
+  width: 276px;
   border: 2px solid $basic-gray;
   border-radius: 2px;
 
@@ -106,7 +106,7 @@
   @include font-style(16px, normal, 700);
   text-transform: uppercase;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: -1px;
 
   @media (min-width: $desktop-breakpoint) {
     font-size: 18px;

@@ -31,7 +31,6 @@
 }
 
 .contacts__item {
-  outline: 1px solid blue;
   &--visit {
     margin-top: 22px;
   }
@@ -95,13 +94,8 @@
 
 .contacts__method {
   @include font-style(24px, auto, 300);
-  outline: 1px solid red;
   color: $theme-pink;
   text-decoration: none;
-
-  // @media (min-width: $desktop-breakpoint) {
-  //   padding-top: 50px;
-  // }
 
   &--visit {
     margin-top: 0;
@@ -135,12 +129,34 @@
   background-color: $basic-gray;
   background-position: center;
 
+  @media (min-width: 321px) {
+    background-image: url("../img/bg-map-and-marker-tablet@1x.png");
+    background-size: cover;
+  }
+
   @media (min-width: $tablet-breakpoint) {
     height: 374px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     height: 497px;
+    background-image: url("../img/bg-map-and-marker-desktop@1x.png");
+  }
+}
+
+.contacts__map::before {
+  @media (min-width: $desktop-breakpoint) {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -25px;
+    z-index: 500;
+    width: 1439px;
+    height: 123px;
+    background-image: url("../img/bg-desktop-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -151,9 +167,12 @@
 }
 
 .contacts__bg {
-  outline: 1px solid red;
   position: absolute;
-  top: 0;
+  top: -1px;
   height: auto;
   width: 100%;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
 }

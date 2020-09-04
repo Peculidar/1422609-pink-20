@@ -92,7 +92,7 @@
 }
 
 .advantages__item {
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 
   br {
     display: none;
@@ -164,7 +164,7 @@
   &--pink-smiley {
     position: relative;
     margin-bottom: 0;
-    padding-bottom: 305px;
+    padding-bottom: 304px;
 
     &::after {
       content: "";
@@ -238,7 +238,7 @@
 
 .advantages__description {
   @include font-style;
-  margin-top: 10px;
+  margin-top: 12px;
 
   @media (min-width: $tablet-breakpoint) {
     margin-top: 12px;
