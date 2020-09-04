@@ -678,12 +678,13 @@ img {
   vertical-align: middle;
   margin-top: 28px;
   width: 274px;
-  padding: 15px 0 16px;
+  padding: 15px 0 17px;
   border: 3px solid #ffffff;
   border-radius: 30px; }
   @media (min-width: 660px) {
     .app-store__download-link {
-      width: 292px; } }
+      width: 292px;
+      padding-bottom: 16px; } }
   @media (min-width: 959px) {
     .app-store__download-link {
       font-size: 21px;
@@ -740,12 +741,13 @@ img {
       line-height: normal; } }
   @media (min-width: 959px) {
     .advantages__promo-end {
-      width: 480px; } }
+      width: 480px;
+      margin-top: 4px; } }
 
 .advantages__wrapper {
   color: #283645;
   background-color: #f2f2f2;
-  margin-top: 36px;
+  margin-top: 35px;
   padding-top: 60px;
   position: relative; }
   @media (min-width: 660px) {
@@ -754,7 +756,7 @@ img {
       margin-top: 29px; } }
   @media (min-width: 959px) {
     .advantages__wrapper {
-      margin-top: 55px;
+      margin-top: 53px;
       padding-top: 10px; } }
 
 .advantages__bg {
@@ -1161,7 +1163,7 @@ img {
 
 .price {
   position: relative;
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
   overflow: hidden; }
   @media (min-width: 660px) {
     .price {
@@ -1169,7 +1171,8 @@ img {
   @media (min-width: 959px) {
     .price {
       margin-top: 40px;
-      padding-top: 152px; } }
+      padding-top: 152px;
+      padding-bottom: 96px; } }
 
 .price__bg {
   position: absolute;
@@ -1218,12 +1221,13 @@ img {
   @media (min-width: 660px) {
     .table {
       width: 620px;
-      padding: 0 20px 68px;
+      padding: 1px 20px 68px;
       margin: 0 auto; } }
   @media (min-width: 959px) {
     .table {
-      width: 940px;
-      padding: 0 10px; } }
+      width: 944px;
+      padding: 0 10px;
+      margin-top: 1px; } }
 
 .price__bg {
   position: absolute;
@@ -1235,34 +1239,43 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 278px; }
-  @media (min-width: 660px) {
-    .table__col {
-      width: 100%; } }
-  @media (min-width: 959px) {
-    .table__col {
-      width: 100%; } }
+  width: 278px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px; }
   .table__col--title {
     display: none; }
     @media (min-width: 660px) {
       .table__col--title {
         display: block;
         align-self: flex-end; } }
+  .table__col--unlimited, .table__col--standard, .table__col--basic {
+    margin-left: -2px; }
 
 .table__col-header {
   color: #ffffff;
   background-color: #283645;
   position: relative;
-  border: 1px solid #e5e5e5;
   text-align: center;
-  padding-bottom: 14px; }
+  padding-bottom: 14px;
+  padding-top: 15px;
+  border-top: 2px solid #283645;
+  margin-top: -2px; }
+  .table__col-header--basic {
+    border-left: 2px solid #283645;
+    border-top-left-radius: 3px;
+    margin-left: -2px; }
+  .table__col-header--unlimited {
+    border-right: 2px solid #283645;
+    border-top-right-radius: 3px;
+    margin-right: -2px; }
   .table__col-header--standard::before {
     content: "";
     position: absolute;
     width: 74px;
     height: 74px;
     background-image: url("../img/bg-hit-ribbon.svg");
-    left: -2px; }
+    left: -2px;
+    top: -2px; }
     @media (min-width: 660px) and (max-width: 959px) {
       .table__col-header--standard::before {
         background-image: url("../img/bg-hit-ribbon-tablet.svg");
@@ -1282,10 +1295,12 @@ img {
   font-family: inherit;
   line-height: normal;
   text-transform: uppercase;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 0; }
   @media (min-width: 959px) {
     .table__col-title {
-      font-size: 18px; } }
+      font-size: 18px;
+      padding-top: 2px; } }
 
 .table__col-price {
   font-size: 18px;
@@ -1295,26 +1310,30 @@ img {
   margin-top: 4px; }
   @media (min-width: 660px) {
     .table__col-price {
-      padding-bottom: 13px;
+      padding-bottom: 12px;
       margin-bottom: 0; } }
   @media (min-width: 959px) {
     .table__col-price {
       font-size: 24px;
+      margin-top: 3px;
       padding-bottom: 19px; } }
 
 .table__col-cell {
   color: #283645;
   background-color: #ffffff;
-  padding: 16px 17px 18px 20px;
-  margin-bottom: 1px;
-  border: 1px solid #e5e5e5; }
+  padding: 17px 17px 0 20px;
+  height: 42px;
+  border-bottom: 2px solid #e5e5e5; }
+  .table__col-cell--bottom {
+    border-bottom: none; }
   @media (min-width: 660px) {
     .table__col-cell {
       padding: 0;
-      height: 44px; } }
+      height: 45px; } }
   @media (min-width: 959px) {
     .table__col-cell {
-      padding: 0; } }
+      padding: 0;
+      height: 59px; } }
   .table__col-cell--pink {
     border-top: transparent; }
 
@@ -1330,12 +1349,14 @@ img {
     font-weight: 400;
     font-family: inherit;
     line-height: 30px;
-    padding-left: 16px;
-    padding-top: 7px;
+    padding-left: 15px;
+    padding-top: 8px;
     text-transform: none; }
     @media (min-width: 959px) {
       .table__feature--title {
-        font-size: 18px; } }
+        font-size: 18px;
+        padding-left: 21px;
+        padding-top: 14px; } }
   @media (min-width: 660px) {
     .table__feature .table__feature-name {
       display: none; } }
@@ -1348,14 +1369,14 @@ img {
       right: 0; }
     @media (min-width: 660px) {
       .table__feature .table__icon {
-        position: relative;
-        padding-top: 9px;
-        padding-left: 65px; }
-        .table__feature .table__icon--yes {
-          padding-left: 61px; } }
+        top: 46px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto; } }
     @media (min-width: 959px) {
       .table__feature .table__icon {
-        padding-left: 100px; } }
+        top: 56px; } }
 
 .table__col-banner {
   font-size: 14px;
@@ -1365,7 +1386,7 @@ img {
   position: absolute;
   text-transform: uppercase;
   transform: rotate(-45deg);
-  top: 0;
+  top: -1px;
   left: 13px; }
   @media (min-width: 660px) {
     .table__col-banner {
@@ -1373,7 +1394,7 @@ img {
       left: 7px; } }
   @media (min-width: 959px) {
     .table__col-banner {
-      top: 1px;
+      top: -1px;
       left: 15px; } }
 
 .contacts__intro {
@@ -1393,7 +1414,8 @@ img {
       font-size: 40px; } }
   @media (min-width: 959px) {
     .contacts__intro {
-      font-size: 50px; } }
+      font-size: 50px;
+      margin-top: 59px; } }
 
 .contacts__list {
   list-style: none;
@@ -1405,26 +1427,28 @@ img {
       flex-wrap: wrap;
       justify-content: space-between; } }
 
-.contacts__item--visit {
-  margin-top: 22px; }
-
-@media (min-width: 660px) {
-  .contacts__item--write, .contacts__item--call {
-    width: 299px; }
+.contacts__item {
+  outline: 1px solid blue; }
   .contacts__item--visit {
-    width: 215px;
-    margin: 24px auto 0; } }
-
-@media (min-width: 959px) {
-  .contacts__item--call {
-    width: auto;
-    padding-left: 40px; }
-  .contacts__item--write {
-    width: auto;
-    order: 3;
-    padding-right: 40px; }
-  .contacts__item--visit {
-    margin-top: 0; } }
+    margin-top: 22px; }
+  @media (min-width: 660px) {
+    .contacts__item--write, .contacts__item--call {
+      width: 299px; }
+    .contacts__item--visit {
+      width: 215px;
+      margin: 24px auto 0; } }
+  @media (min-width: 959px) {
+    .contacts__item {
+      margin-top: 7px; }
+      .contacts__item--call {
+        width: auto;
+        padding-left: 47px; }
+      .contacts__item--write {
+        width: auto;
+        order: 3;
+        padding-right: 30px; }
+      .contacts__item--visit {
+        padding-left: 17px; } }
 
 .contacts__heading {
   font-size: 18px;
@@ -1435,17 +1459,24 @@ img {
   @media (min-width: 660px) {
     .contacts__heading {
       margin-bottom: 9px; } }
+  @media (min-width: 959px) {
+    .contacts__heading {
+      margin-bottom: 26px; } }
   .contacts__heading--visit {
     margin-bottom: 0; }
     @media (min-width: 660px) {
       .contacts__heading--visit {
         margin-bottom: 4px; } }
+    @media (min-width: 959px) {
+      .contacts__heading--visit {
+        margin-bottom: 21px; } }
 
 .contacts__method {
   font-size: 24px;
   font-weight: 300;
   font-family: inherit;
   line-height: auto;
+  outline: 1px solid red;
   color: #d22856;
   text-decoration: none; }
   .contacts__method--visit {
@@ -1475,7 +1506,7 @@ img {
       height: 374px; } }
   @media (min-width: 959px) {
     .contacts__map {
-      height: 502px; } }
+      height: 497px; } }
 
 .contacts__map-iframe {
   width: 100%;
@@ -1483,6 +1514,7 @@ img {
   border: none; }
 
 .contacts__bg {
+  outline: 1px solid red;
   position: absolute;
   top: 0;
   height: auto;

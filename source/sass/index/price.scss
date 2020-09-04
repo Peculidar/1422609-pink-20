@@ -1,6 +1,6 @@
 .price {
   position: relative;
-  background-color: $basic-gray;
+  background-color: $theme-grey;
   overflow: hidden;
 
   @media (min-width: $tablet-breakpoint) {
@@ -10,6 +10,7 @@
   @media (min-width: $desktop-breakpoint) {
     margin-top: 40px;
     padding-top: 152px;
+    padding-bottom: 96px;
   }
 }
 

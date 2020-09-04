@@ -38,12 +38,13 @@
 
   @media (min-width: $desktop-breakpoint) {
     width: 480px;
+    margin-top: 4px;
   }
 }
 
 .advantages__wrapper {
   @include color-style($bgc: $theme-grey);
-  margin-top: 36px;
+  margin-top: 35px;
   padding-top: 60px;
   position: relative;
 
@@ -53,7 +54,7 @@
   }
 
   @media (min-width: $desktop-breakpoint) {
-    margin-top: 55px;
+    margin-top: 53px;
     padding-top: 10px;
   }
 }
