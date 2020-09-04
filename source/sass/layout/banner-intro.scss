@@ -36,12 +36,12 @@
 .banner-intro__header {
   @include font-style(24px, normal, 300);
   @include color-style($basic-white, transparent);
-  padding: 96px 20px 33px;
+  padding: 96px 20px 0;
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
     @include font-style(50px, normal, 300);
-    padding: 175px 20px 84px;
+    padding: 175px 20px 15px;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -55,14 +55,14 @@
 
 .banner-intro__paragraph {
   @include font-style($line: 30px);
-  width: 250px;
-  margin: 45px auto 50px;
+  width: $mobile-width;
+  margin: 45px auto 0;
   padding: 44px 20px 0;
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
     @include font-style(18px, 30px, 400);
-    width: 450px;
+    width: 550px;
     padding: 91px 40px 27px;
   }
 
@@ -73,6 +73,14 @@
     br {
       display: none;
     }
+  }
+}
+
+.banner-intro__number {
+  padding-right: 3px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-right: 0;
   }
 }
 
