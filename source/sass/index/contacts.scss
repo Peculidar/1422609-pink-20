@@ -1,9 +1,14 @@
+.contacts {
+  overflow-x: hidden;
+}
+
 .contacts__intro {
   @include font-style(24px, 120%, 300);
   color: $theme-black;
   text-align: center;
   margin-top: 42px;
   margin-bottom: 35px;
+
 
   @media (min-width: $tablet-breakpoint) {
     margin-bottom: 15px;

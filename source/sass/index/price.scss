@@ -1,7 +1,7 @@
 .price {
   position: relative;
   background-color: $theme-grey;
-  overflow: hidden;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-breakpoint) {
     padding-top: 103px;
@@ -51,10 +51,23 @@
     margin: auto;
   }
 
+  &:hover::before {
+    background-color: rgba($theme-black, 0.6);
+  }
+
+  &:active::before {
+    background-color: rgba($theme-black, 0.1);
+  }
+
   &--current {
     &::before {
       background-color: transparent;
       border: 3px solid $theme-black;
+    }
+
+    &:hover::before,
+    &:active::before {
+      background-color: transparent;
     }
   }
 }

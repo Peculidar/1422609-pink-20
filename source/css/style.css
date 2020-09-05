@@ -62,6 +62,312 @@ img {
       width: 940px;
       padding: 0 10px; } }
 
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
 .page-header {
   position: relative;
   z-index: 100;
@@ -317,7 +623,8 @@ img {
 
 .page-footer {
   margin-top: 40px;
-  margin-bottom: 33px; }
+  margin-bottom: 33px;
+  overflow-x: hidden; }
   @media (min-width: 660px) {
     .page-footer {
       margin-top: 30px;
@@ -346,7 +653,7 @@ img {
   margin-top: -69px;
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center top;
+  background-position: center top 3px;
   background-size: cover;
   background-repeat: none; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -356,6 +663,7 @@ img {
   @media (min-width: 660px) {
     .banner-intro {
       margin-top: -110px;
+      position: center top;
       background-image: url("../img/bg-back-tablet@1x.jpg"); } }
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
     .banner-intro {
@@ -363,7 +671,8 @@ img {
       background-size: 1200px auto; } }
   @media (min-width: 959px) {
     .banner-intro {
-      background-image: url("../img/bg-back-desktop@1x.jpg"); } }
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+      position: center top 20px; } }
   @media (min-width: 959px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 959px) and (min-resolution: 2dppx) {
     .banner-intro {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -412,8 +721,7 @@ img {
       padding: 91px 40px 27px; } }
   @media (min-width: 959px) {
     .banner-intro__paragraph {
-      width: 572px;
-      padding-bottom: 39px; }
+      width: 756px; }
       .banner-intro__paragraph br {
         display: none; } }
 
@@ -545,7 +853,8 @@ img {
       background-size: 1200px auto; } }
   @media (min-width: 959px) {
     .index-intro {
-      background-image: url("../img/bg-back-desktop@1x.jpg"); } }
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+      background-position: center top 11px; } }
   @media (min-width: 959px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 959px) and (min-resolution: 2dppx) {
     .index-intro {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -579,7 +888,8 @@ img {
 @media (min-width: 959px) {
   .index-intro__wrapper {
     width: 940px;
-    padding: 0 10px; }
+    padding: 0 10px;
+    overflow-x: hidden; }
     .index-intro__wrapper::before {
       height: 645px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
@@ -1198,9 +1508,15 @@ img {
     bottom: 0;
     left: 0;
     margin: auto; }
+  .reviews__toggle-button:hover::before {
+    background-color: rgba(40, 54, 69, 0.6); }
+  .reviews__toggle-button:active::before {
+    background-color: rgba(40, 54, 69, 0.1); }
   .reviews__toggle-button--current::before {
     background-color: transparent;
     border: 3px solid #283645; }
+  .reviews__toggle-button--current:hover::before, .reviews__toggle-button--current:active::before {
+    background-color: transparent; }
   @media (min-width: 959px) {
     .reviews__toggle-button {
       display: none; } }
@@ -1215,6 +1531,10 @@ img {
       position: absolute;
       z-index: 200;
       top: 212px; }
+      .reviews__slider-button:hover svg {
+        opacity: 0.6; }
+      .reviews__slider-button:active svg {
+        opacity: 0.1; }
       .reviews__slider-button--back {
         left: 4px; }
       .reviews__slider-button--forward {
@@ -1223,7 +1543,7 @@ img {
 .price {
   position: relative;
   background-color: #f2f2f2;
-  overflow: hidden; }
+  overflow-x: hidden; }
   @media (min-width: 660px) {
     .price {
       padding-top: 103px; } }
@@ -1264,9 +1584,15 @@ img {
     bottom: 0;
     left: 0;
     margin: auto; }
+  .price__toggle-button:hover::before {
+    background-color: rgba(40, 54, 69, 0.6); }
+  .price__toggle-button:active::before {
+    background-color: rgba(40, 54, 69, 0.1); }
   .price__toggle-button--current::before {
     background-color: transparent;
     border: 3px solid #283645; }
+  .price__toggle-button--current:hover::before, .price__toggle-button--current:active::before {
+    background-color: transparent; }
 
 .table {
   margin-top: 112px;
@@ -1456,6 +1782,9 @@ img {
       top: -1px;
       left: 15px; } }
 
+.contacts {
+  overflow-x: hidden; }
+
 .contacts__intro {
   font-size: 24px;
   font-weight: 300;
@@ -1629,219 +1958,10 @@ img {
 
 .form__field {
   border: none; }
-  @media (min-width: 959px) {
-    .form__field--username {
-      width: 433px; } }
-  .form__field--checkbox {
-    background-color: #f2f2f2;
-    margin-top: -55px; }
-    @media (min-width: 660px) {
-      .form__field--checkbox {
-        background-color: #ffffff;
-        width: 620px;
-        margin: 0 auto 20px;
-        padding: 0; } }
-    @media (min-width: 959px) {
-      .form__field--checkbox {
-        width: 940px; } }
-  .form__field--radio {
-    background-color: #f2f2f2;
-    margin-top: -56px; }
-    @media (min-width: 660px) {
-      .form__field--radio {
-        background-color: #ffffff;
-        width: 616px;
-        margin: 0 auto 20px;
-        padding: 0; } }
-    @media (min-width: 959px) {
-      .form__field--radio {
-        width: 431px; } }
-  @media (min-width: 660px) {
-    .form__field--contacts {
-      width: 580px;
-      padding: 0 20px; } }
-  @media (min-width: 959px) {
-    .form__field--contacts {
-      width: 900px; } }
   @media (min-width: 660px) {
     .form__field--bordered {
       border: 2px solid #e5e5e5;
       border-radius: 1px; } }
-
-.form__legend {
-  font-size: 14px;
-  font-weight: 400;
-  font-family: inherit;
-  line-height: 18px;
-  color: #d22856;
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 112px;
-  padding-left: 8px; }
-  .form__legend--contacts {
-    display: none; }
-  .form__legend--radio {
-    padding-left: 2px;
-    margin-bottom: 35px; }
-  .form__legend--textarea {
-    padding-left: 0; }
-  @media (min-width: 660px) {
-    .form__legend {
-      padding: 20px;
-      width: auto;
-      margin-bottom: 0; }
-      .form__legend--contacts {
-        display: block;
-        margin: 0 auto; } }
-  @media (min-width: 660px) {
-    .form__legend br {
-      display: none; } }
-
-.form__list {
-  list-style: none;
-  padding: 0;
-  margin-top: 41px; }
-  @media (min-width: 660px) {
-    .form__list {
-      margin-top: 45px; } }
-  @media (min-width: 959px) {
-    .form__list--contacts {
-      display: flex;
-      justify-content: space-around; } }
-  .form__list--checkbox {
-    margin-top: 39px; }
-    @media (min-width: 959px) {
-      .form__list--checkbox {
-        display: flex;
-        flex-wrap: wrap;
-        width: 812px; } }
-  .form__list--radio {
-    width: 280px;
-    margin: 0 auto;
-    outline: 1px solid black; }
-    @media (min-width: 660px) {
-      .form__list--radio {
-        margin: 0;
-        width: 620px; } }
-
-.form__item {
-  margin-bottom: 23px; }
-  @media (min-width: 660px) {
-    .form__item {
-      display: flex;
-      align-items: center; } }
-  @media (min-width: 660px) {
-    .form__item--username {
-      margin-bottom: 52px; }
-      .form__item--username:last-child {
-        margin-bottom: 39px; } }
-  @media (min-width: 660px) {
-    .form__item--contacts {
-      flex-direction: column;
-      align-items: flex-start; } }
-  @media (min-width: 959px) {
-    .form__item--contacts {
-      width: 371px; } }
-  .form__item--checkbox {
-    margin-left: -5px;
-    margin-bottom: 52px; }
-    .form__item--checkbox:last-child {
-      margin-bottom: 35px; }
-    @media (min-width: 959px) {
-      .form__item--checkbox {
-        width: 257px; } }
-  .form__item--radio {
-    margin-bottom: 45px; }
-    .form__item--radio:last-child {
-      margin-bottom: 38px; }
-    @media (min-width: 660px) {
-      .form__item--radio {
-        outline: 1px solid red;
-        margin-top: 10px;
-        margin-bottom: 0; } }
-  @media (min-width: 660px) {
-    .form__item--tel {
-      position: relative; }
-      .form__item--tel::before {
-        content: "";
-        position: absolute;
-        width: 59px;
-        height: 59px;
-        background-image: url("../img/icon-phone.svg");
-        right: 0;
-        top: 2px;
-        border: 1px solid #e5e5e5; } }
-  @media (min-width: 660px) {
-    .form__item--email {
-      position: relative; }
-      .form__item--email::before {
-        content: "";
-        position: absolute;
-        width: 59px;
-        height: 59px;
-        background-image: url("../img/icon-mail.svg");
-        right: 0;
-        top: 2px;
-        border: 1px solid #e5e5e5; } }
-
-.form__label {
-  font-size: 18px;
-  font-weight: 400;
-  font-family: inherit;
-  line-height: 30px;
-  color: #283645;
-  padding: 20px 20px; }
-  .form__label--checkbox {
-    position: relative;
-    padding-left: 58px; }
-    .form__label--checkbox::before {
-      content: "";
-      position: absolute;
-      width: 35px;
-      height: 35px;
-      left: -2px;
-      top: 12px;
-      background-color: #ffffff;
-      border: 2px solid #e5e5e5;
-      border-radius: 1px; }
-  .form__label--radio {
-    position: relative;
-    padding-left: 70px; }
-    .form__label--radio::before {
-      content: "";
-      position: absolute;
-      width: 37px;
-      height: 37px;
-      top: 12px;
-      left: 0;
-      background-color: #ffffff;
-      border: 2px solid #e5e5e5;
-      border-radius: 50%; }
-  .form__label--fill {
-    font-size: 14px;
-    font-weight: 400;
-    font-family: inherit;
-    line-height: 18px;
-    display: block;
-    color: #d22856;
-    text-transform: uppercase;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    padding-left: 23px;
-    padding-bottom: 11px; }
-    @media (min-width: 660px) {
-      .form__label--fill {
-        padding-left: 0;
-        padding-bottom: 0;
-        padding-top: 3px;
-        margin-right: 18px; } }
-  @media (min-width: 660px) {
-    .form__label--contacts {
-      order: 2; } }
-  @media (min-width: 959px) {
-    .form__label--checkbox {
-      padding-left: 50px; } }
 
 .form__input {
   border: 2px solid #e5e5e5;
@@ -1853,8 +1973,8 @@ img {
     outline: none; }
   .form__input--fill {
     display: block;
-    width: 100%;
     height: 56px;
+    width: 254px;
     padding-left: 20px;
     padding-bottom: 2px;
     font-size: 18px;
@@ -1865,6 +1985,188 @@ img {
       color: #283645;
       font-family: "Open Sans", "Arial", sans-serif; }
 
+.form__legend {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: inherit;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+  width: 218px;
+  margin: 0 auto; }
+  @media (min-width: 660px) {
+    .form__legend {
+      background-color: #ffffff; } }
+
+.form__list {
+  list-style: none;
+  padding: 0; }
+
+@media (min-width: 660px) {
+  .form__item {
+    display: flex;
+    align-items: center; } }
+
+.form__label {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: inherit;
+  line-height: 30px;
+  color: #283645; }
+  .form__label--fill {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: inherit;
+    line-height: 18px;
+    display: block;
+    color: #d22856;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    padding: 0; }
+
+@media (min-width: 959px) {
+  .form__field--username {
+    width: 433px;
+    padding: 0; } }
+
+.form__field--username .form__list {
+  margin-top: 36px; }
+  @media (min-width: 660px) {
+    .form__field--username .form__list {
+      margin-top: 40px; } }
+  @media (min-width: 959px) {
+    .form__field--username .form__list {
+      width: 100%;
+      padding: 0;
+      margin-top: 58px; } }
+
+.form__field--username .form__label {
+  padding-left: 23px;
+  padding-bottom: 11px; }
+  @media (min-width: 660px) {
+    .form__field--username .form__label {
+      padding-left: 0;
+      padding-bottom: 0;
+      padding-top: 3px; } }
+  @media (min-width: 959px) {
+    .form__field--username .form__label {
+      margin-left: -2px; } }
+
+.form__field--username .form__item:not(:first-child) {
+  margin-top: 23px; }
+  @media (min-width: 660px) {
+    .form__field--username .form__item:not(:first-child) {
+      margin-top: 52px; } }
+  @media (min-width: 959px) {
+    .form__field--username .form__item:not(:first-child) {
+      margin-top: 53px; } }
+
+@media (min-width: 660px) {
+  .form__field--username .form__input {
+    margin-left: 18px;
+    padding-left: 20px;
+    width: 100%; } }
+
+@media (min-width: 959px) {
+  .form__field--username .form__input {
+    margin-left: 18px; } }
+
+.form__field--checkbox {
+  margin-top: 33px;
+  background-color: #f2f2f2; }
+  @media (min-width: 660px) {
+    .form__field--checkbox {
+      background-color: #ffffff;
+      width: 616px;
+      margin: 66px auto 0;
+      padding: 0; } }
+  @media (min-width: 959px) {
+    .form__field--checkbox {
+      width: 936px;
+      margin-top: 65px; } }
+  .form__field--checkbox .form__legend {
+    margin: 0 auto;
+    padding-top: 34px; }
+    @media (min-width: 660px) {
+      .form__field--checkbox .form__legend {
+        padding: 0 31px 0;
+        width: 374px;
+        margin-top: -9px; } }
+  .form__field--checkbox .form__list {
+    padding: 0;
+    margin-top: 42px;
+    padding-bottom: 39px; }
+    @media (min-width: 660px) {
+      .form__field--checkbox .form__list {
+        margin: 32px 0 0;
+        padding-left: 58px;
+        padding-bottom: 38px;
+        width: 320px; } }
+    @media (min-width: 959px) {
+      .form__field--checkbox .form__list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 876px;
+        margin: 20px auto;
+        padding-bottom: 13px; } }
+  .form__field--checkbox .form__item:not(:first-of-type) {
+    margin-top: 52px; }
+    @media (min-width: 660px) {
+      .form__field--checkbox .form__item:not(:first-of-type) {
+        margin-top: 22px; } }
+    @media (min-width: 959px) {
+      .form__field--checkbox .form__item:not(:first-of-type) {
+        margin-top: 0; } }
+  @media (min-width: 959px) {
+    .form__field--checkbox .form__item {
+      width: 315px;
+      padding: 12px 0; }
+      .form__field--checkbox .form__item--chuck-norris, .form__field--checkbox .form__item--souvenir {
+        width: 295px; }
+      .form__field--checkbox .form__item--tower, .form__field--checkbox .form__item--hotel {
+        width: 250px; }
+      .form__field--checkbox .form__item--sunburn, .form__field--checkbox .form__item--souvenir, .form__field--checkbox .form__item--hotel {
+        padding-top: 10px; } }
+  .form__field--checkbox .form__label {
+    position: relative;
+    padding: 15px 0 15px 59px; }
+    .form__field--checkbox .form__label:hover::before {
+      border-color: #283645; }
+    .form__field--checkbox .form__label:focus::before, .form__field--checkbox .form__label:active::before {
+      border-color: #d22856; }
+    .form__field--checkbox .form__label::before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: 0;
+      top: 8px;
+      background-color: #ffffff;
+      border: 2px solid #e5e5e5;
+      border-radius: 1px; }
+      @media (min-width: 660px) {
+        .form__field--checkbox .form__label::before {
+          top: 11px; } }
+    @media (min-width: 959px) {
+      .form__field--checkbox .form__label {
+        padding-left: 58px; } }
+
+@media (min-width: 959px) {
+  .form__list--checkbox .form__item--sharks {
+    order: 1; }
+  .form__list--checkbox .form__item--souvenir {
+    order: 5; }
+  .form__list--checkbox .form__item--chuck-norris {
+    order: 2; }
+  .form__list--checkbox .form__item--sunburn {
+    order: 4; }
+  .form__list--checkbox .form__item--tower {
+    order: 3; }
+  .form__list--checkbox .form__item--hotel {
+    order: 6; } }
+
 .form__input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
@@ -1872,8 +2174,157 @@ img {
   width: 22px;
   height: 16px;
   background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.7001 0.284331C21.5105 0.102082 21.2557 0 20.9903 0C20.7249 0 20.47 0.102082 20.2805 0.284331L6.70324 13.6028L1.73472 8.72901C1.64045 8.63578 1.52831 8.56178 1.40474 8.51128C1.28118 8.46079 1.14865 8.43479 1.01479 8.43479C0.88093 8.43479 0.748397 8.46079 0.624833 8.51128C0.50127 8.56178 0.389122 8.63578 0.294859 8.72901C0.106004 8.91537 0 9.16747 0 9.43024C0 9.69302 0.106004 9.94512 0.294859 10.1315L5.98331 15.7115C6.07806 15.8037 6.19042 15.8767 6.31396 15.9262C6.4375 15.9756 6.56979 16.0007 6.70324 16C6.96925 15.9989 7.22416 15.8953 7.41303 15.7115L21.7001 1.69675C21.7951 1.60428 21.8705 1.49427 21.922 1.37306C21.9735 1.25186 22 1.12185 22 0.990541C22 0.859234 21.9735 0.729226 21.922 0.608017C21.8705 0.486809 21.7951 0.376798 21.7001 0.284331Z' fill='%23D22856'/%3E%3C/svg%3E%0A");
-  top: 23px;
-  left: 7px; }
+  top: 19px;
+  left: 9px; }
+  @media (min-width: 660px) {
+    .form__input[type="checkbox"]:checked + label::after {
+      top: 22px; } }
+
+.form__field--contacts {
+  margin-top: 38px; }
+  @media (min-width: 660px) {
+    .form__field--contacts {
+      padding: 0 20px;
+      width: 576px;
+      margin-top: 66px; } }
+  @media (min-width: 959px) {
+    .form__field--contacts {
+      width: 896px;
+      margin-top: 65px; } }
+  .form__field--contacts .form__legend {
+    display: none; }
+    @media (min-width: 660px) {
+      .form__field--contacts .form__legend {
+        display: block;
+        margin-top: -9px;
+        padding: 0 30px;
+        width: 198px; } }
+  .form__field--contacts .form__list {
+    padding-bottom: 42px;
+    width: 100%; }
+    @media (min-width: 660px) {
+      .form__field--contacts .form__list {
+        width: 500px;
+        margin-top: 35px;
+        padding-bottom: 33px; } }
+    @media (min-width: 959px) {
+      .form__field--contacts .form__list {
+        display: flex;
+        justify-content: space-between;
+        width: 820px;
+        margin-top: 33px;
+        padding-bottom: 19px; } }
+  .form__field--contacts .form__item:not(:first-of-type) {
+    margin-top: 23px; }
+    @media (min-width: 660px) {
+      .form__field--contacts .form__item:not(:first-of-type) {
+        margin-top: 35px; } }
+    @media (min-width: 959px) {
+      .form__field--contacts .form__item:not(:first-of-type) {
+        margin-top: 0; } }
+  @media (min-width: 660px) {
+    .form__field--contacts .form__item {
+      flex-direction: column;
+      align-items: flex-start; } }
+  @media (min-width: 660px) {
+    .form__field--contacts .form__item--tel {
+      position: relative; }
+      .form__field--contacts .form__item--tel::before {
+        content: "";
+        position: absolute;
+        width: 59px;
+        height: 59px;
+        background-image: url("../img/icon-phone.svg");
+        right: 2px;
+        top: 2px; } }
+  @media (min-width: 660px) {
+    .form__field--contacts .form__item--email {
+      position: relative; }
+      .form__field--contacts .form__item--email::before {
+        content: "";
+        position: absolute;
+        width: 59px;
+        height: 59px;
+        background-image: url("../img/icon-mail.svg");
+        right: 2px;
+        top: 2px; } }
+  @media (min-width: 660px) {
+    .form__field--contacts .form__item .form__input {
+      width: 474px; } }
+  @media (min-width: 959px) {
+    .form__field--contacts .form__item .form__input {
+      width: 349px; } }
+  .form__field--contacts .form__label {
+    padding-left: 24px;
+    padding-bottom: 11px; }
+    @media (min-width: 660px) {
+      .form__field--contacts .form__label {
+        order: 2;
+        padding: 16px 0 0 19px; } }
+
+.form__field--radio {
+  background-color: #f2f2f2; }
+  @media (min-width: 660px) {
+    .form__field--radio {
+      background-color: #ffffff;
+      margin: 57px auto 0;
+      padding: 0;
+      width: 616px; } }
+  @media (min-width: 959px) {
+    .form__field--radio {
+      width: 431px;
+      margin-top: 52px; } }
+  .form__field--radio .form__legend {
+    margin-top: 34px; }
+    @media (min-width: 660px) {
+      .form__field--radio .form__legend {
+        padding: 0 23px;
+        margin-top: -9px;
+        width: 318px; } }
+  .form__field--radio .form__list {
+    margin-top: 39px;
+    padding-bottom: 37px; }
+    @media (min-width: 660px) {
+      .form__field--radio .form__list {
+        margin-top: 28px;
+        padding-bottom: 38px;
+        width: 100%; } }
+  .form__field--radio .form__item:not(:first-child) {
+    margin-top: 45px; }
+    @media (min-width: 660px) {
+      .form__field--radio .form__item:not(:first-child) {
+        margin-top: 5px; } }
+    @media (min-width: 959px) {
+      .form__field--radio .form__item:not(:first-child) {
+        margin-top: 6px; } }
+  .form__field--radio .form__label {
+    position: relative;
+    padding: 20px 0 20px 70px; }
+    .form__field--radio .form__label:hover::before {
+      border-color: #283645; }
+    .form__field--radio .form__label:focus::before, .form__field--radio .form__label:active::before {
+      border-color: #d22856; }
+    .form__field--radio .form__label::before {
+      content: "";
+      position: absolute;
+      width: 37px;
+      height: 37px;
+      top: 12px;
+      left: 0;
+      background-color: #ffffff;
+      border: 2px solid #e5e5e5;
+      border-radius: 50%; }
+    @media (min-width: 660px) {
+      .form__field--radio .form__label {
+        padding-left: 119px; }
+        .form__field--radio .form__label::before {
+          top: 15px;
+          left: 58px; } }
+    @media (min-width: 959px) {
+      .form__field--radio .form__label {
+        padding-left: 133px; }
+        .form__field--radio .form__label::before {
+          left: 72px; } }
 
 .form__input[type="radio"]:checked + label::after {
   content: "";
@@ -1885,31 +2336,60 @@ img {
   left: 13px;
   background-color: #d22856;
   border-radius: 50%; }
+  @media (min-width: 660px) {
+    .form__input[type="radio"]:checked + label::after {
+      left: 71px;
+      top: 28px; } }
+  @media (min-width: 959px) {
+    .form__input[type="radio"]:checked + label::after {
+      left: 85px; } }
 
 .form__field--textarea {
-  margin-top: -75px;
   text-align: center; }
   @media (min-width: 660px) {
     .form__field--textarea {
       padding: 0;
-      margin: 0 auto; } }
+      padding-bottom: 28px;
+      margin: 66px auto;
+      width: 616px; } }
+  @media (min-width: 959px) {
+    .form__field--textarea {
+      margin-top: 65px;
+      width: 936px;
+      padding-bottom: 20px; } }
   .form__field--textarea .form__legend {
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 38px; }
+    @media (min-width: 660px) {
+      .form__field--textarea .form__legend {
+        margin-top: -9px;
+        padding: 0 38px 0;
+        width: 184px; } }
   .form__field--textarea textarea {
     resize: none;
     width: 236px;
     height: 164px;
     padding: 13px 20px 20px;
-    margin: 17px 0;
+    margin: 16px 0;
     border: 2px solid #e5e5e5;
     border-radius: 1px; }
+    .form__field--textarea textarea:hover {
+      border-color: #283645; }
+    .form__field--textarea textarea:focus {
+      border-color: #d22856;
+      outline: none; }
     @media (min-width: 660px) {
       .form__field--textarea textarea {
-        width: 476px; } }
+        margin-top: 36px;
+        width: 456px;
+        height: 155px;
+        padding-top: 14px; } }
     @media (min-width: 959px) {
       .form__field--textarea textarea {
-        width: 816px;
-        height: 124px; } }
+        width: 776px;
+        height: 91px;
+        margin-top: 33px;
+        padding-top: 13px; } }
     .form__field--textarea textarea::-moz-placeholder {
       font-family: "Open Sans", "Arial", sans-serif;
       font-size: 18px;
@@ -1924,12 +2404,17 @@ img {
       opacity: 1; }
 
 .form__button-wrapper {
-  margin-top: 24px; }
+  margin-top: 25px; }
   @media (min-width: 660px) {
     .form__button-wrapper {
       order: 5;
       display: flex;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      margin-top: 0; } }
+  @media (min-width: 959px) {
+    .form__button-wrapper {
+      padding: 0;
+      margin-top: -1px; } }
 
 .form__button {
   font-size: 18px;
@@ -1938,11 +2423,16 @@ img {
   line-height: 30px;
   color: #ffffff;
   background-color: #2aab6d;
-  padding: 16px 0 17px;
+  height: 63px;
   width: 280px;
   text-transform: uppercase;
   border: none;
   border-radius: 3px; }
+  @media (min-width: 660px) {
+    .form__button {
+      padding: 0;
+      line-height: 0;
+      width: 300px; } }
   .form__button:hover {
     background-color: #1c9b5e; }
   .form__button:active {
@@ -1963,13 +2453,23 @@ img {
   margin-top: 34px;
   padding-left: 11px;
   padding-bottom: 16px; }
+  @media (min-width: 660px) {
+    .form__conditions {
+      margin-top: 17px;
+      padding-bottom: 51px; } }
+  @media (min-width: 959px) {
+    .form__conditions {
+      padding-bottom: 0; } }
   .form__conditions sup {
     position: absolute;
     display: inline-block;
     font-size: 16px;
-    top: 0;
+    top: 15px;
     left: 49px;
     color: #d22856; }
+    @media (min-width: 660px) {
+      .form__conditions sup {
+        left: 0; } }
   .form__conditions span {
     display: none; }
     @media (min-width: 959px) {

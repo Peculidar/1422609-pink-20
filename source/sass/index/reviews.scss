@@ -128,10 +128,23 @@
     margin: auto;
   }
 
+  &:hover::before {
+    background-color: rgba($theme-black, 0.6);
+  }
+
+  &:active::before {
+    background-color: rgba($theme-black, 0.1);
+  }
+
   &--current {
     &::before {
       background-color: transparent;
       border: 3px solid $theme-black;
+    }
+
+    &:hover::before,
+    &:active::before {
+      background-color: transparent;
     }
   }
 
@@ -150,6 +163,18 @@
     position: absolute;
     z-index: 200;
     top: 212px;
+
+    &:hover {
+      svg {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      svg {
+        opacity: 0.1;
+      }
+    }
 
     &--back {
       left: 4px;
