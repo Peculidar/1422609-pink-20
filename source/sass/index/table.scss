@@ -54,7 +54,7 @@
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
-    padding-bottom: 0;
+    padding-bottom: 1px;
   }
 }
 
@@ -198,15 +198,28 @@
     }
 
     @media (min-width: $tablet-breakpoint) {
-      top: 46px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
+      position: relative;
+      margin-top: 10px;
+
+      &--yes {
+        margin-left: 61px;
+      }
+
+      &--no {
+        margin-left: 65px;
+      }
     }
 
     @media (min-width: $desktop-breakpoint) {
-      top: 56px;
+      margin-top: 17px;
+
+      &--yes {
+        margin-left: 102px;
+      }
+
+      &--no {
+        margin-left: 105px;
+      }
     }
   }
 }
