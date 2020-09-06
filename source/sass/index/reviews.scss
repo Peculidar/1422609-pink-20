@@ -1,10 +1,34 @@
 .reviews {
+  position: relative;
+  margin-bottom: 18px;
   text-align: center;
-  margin-bottom: 50px;
+  background-color: $basic-white;
+
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 62px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+.reviews__quotes-pic {
+  display: none;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: inline-block;
+    margin-top: 72px;
+    margin-bottom: 0;
+  }
 }
 
 .reviews__list {
   list-style: none;
+  padding: 0;
 }
 
 .reviews__item {
@@ -20,6 +44,9 @@
   color: $basic-black;
 
   &--top {
+    margin-top: 41px;
+    margin-bottom: 0;
+
     @media (min-width: $tablet-breakpoint) {
       display: none;
     }
@@ -30,11 +57,13 @@
 
     @media (min-width: $tablet-breakpoint) {
       display: block;
+      padding-top: 16px;
       font-size: 20px;
     }
 
     @media (min-width: $desktop-breakpoint) {
       font-size: 24px;
+      padding-top: 12px;
     }
   }
 }
@@ -45,16 +74,19 @@
   @media (min-width: $tablet-breakpoint) {
     @include font-style(14px, normal, 400);
     display: block;
-    color: $theme-black;
     margin-top: -15px;
+    color: $theme-black;
   }
 
   @media (min-width: $desktop-breakpoint) {
     font-size: 18px;
+    margin-top: -19px;
   }
 }
 
 .reviews__text {
+  margin-top: 13px;
+
   @include font-style($line: 30px);
   color: $theme-black;
 
@@ -64,6 +96,93 @@
 
   @media (min-width: $desktop-breakpoint) {
     width: 688px;
-    margin: 50px auto 0;
+    margin: 42px auto 0;
+  }
+}
+
+.reviews__toggles {
+  margin-top: 27px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 37px;
+  }
+}
+
+.reviews__toggle-button {
+  position: relative;
+  width: 21px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: rgba($theme-black, 0.3);
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  &:hover::before {
+    background-color: rgba($theme-black, 0.6);
+  }
+
+  &:active::before {
+    background-color: rgba($theme-black, 0.1);
+  }
+
+  &--current {
+    &::before {
+      background-color: transparent;
+      border: 3px solid $theme-black;
+    }
+
+    &:hover::before,
+    &:active::before {
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+
+.reviews__slider-button {
+  display: none;
+
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    z-index: 200;
+    top: 212px;
+    display: block;
+    border: none;
+    background: transparent;
+
+    &:hover {
+      svg {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      svg {
+        opacity: 0.1;
+      }
+    }
+
+    &--back {
+      left: 4px;
+    }
+
+    &--forward {
+      right: 4px;
+    }
   }
 }

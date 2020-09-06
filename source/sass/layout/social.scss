@@ -1,23 +1,20 @@
 .social__list {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  width: 178px;
-  margin: 0;
+  width: 175px;
+  margin: 30px auto 33px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-breakpoint) {
-    margin-left: -15px;
-    padding-top: 32px;
-    padding-bottom: 40px;
+    margin: 0;
+    margin-left: -16px;
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    margin-left: 6px;
-    width: 174px;
-    padding-top: 60px;
-    padding-bottom: 75px;
+    padding-left: 22px;
+    padding-top: 8px;
   }
 }
 
@@ -26,9 +23,9 @@
 }
 
 .social__link {
+  display: block;
   width: 48px;
   height: 48px;
-  display: block;
   border: 3px solid rgba($theme-black, 0.1);
   border-radius: 50%;
 
@@ -54,9 +51,17 @@
 
   &--youtube {
     margin-left: 3px;
+
+    @media (min-width: $desktop-breakpoint) {
+      margin-left: 0;
+    }
   }
 
   &--twitter {
-    margin-left: -1px;
+    margin-left: -2px;
+
+    @media (min-width: $desktop-breakpoint) {
+      margin-left: 0;
+    }
   }
 }

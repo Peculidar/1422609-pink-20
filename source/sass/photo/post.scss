@@ -1,9 +1,9 @@
 .post {
   @include color-style($bgc: $theme-grey);
-  overflow-x: hidden;
   padding: 18px 10px 18px 17px;
   margin-top: 0;
   margin-bottom: 20px;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-breakpoint) {
     display: grid;
@@ -31,7 +31,7 @@
     }
 
     @media (min-width: $desktop-breakpoint) {
-      padding: 24px 24px 2px 28px;
+      padding: 24px 24px 4px 28px;
     }
   }
 }
@@ -57,12 +57,38 @@
 }
 
 .post__text {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0;
+  margin-top: -1px;
+  padding: 0;
+
+  &--panorama {
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin-top: 0;
+
+    @media (min-width: $tablet-breakpoint) {
+      padding: 0;
+    }
+  }
+
+  &--car {
+    padding-bottom: 10px;
+  }
+
+  &--window {
+    padding-bottom: 11px;
+  }
+
+  &--drums,
+  &--fair,
+  &--pov,
+  &--wing {
+    padding-bottom: 12px;
+  }
 
   @media (min-width: $tablet-breakpoint) {
     overflow: hidden;
-    min-height: 35px;
+    min-height: 33px;
 
 
     &--panorama {

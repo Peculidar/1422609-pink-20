@@ -1,22 +1,32 @@
 .table {
+  margin-top: 112px;
+  margin-bottom: 36px;
   display: flex;
 
   @media (max-width: 659px) {
-    width: 832px;
+    width: 834px;
     margin-left: 50%;
     transform: translateX(-50%);
   }
 
   @media (min-width: $tablet-breakpoint) {
     width: $tablet-width;
-    padding: 0 20px;
+    padding: 1px 20px 68px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    width: $desktop-width;
+    width: 944px;
     padding: 0 10px;
+    margin-top: 1px;
   }
+}
+
+.price__bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
 }
 
 .table__col {
@@ -24,87 +34,152 @@
   padding: 0;
   margin: 0;
   width: 276px;
+  border: 2px solid $basic-gray;
+  border-radius: 2px;
 
-  @media (min-width: $tablet-breakpoint) {
-    width: 153px;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
-    width: 233px;
-  }
-
-  &--title {
-    display: none;
-
-    @media (min-width: $tablet-breakpoint) {
-      display: block;
-      align-self: flex-end;
-    }
+  &--unlimited,
+  &--standard,
+  &--basic {
+    margin-left: -2px;
   }
 }
 
 .table__col-header {
   @include color-style($basic-white, $theme-black);
-  border: 2px solid $basic-gray;
+  position: relative;
+  padding-bottom: 14px;
+  padding-top: 15px;
+  border-top: 2px solid $theme-black;
+  margin-top: -2px;
   text-align: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-bottom: 1px;
+  }
+}
+
+.table__col--title {
+  display: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: block;
+    align-self: flex-end;
+  }
+
+  .table__feature {
+    @include font-style(14px, 30px, 400);
+    padding-left: 15px;
+    padding-top: 8px;
+    text-transform: none;
+
+    @media (min-width: $desktop-breakpoint) {
+      padding-left: 21px;
+      padding-top: 14px;
+      font-size: 18px;
+    }
+  }
+}
+
+.table__col--basic {
+  .table__col-header {
+    border-left: 2px solid $theme-black;
+    border-top-left-radius: 3px;
+    margin-left: -2px;
+  }
+}
+
+.table__col--standard {
+  .table__col-header {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      width: 74px;
+      height: 74px;
+      background-image: url("../img/bg-hit-ribbon.svg");
+
+      @media (min-width: $tablet-breakpoint) and (max-width: 959px) {
+        left: 0;
+        background-image: url("../img/bg-hit-ribbon-tablet.svg");
+        width: 59px;
+        height: 59px;
+      }
+
+      @media (min-width: $desktop-breakpoint) {
+        left: 0;
+      }
+    }
+  }
+}
+
+.table__col--unlimited {
+  .table__col-header {
+    border-right: 2px solid $theme-black;
+    border-top-right-radius: 3px;
+    margin-right: -2px;
+  }
 }
 
 .table__col-title {
   @include font-style(16px, normal, 700);
+  margin-bottom: 0;
+  margin-top: -1px;
   text-transform: uppercase;
 
   @media (min-width: $desktop-breakpoint) {
     font-size: 18px;
+    padding-top: 2px;
   }
 }
 
 .table__col-price {
   @include font-style(18px, normal, 300);
-  margin-top: -10px;
+  margin-top: 4px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-bottom: 12px;
+    margin-bottom: 0;
+  }
 
   @media (min-width: $desktop-breakpoint) {
+    margin-top: 3px;
+    padding-bottom: 19px;
     font-size: 24px;
   }
 }
 
 .table__col-cell {
   @include color-style($theme-black, $basic-white);
-  padding: 24px 19px 25px 20px;
-  border: 2px solid $basic-gray;
+  padding: 17px 17px 0 20px;
+  height: 42px;
+  border-bottom: 2px solid $basic-gray;
+
+  &--bottom {
+    border-bottom: none;
+  }
 
   @media (min-width: $tablet-breakpoint) {
-    padding: 8px 0;
-
-    &--title {
-      padding: 7px 0;
-    }
+    padding: 0;
+    height: 45px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    padding: 15px 0;
+    padding: 0;
+    height: 59px;
+  }
 
-    &--title {
-      padding: 14px 0;
-    }
+  &--pink {
+    border-top: transparent;
   }
 }
 
 .table__feature {
   @include color-style($theme-black, $basic-white);
   position: relative;
-  text-transform: uppercase;
   margin: 0;
   padding: 0;
-
-  &--title {
-    @include font-style(14px, 30px, 400);
-    padding-left: 10px;
-    text-transform: none;
-
-    @media (min-width: $desktop-breakpoint) {
-      font-size: 18px;
-    }
-  }
+  text-transform: uppercase;
 
   .table__feature-name {
     @media (min-width: $tablet-breakpoint) {
@@ -114,15 +189,57 @@
 
   .table__icon {
     position: absolute;
-    right: 0;
+    right: 2px;
+    top: -1px;
+
+    &--yes {
+      top: 2px;
+      right: 0;
+    }
 
     @media (min-width: $tablet-breakpoint) {
       position: relative;
-      padding-left: 60px;
+      margin-top: 10px;
+
+      &--yes {
+        margin-left: 61px;
+      }
+
+      &--no {
+        margin-left: 65px;
+      }
     }
 
     @media (min-width: $desktop-breakpoint) {
-      padding-left: 100px;
+      margin-top: 17px;
+
+      &--yes {
+        margin-left: 102px;
+      }
+
+      &--no {
+        margin-left: 105px;
+      }
     }
+  }
+}
+
+.table__col-banner {
+  @include font-style(14px, 30px, 400);
+  position: absolute;
+  top: -1px;
+  left: 13px;
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+
+
+  @media (min-width: $tablet-breakpoint) {
+    top: -5px;
+    left: 7px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    top: -1px;
+    left: 15px;
   }
 }

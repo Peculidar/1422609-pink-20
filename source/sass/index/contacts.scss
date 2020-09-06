@@ -1,18 +1,25 @@
+.contacts {
+  overflow-x: hidden;
+}
+
 .contacts__intro {
   @include font-style(24px, 120%, 300);
+  margin-top: 42px;
+  margin-bottom: 35px;
   color: $theme-black;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
+
 
   @media (min-width: $tablet-breakpoint) {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
+    margin-top: 42px;
+    line-height: normal;
     font-size: 40px;
-    line-height: auto;
   }
 
   @media (min-width: $desktop-breakpoint) {
     font-size: 50px;
+    margin-top: 59px;
   }
 }
 
@@ -24,52 +31,86 @@
   @media (min-width: $tablet-breakpoint) {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
     justify-content: space-between;
   }
 }
 
 .contacts__item {
+  &--visit {
+    margin-top: 22px;
+  }
+
   @media (min-width: $tablet-breakpoint) {
     &--write,
     &--call {
-      width: 50%;
+      width: 299px;
     }
 
     &--visit {
       width: 215px;
-      margin: 20px auto 0;
+      margin: 24px auto 0;
     }
   }
 
   @media (min-width: $desktop-breakpoint) {
+    margin-top: 7px;
+
     &--call {
       width: auto;
-      padding-left: 40px;
+      padding-left: 47px;
     }
 
     &--write {
       width: auto;
       order: 3;
-      padding-right: 40px;
+      padding-right: 30px;
     }
 
     &--visit {
-      margin-top: 0;
+      padding-left: 17px;
     }
   }
 }
 
 .contacts__heading {
   @include font-style(18px, auto, 700);
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 26px;
+  }
+
+  &--visit {
+    margin-bottom: 0;
+
+    @media (min-width: $tablet-breakpoint) {
+      margin-bottom: 4px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      margin-bottom: 21px;
+    }
+  }
 }
 
 .contacts__method {
   @include font-style(24px, auto, 300);
   color: $theme-pink;
   text-decoration: none;
+
+  &--visit {
+    margin-top: 0;
+    padding-bottom: 10px;
+    line-height: normal;
+
+    @media (min-width: $tablet-breakpoint) {
+      padding-bottom: 0;
+    }
+  }
 
   &--link {
     &:hover {
@@ -85,23 +126,76 @@
 }
 
 .contacts__map {
+  position: relative;
   width: 100%;
   height: 200px;
-  background-image: url("../img/bg-map-and-marker-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-color: $basic-gray;
-  background-position: center;
+
+  background: {
+    image: url("../img/bg-map-and-marker-mobile@1x.png");
+    repeat: no-repeat;
+    color: $basic-gray;
+    position: center;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-map-and-marker-mobile@2x.png");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: 321px) {
+    background-image: url("../img/bg-map-and-marker-tablet@1x.png");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-map-and-marker-tablet@2x.png");
+      background-size: 660px auto;
+    }
+  }
 
   @media (min-width: $tablet-breakpoint) {
     height: 374px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    height: 502px;
+    height: 497px;
+    background-image: url("../img/bg-map-and-marker-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-map-and-marker-desktop@2x.png");
+      background-size: 1200px auto;
+    }
+  }
+}
+
+.contacts__map::before {
+  @media (min-width: $desktop-breakpoint) {
+    content: "";
+    position: absolute;
+    top: -25px;
+    z-index: 500;
+    width: 1439px;
+    height: 123px;
+    display: block;
+    background-image: url("../img/bg-desktop-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 .contacts__map-iframe {
   width: 100%;
   height: 100%;
+  border: none;
+}
+
+.contacts__bg {
+  position: absolute;
+  top: -1px;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
 }

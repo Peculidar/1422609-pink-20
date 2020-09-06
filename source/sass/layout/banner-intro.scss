@@ -1,9 +1,10 @@
 .banner-intro {
   margin-top: -69px;
+
   background: {
     color: $theme-black;
     image: url("../img/bg-back-mobile@1x.jpg");
-    position: center top;
+    position: center top 3px;
     size: cover;
     repeat: none;
   }
@@ -15,6 +16,7 @@
 
   @media (min-width: $tablet-breakpoint) {
     margin-top: -110px;
+    position: center top;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -25,6 +27,7 @@
 
   @media (min-width: $desktop-breakpoint) {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    position: center top 20px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -36,12 +39,12 @@
 .banner-intro__header {
   @include font-style(24px, normal, 300);
   @include color-style($basic-white, transparent);
-  padding: 96px 20px 33px;
+  padding: 96px 20px 0;
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
     @include font-style(50px, normal, 300);
-    padding: 175px 20px 84px;
+    padding: 175px 20px 15px;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -55,24 +58,31 @@
 
 .banner-intro__paragraph {
   @include font-style($line: 30px);
-  width: 250px;
-  margin: 45px auto 50px;
+  width: $mobile-width;
+  margin: 45px auto 0;
   padding: 44px 20px 0;
   text-align: center;
 
   @media (min-width: $tablet-breakpoint) {
     @include font-style(18px, 30px, 400);
-    width: 450px;
+    width: 550px;
     padding: 91px 40px 27px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    width: 572px;
-    padding-bottom: 39px;
+    width: 756px;
 
     br {
       display: none;
     }
+  }
+}
+
+.banner-intro__number {
+  padding-right: 3px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-right: 0;
   }
 }
 
@@ -82,6 +92,40 @@
   &--form-page {
     @media (min-width: $tablet-breakpoint) {
       display: inline;
+    }
+  }
+}
+
+.banner-intro--photo {
+  .banner-intro__header {
+    padding-bottom: 33px;
+
+    @media (min-width: $tablet-breakpoint) {
+      padding-bottom: 83px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      padding-bottom: 43px;
+    }
+  }
+
+  .banner-intro__paragraph {
+    padding-bottom: 50px;
+
+    @media (min-width: $tablet-breakpoint) {
+      padding-bottom: 77px;
+
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      padding-bottom: 89px;
+
+      br {
+        display: inline;
+      }
     }
   }
 }

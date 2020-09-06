@@ -17,27 +17,36 @@
 
 .app-store__list {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-  width: 204px;
-  margin: 30px auto 0;
+  justify-content: center;
+  align-items: center;
+  margin: 32px auto 0;
   padding: 0 20px;
   list-style: none;
 
   @media (min-width: $tablet-breakpoint) {
     margin-top: 45px;
+    margin-left: -6px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    margin-top: 65px;
+    margin-top: 68px;
+  }
+}
+
+.app-store__item {
+  margin-right: 36px;
+
+  &--windows {
+    margin-top: 6px;
+    margin-right: 0;
   }
 }
 
 .app-store__description {
   @include font-style($weight: 300);
   width: $mobile-width;
-  padding: 0 20px 31px;
+  padding: 0 20px 30px;
   margin: 15px auto 0;
 
   @media (min-width: $tablet-breakpoint) {
@@ -49,7 +58,7 @@
 
   @media (min-width: $desktop-breakpoint) {
     margin-top: 45px;
-    padding-bottom: 127px;
+    padding-bottom: 124px;
   }
 }
 
@@ -59,17 +68,20 @@
   display: inline-block;
   vertical-align: middle;
   margin-top: 28px;
-  padding: 16px 37px 15px;
+  width: 274px;
+  padding: 15px 0 16px;
   border: 3px solid $basic-white;
   border-radius: 30px;
 
   @media (min-width: $tablet-breakpoint) {
-    padding: 16px 45px 15px;
+    width: 292px;
+    padding-bottom: 16px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     @include font-style(21px, 18px, 700);
-    padding: 16px 28px 16px 29px;
+    margin-top: 28px;
+    padding-top: 16px;
   }
 
   &:hover {

@@ -1,33 +1,38 @@
 .copyright {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-width: 130px;
+  width: min-content;
+  margin: 0 auto;
 
   @media (min-width: $tablet-breakpoint) {
-    padding-bottom: 4px;
+    margin: 0;
+    padding-top: 7px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    width: 153px;
-    padding-bottom: 14px;
+    padding-top: 4px;
   }
 }
 
 .copyright__text {
   @include font-style($line: 18px);
   @include color-style;
+  margin-right: 15px;
 
   @media (min-width: $desktop-breakpoint) {
     @include font-style(18px, 18px, 400);
+    margin-right: 13px;
   }
 }
 
 .copyright__link {
-  margin-top: 3px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-breakpoint) {
-    margin-top: 6px;
+    margin-top: 7px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 12px;
   }
 
   path {

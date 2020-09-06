@@ -52,24 +52,24 @@
           <p class="index-intro__header">Взгляните на жизнь<br> иначе!</p>
           <div class="index-intro__app-store app-store">
             <h2 class="visually-hidden">Скачайте наше приложение</h2>
-            <a class="app-store__download-link" href="#">Скачать приложение</a>
+            <a class="app-store__download-link" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
             <ul class="app-store__list">
-              <li class="app-store__item">
-                <a class="app-store__link app-store__link--apple" href="#" aria-label="Логотип Apple">
+              <li class="app-store__item app-store__item--apple">
+                <a class="app-store__link" href="https://www.apple.com/ios/app-store/" aria-label="Логотип Apple">
                   <svg width="46" height="56" viewBox="0 0 46 56" fill="#ffffff">
                     <path d="M38.593 30.15c.081 8.59 7.535 11.447 7.617 11.483-.062.202-1.19 4.073-3.927 8.072-2.365 3.457-4.82 6.901-8.688 6.973-3.799.07-5.021-2.253-9.365-2.253s-5.702 2.182-9.298 2.32c-3.733.142-6.576-3.739-8.961-7.184-4.875-7.046-8.598-19.91-3.597-28.593 2.484-4.313 6.925-7.043 11.743-7.114 3.666-.069 7.126 2.466 9.366 2.466 2.241 0 6.444-3.049 10.865-2.601 1.85.077 7.044.747 10.38 5.629-.269.171-6.197 3.623-6.135 10.802m-7.14-21.088c1.982-2.4 3.316-5.739 2.952-9.062-2.857.115-6.312 1.904-8.36 4.302-1.837 2.123-3.445 5.521-3.011 8.778 3.184.246 6.436-1.619 8.419-4.018"/>
                   </svg>
                 </a>
               </li>
               <li class="app-store__item">
-                <a class="app-store__link app-store__link--android" href="#" aria-label="Логотип Android">
+                <a class="app-store__link app-store" href="https://play.google.com/store" aria-label="Логотип Android">
                   <svg width="42" height="47" viewBox="0 0 42 47" fill="#A4C639">
                     <path d="M34.144 14.009H7.945c-.009.11-.018.22-.018.333v18.755c0 1.926 1.457 3.49 3.316 3.627v7.43a2.884 2.884 0 105.77 0v-7.42h8.058v7.42a2.884 2.884 0 002.885 2.885 2.884 2.884 0 002.886-2.885V36.72c1.858-.137 3.315-1.701 3.315-3.627V14.342c0-.113-.004-.223-.013-.333zM2.886 15.679a2.886 2.886 0 012.886 2.885v12.378a2.885 2.885 0 11-5.772 0V18.564a2.885 2.885 0 012.886-2.885zM39.198 15.679a2.885 2.885 0 012.886 2.885v12.378a2.885 2.885 0 01-2.886 2.886 2.884 2.884 0 01-2.885-2.886V18.564a2.884 2.884 0 012.885-2.885zM8.03 11.967h26.026c-.039-2.783-1.234-5.322-3.187-7.275L33.315.457a.304.304 0 00-.527-.304L30.416 4.26c-2.052-1.853-6.249-3.4-9.374-3.4-3.016 0-7.322 1.547-9.374 3.4L9.296.152a.304.304 0 00-.526.304l2.445 4.235c-1.95 1.954-3.147 4.493-3.185 7.276zm17.293-5.163c-.002-.805.664-1.46 1.488-1.462.826-.002 1.494.648 1.498 1.454v.008c.002.805-.664 1.46-1.49 1.462-.823.002-1.493-.649-1.496-1.454v-.008zm-11.143 0c-.001-.805.665-1.46 1.489-1.462.824-.002 1.494.648 1.497 1.454v.008c.002.805-.664 1.46-1.488 1.462-.825.002-1.495-.649-1.498-1.454v-.008z"/>
                   </svg>
                 </a>
               </li>
-              <li class="app-store__item">
-                <a class="app-store__link app-store__link--windows" href="#" aria-label="Логотип Windows">
+              <li class="app-store__item app-store__item--windows">
+                <a class="app-store__link app-store" href="https://www.microsoft.com/ru-ru/store/apps/windows" aria-label="Логотип Windows">
                   <svg width="43" height="41" viewBox="0 0 43 41">
                     <path fill="#F05423" d="M20.874 19.953H0V0h20.874v19.953z"/>
                     <path fill="#84C441" d="M43.922 19.953H23.049V0h20.873v19.953z"/>
@@ -119,9 +119,12 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews container">
         <h2 class="visually-hidden">Отзывы клиентов</h2>
-        <ul class="reviews__list container">
+        <svg class="reviews__quotes-pic" fill="#EFEFEF" width="76" height="63">
+          <use xlink:href="img/sprite.svg#icon-quotes"></use>
+        </svg>
+        <ul class="reviews__list">
           <li class="reviews__item reviews__item--current">
             <p class="reviews__author reviews__author--top">Николай Петров</p>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -141,23 +144,36 @@
             <p class="reviews__author-info">35 лет, пекарь</p>
           </li>
         </ul>
-        <div class="review__toggles">
-          <button class="review__toggle-button review__toggle-button--current" type="button" aria-label="Кнопка отображает первый отзыв в слайдере"></button>
-          <button class="review__toggle-button" type="button" aria-label="Кнопка отображает второй отзыв в слайдере"></button>
-          <button class="review__toggle-button" type="button" aria-label="Кнопка отображает третий отзыв в слайдере"></button>
+        <div class="reviews__toggles">
+          <button class="reviews__toggle-button reviews__toggle-button--current" type="button" aria-label="Посмотреть первый отзыв в слайдере"></button>
+          <button class="reviews__toggle-button" type="button" aria-label="Посмотреть второй отзыв в слайдере"></button>
+          <button class="reviews__toggle-button" type="button" aria-label="Посмотреть третий отзыв в слайдере"></button>
+          <button class="reviews__slider-button reviews__slider-button--back" type="button" aria-label="Посмотреть предыдущий отзыв в слайдере">
+            <svg fill="#283645" opacity="0.3" width="22" height="41">
+              <use xlink:href="img/sprite.svg#icon-review-arrow-left"></use>
+            </svg>
+          </button>
+          <button class="reviews__slider-button reviews__slider-button--forward" type="button" aria-label="Посмотреть следующий отзыв в слайдере">
+            <svg fill="#283645" opacity="0.3" width="22" height="41">
+              <use xlink:href="img/sprite.svg#icon-review-arrow-right"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="price">
+        <svg class="price__bg" width="1200" height="94" viewBox="0 0 1200 94">
+          <polygon fill="white" points="1200,0 0,0 0,94"/>
+        </svg>
         <div class="price__table table">
           <ul class="table__col table__col--title">
-            <li class="table__col-cell table__col-cell--title">
-              <p class="table__feature table__feature--title">Розовый фильтр</p>
+            <li class="table__col-cell">
+              <p class="table__feature">Розовый фильтр</p>
             </li>
-            <li class="table__col-cell table__col-cell--title">
-              <p class="table__feature table__feature--title">Смайлики</p>
+            <li class="table__col-cell">
+              <p class="table__feature">Смайлики</p>
             </li>
-            <li class="table__col-cell table__col-cell--title">
-              <p class="table__feature table__feature--title">Комментарии</p>
+            <li class="table__col-cell table__col-cell--bottom">
+              <p class="table__feature">Комментарии</p>
             </li>
           </ul>
           <ul class="table__col table__col--basic">
@@ -165,11 +181,11 @@
               <p class="table__col-title">База</p>
               <p class="table__col-price">1,99 USD</p>
             </li>
-            <li class="table__col-cell">
+            <li class="table__col-cell table__col-cell--pink">
               <p class="table__feature">
                 <span class="table__feature-name">Розовый фильтр</span>
                 <span class="visually-hidden"> - есть</span>
-                <svg class="table__icon" fill="#3DC644" width="31" height="21">
+                <svg class="table__icon table__icon--yes" fill="#3DC644" width="31" height="21">
                   <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </p>
@@ -178,31 +194,32 @@
               <p class="table__feature">
                 <span class="table__feature-name">Смайлики</span>
                 <span class="visually-hidden"> - нет</span>
-                <svg class="table__icon" fill="#F25B26" width="31" height="21">
+                <svg class="table__icon table__icon--no" fill="#F25B26" width="27" height="27">
                   <use xlink:href="img/sprite.svg#icon-no"></use>
                 </svg>
               </p>
             </li>
-            <li class="table__col-cell">
+            <li class="table__col-cell table__col-cell--bottom">
               <p class="table__feature">
                 <span class="table__feature-name">Комментарии</span>
                 <span class="visually-hidden"> - нет</span>
-                <svg class="table__icon" fill="#F25B26" width="31" height="21">
+                <svg class="table__icon table__icon--no" fill="#F25B26" width="27" height="27">
                   <use xlink:href="img/sprite.svg#icon-no"></use>
                 </svg>
               </p>
             </li>
           </ul>
-          <ul class="table__col table__col--standard">
+          <ul class="table__col table__col--standard table__col--current">
             <li class="table__col-header">
+              <p class="table__col-banner">Хит</p>
               <p class="table__col-title">Стандарт</p>
               <p class="table__col-price">3,99 USD</p>
             </li>
-            <li class="table__col-cell">
+            <li class="table__col-cell table__col-cell--pink">
               <p class="table__feature">
                 <span class="table__feature-name">Розовый фильтр</span>
                 <span class="visually-hidden"> - есть</span>
-                <svg class="table__icon" fill="#3DC644" width="31" height="21">
+                <svg class="table__icon table__icon--yes" fill="#3DC644" width="31" height="21">
                   <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </p>
@@ -211,16 +228,16 @@
               <p class="table__feature">
                 <span class="table__feature-name">Смайлики</span>
                 <span class="visually-hidden"> - есть</span>
-                <svg class="table__icon" fill="#3DC644" width="31" height="21">
+                <svg class="table__icon table__icon--yes" fill="#3DC644" width="31" height="21">
                   <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </p>
             </li>
-            <li class="table__col-cell">
+            <li class="table__col-cell table__col-cell--bottom">
               <p class="table__feature">
                 <span class="table__feature-name">Комментарии</span>
                 <span class="visually-hidden"> - нет</span>
-                <svg class="table__icon" fill="#F25B26" width="31" height="21">
+                <svg class="table__icon table__icon--no" fill="#F25B26" width="27" height="27">
                   <use xlink:href="img/sprite.svg#icon-no"></use>
                 </svg>
               </p>
@@ -231,11 +248,11 @@
               <p class="table__col-title">Анлим</p>
               <p class="table__col-price">9,99 USD</p>
             </li>
-            <li class="table__col-cell">
+            <li class="table__col-cell table__col-cell--pink">
               <p class="table__feature">
                 <span class="table__feature-name">Розовый фильтр</span>
                 <span class="visually-hidden"> - есть</span>
-                <svg class="table__icon" fill="#3DC644" width="31" height="21">
+                <svg class="table__icon table__icon--yes" fill="#3DC644" width="31" height="21">
                   <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </p>
@@ -244,16 +261,16 @@
               <p class="table__feature">
                 <span class="table__feature-name">Смайлики</span>
                 <span class="visually-hidden"> - есть</span>
-                <svg class="table__icon" fill="#3DC644" width="31" height="21">
+                <svg class="table__icon table__icon--yes" fill="#3DC644" width="31" height="21">
                   <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </p>
             </li>
-            <li class="table__col-cell">
+            <li class="table__col-cell table__col-cell--bottom">
               <p class="table__feature">
                 <span class="table__feature-name">Комментарии</span>
                 <span class="visually-hidden"> - есть</span>
-                <svg class="table__icon" fill="#3DC644" width="31" height="21">
+                <svg class="table__icon table__icon--yes" fill="#3DC644" width="31" height="21">
                   <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </p>
@@ -279,11 +296,14 @@
             <a class="contacts__method contacts__method--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item contacts__item--visit">
-            <p class="contacts__heading">Приезжайте в гости:</p>
-            <p class="contacts__method">ул. Большая Конюшенная, 19/8</p>
+            <p class="contacts__heading contacts__heading--visit">Приезжайте в гости:</p>
+            <p class="contacts__method contacts__method--visit">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
         <div class="contacts__map">
+          <svg class="contacts__bg" width="595" height="100%" viewBox="0 0 595 61">
+            <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
+          </svg>
           <h2 class="visually-hidden">Карта проезда</h2>
           <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6138220012976!2d30.320661316364117!3d59.93854998187616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE4LjgiTiAzMMKwMTknMjIuMyJF!5e0!3m2!1sen!2sru!4v1598456238556!5m2!1sen!2sru" width="320" height="200" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
@@ -320,7 +340,7 @@
               </svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item social__item--youtube">
             <a href="#" class="social__link">
               <svg class="social__svg social__svg--youtube" width="14" height="13" fill="#D22856">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>

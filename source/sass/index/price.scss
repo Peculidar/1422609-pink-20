@@ -1,8 +1,73 @@
 .price {
-  background-color: $basic-gray;
-  overflow: hidden;
+  position: relative;
+  overflow-x: hidden;
+  background-color: $theme-grey;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 103px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 40px;
+    padding-top: 152px;
+    padding-bottom: 96px;
+  }
+}
+
+.price__bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
 }
 
 .price__toggle {
+  margin-bottom: 38px;
   text-align: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
+
+.price__toggle-button {
+  position: relative;
+  width: 20px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: rgba($theme-black, 0.3);
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  &:hover::before {
+    background-color: rgba($theme-black, 0.6);
+  }
+
+  &:active::before {
+    background-color: rgba($theme-black, 0.1);
+  }
+
+  &--current {
+    &::before {
+      background-color: transparent;
+      border: 3px solid $theme-black;
+    }
+
+    &:hover::before,
+    &:active::before {
+      background-color: transparent;
+    }
+  }
 }

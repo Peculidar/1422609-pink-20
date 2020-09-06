@@ -38,14 +38,15 @@
 
   @media (min-width: $desktop-breakpoint) {
     width: 480px;
+    margin-top: 4px;
   }
 }
 
 .advantages__wrapper {
   @include color-style($bgc: $theme-grey);
-  margin-top: 36px;
-  padding-top: 60px;
   position: relative;
+  margin-top: 35px;
+  padding-top: 60px;
 
   @media (min-width: $tablet-breakpoint) {
     padding-top: 36px;
@@ -53,7 +54,7 @@
   }
 
   @media (min-width: $desktop-breakpoint) {
-    margin-top: 55px;
+    margin-top: 53px;
     padding-top: 10px;
   }
 }
@@ -72,12 +73,7 @@
   @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
     text-align: left;
     width: 307px;
-
-    padding: {
-      left: 307px;
-      right: 0;
-      top: 21px;
-    }
+    padding: 21px 0 0 307px;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -91,7 +87,7 @@
 }
 
 .advantages__item {
-  margin-bottom: 29px;
+  margin-bottom: 31px;
 
   br {
     display: none;
@@ -162,6 +158,7 @@
 
   &--pink-smiley {
     position: relative;
+    margin-bottom: 0;
     padding-bottom: 304px;
 
     &::after {
@@ -175,7 +172,7 @@
       background: {
         image: url("../img/iphone-screen-mobile@1x.png");
         repeat: no-repeat;
-        position: center top;
+        position: center top 4px;
       }
 
       @media (min-resolution: 2dppx) {
@@ -188,8 +185,8 @@
       padding-bottom: 27px;
 
       &::after {
-        height: 480px;
         left: -330px;
+        height: 480px;
         bottom: 0;
         background-image: url("../img/iphone-screen-3-tablet@1x.png");
         background-position: center;
@@ -207,8 +204,8 @@
       }
 
       &::after {
-        margin-left: 0;
         left: 7px;
+        margin-left: 0;
         height: 303px;
         background-image: url("../img/iphone-screen-3-desktop@1x.png");
 
@@ -236,6 +233,7 @@
 
 .advantages__description {
   @include font-style;
+  margin-top: 12px;
 
   @media (min-width: $tablet-breakpoint) {
     margin-top: 12px;
@@ -261,10 +259,13 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 60px;
+    margin-top: 35px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     padding-bottom: 111px;
+    margin-top: 0;
+    padding-top: 27px;
   }
 }
 
@@ -280,11 +281,11 @@
   &::before {
     content: "";
     position: absolute;
+    left: 18px;
+    top: 56px;
     z-index: 100;
     width: 170px;
     height: 170px;
-    left: 18px;
-    top: 56px;
     background-color: transparent;
     border: 16px solid $theme-pink;
     border-radius: 50%;
@@ -293,20 +294,21 @@
   &::after {
     content: "";
     position: absolute;
-    width: 238px;
-    height: 276px;
     left: 0;
     top: 0;
+    width: 238px;
+    height: 276px;
     background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    font-size: 120px;
     padding-top: 88px;
     margin-left: 31px;
     margin-top: 2px;
+    font-size: 120px;
+
 
     &::before {
       width: 216px;
@@ -317,10 +319,10 @@
     }
 
     &::after {
-      width: 298px;
-      height: 345px;
       left: -30px;
       top: -24px;
+      width: 298px;
+      height: 345px;
     }
   }
 }
@@ -366,11 +368,10 @@
 .advantages__fast-link {
   @include font-style;
   @include color-style($color: $theme-pink);
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
     color: $theme-black;
-    text-decoration: underline;
   }
 
   &:active {
