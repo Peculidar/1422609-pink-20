@@ -46,10 +46,10 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="banner-intro">
+      <section class="banner-intro banner-intro--photo">
         <h1 class="banner-intro__header container">Фотографии<br> пользователей</h1>
         <div class="banner-intro__text">
-          <p class="banner-intro__paragraph">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="banner-intro__paragraph">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
         </div>
       </section>
       <section class="user-photos">
@@ -91,7 +91,7 @@
                 <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                <img class="user-photos__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография видеосъемки рекламы белого автомобиля">
+                <img class="user-photos__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография видеосъемки рекламы автомобиля">
               </picture>
             </a>
             <div class="user-photos__post post">
@@ -99,7 +99,7 @@
                 <span class="post__author">Левон</span>
                 <span class="post__time">(5 часов назад)</span>
               </p>
-              <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="post__text post__text--car">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <button type="submit" class="post__like-button">
                 <svg class="post__heart-icon" width="13" height="12" fill="#D22856">
                   <use xlink:href="img/sprite.svg#icon-heart"></use>
@@ -124,7 +124,7 @@
                 <span class="post__author">Антон</span>
                 <span class="post__time">(12 часов назад)</span>
               </p>
-              <p class="post__text">Соседи будут рады!</p>
+              <p class="post__text post__text--drums">Соседи будут рады!</p>
               <button type="submit" class="post__like-button">
                 <svg class="post__heart-icon" width="13" height="12" fill="#D22856">
                   <use xlink:href="img/sprite.svg#icon-heart"></use>
@@ -149,7 +149,7 @@
                 <span class="post__author">Борис</span>
                 <span class="post__time">(20 часов назад)</span>
               </p>
-              <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="post__text post__text--window">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <button type="submit" class="post__like-button">
                 <svg class="post__heart-icon" width="13" height="12" fill="#D22856">
                   <use xlink:href="img/sprite.svg#icon-heart"></use>
@@ -174,7 +174,7 @@
                 <span class="post__author">Сергей</span>
                 <span class="post__time">(25 часов назад)</span>
               </p>
-              <p class="post__text">Самая кубанская в мире!</p>
+              <p class="post__text post__text--fair">Самая кубанская в мире!</p>
               <button type="submit" class="post__like-button">
                 <svg class="post__heart-icon" width="13" height="12" fill="#D22856">
                   <use xlink:href="img/sprite.svg#icon-heart"></use>
@@ -199,7 +199,7 @@
                 <span class="post__author">Максим</span>
                 <span class="post__time">(40 часов назад)</span>
               </p>
-              <p class="post__text">Где снег-то?</p>
+              <p class="post__text post__text--pov">Где снег-то?</p>
               <button type="submit" class="post__like-button">
                 <svg class="post__heart-icon" width="13" height="12" fill="#D22856">
                   <use xlink:href="img/sprite.svg#icon-heart"></use>
@@ -224,7 +224,7 @@
                 <span class="post__author">Надежда</span>
                 <span class="post__time">(45 часов назад)</span>
               </p>
-              <p class="post__text">Всем GM и взаимные лайки!</p>
+              <p class="post__text post__text--wing">Всем GM и взаимные лайки!</p>
               <button type="submit" class="post__like-button">
                 <svg class="post__heart-icon" width="13" height="12" fill="#D22856">
                   <use xlink:href="img/sprite.svg#icon-heart"></use>
@@ -239,34 +239,45 @@
         <h2 class="visually-hidden">Загрузите вашу фотографию</h2>
         <p class="upload__intro container">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         <div class="upload__form-wrapper">
-          <form class="upload__form container" action="https://echo.htmlacademy.ru" method="get">
+          <form class="upload__form" action="https://echo.htmlacademy.ru" method="get">
             <div class="upload__submit-photo">
-              <img class="upload__img" src="img/photo-road-mobile@1x.jpg" alt="Превью вашей фотографии">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="upload__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Превью вашей фотографии">
+              </picture>
             </div>
             <div class="upload__controls controls">
-              <ul class="controls__list">
-                <li class="controls__item">
+              <ul class="controls__list container">
+                <li class="controls__item controls__item--crop">
                   <button class="controls__filter controls__filter--crop" type="button" aria-label="Обрезать фотографию">
                     <svg class="controls__icon controls__icon--current controls__icon--crop" width="48" height="48" viewBox="0 0 48 48" fill="#283645" opacity="0.3">
                       <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                     </svg>
                   </button>
                   <div class="controls__range">
-                    <div class="controls__range-bar controls__range-bar--current"></div>
+                    <div class="controls__range-bar controls__range-bar--current">
+                      <button class="controls__range-button controls__range-button--crop" type="button" aria-label="Кнопка для обрезки фотографии"></button>
+                    </div>
                   </div>
                 </li>
-                <li class="controls__item">
+                <li class="controls__item controls__item--color">
                   <button class="controls__filter controls__filter--color" type="button" aria-label="Залить фотографию фильтром Pink">
-                    <svg class="controls__icon controls__icon--color" width="48" height="48" viewBox="0 0 48 48" fill="#283645" opacity="0.3">
+                    <svg class="controls__icon" width="48" height="48" viewBox="0 0 48 48" fill="#283645" opacity="0.3">
                       <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
                       <rect y="40" width="48" height="3"/>
                     </svg>
                   </button>
                   <div class="controls__range">
-                    <div class="controls__range-bar"></div>
+                    <div class="controls__range-bar">
+                      <button class="controls__range-button controls__range-button--color" type="button" aria-label="Кнопка для обрезки фотографии"></button>
+                    </div>
                   </div>
                 </li>
-                <li class="controls__item">
+                <li class="controls__item controls__item--contrast">
                   <button class="controls__filter controls__filter--contrast" type="button" aria-label="Редактировать насыщенность фотографии">
                     <svg class="controls__icon controls__icon--contrast" width="31.92" height="31.92" viewBox="-35.422 -7.96 31.92 31.92" fill="#283645" opacity="0.3">
                       <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
@@ -274,7 +285,9 @@
                     </svg>
                   </button>
                   <div class="controls__range">
-                    <div class="controls__range-bar"></div>
+                    <div class="controls__range-bar">
+                      <button class="controls__range-button controls__range-button--contrast" type="button" aria-label="Кнопка для обрезки фотографии"></button>
+                    </div>
                   </div>
                 </li>
               </ul>

@@ -94,3 +94,37 @@
     }
   }
 }
+
+.banner-intro--photo {
+  .banner-intro__header {
+    padding-bottom: 33px;
+
+    @media (min-width: $tablet-breakpoint) {
+      padding-bottom: 83px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      padding-bottom: 43px;
+    }
+  }
+
+  .banner-intro__paragraph {
+    padding-bottom: 50px;
+
+    @media (min-width: $tablet-breakpoint) {
+      padding-bottom: 77px;
+
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      padding-bottom: 89px;
+
+      br {
+        display: inline;
+      }
+    }
+  }
+}
