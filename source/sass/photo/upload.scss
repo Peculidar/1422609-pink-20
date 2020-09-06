@@ -8,9 +8,9 @@
 
 .upload__intro {
   @include font-style(14px, 30px, 400);
+  margin: 20px auto 42px;
   color: $theme-black;
   text-align: center;
-  margin: 20px auto 42px;
 
   @media (min-width: $tablet-breakpoint) {
     font-size: 18px;
@@ -23,9 +23,9 @@
 }
 
 .upload__submit-photo {
+  margin: 0 auto;
   background-color: $theme-grey;
   text-align: center;
-  margin: 0 auto;
 
   @media (min-width: $tablet-breakpoint) {
     margin-top: 57px;
@@ -56,9 +56,9 @@
 
 .upload__form {
   @media (min-width: $tablet-breakpoint) {
+    display: flex;
     width: $tablet-width;
     margin: 0 auto;
-    display: flex;
   }
 
   @media (min-width: $desktop-breakpoint) {

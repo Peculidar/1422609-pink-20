@@ -1,9 +1,9 @@
 .post {
   @include color-style($bgc: $theme-grey);
-  overflow-x: hidden;
   padding: 18px 10px 18px 17px;
   margin-top: 0;
   margin-bottom: 20px;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-breakpoint) {
     display: grid;

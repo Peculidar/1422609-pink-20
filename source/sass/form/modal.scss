@@ -10,8 +10,8 @@
 .modal__window {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
   z-index: 1000;
+  transform: translateX(-50%);
   width: 460px;
   margin: 0 auto;
   text-align: center;
@@ -99,10 +99,10 @@
 
 .modal__text {
   @include font-style(18px, 24px, 400);
-  color: $theme-black;
   width: 320px;
   margin: 0 auto 23px;
   padding-top: 0;
+  color: $theme-black;
 
   @media (min-width: $desktop-breakpoint) {
     width: 378px;

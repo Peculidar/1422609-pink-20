@@ -68,8 +68,8 @@
 
   &--fill {
     display: block;
-    height: 56px;
     width: 254px;
+    height: 56px;
     padding-left: 20px;
     padding-bottom: 2px;
     font-size: 18px;
@@ -88,11 +88,11 @@
 
 .form__legend {
   @include font-style(14px, 18px, 400);
+  width: 218px;
+  margin: 0 auto;
   color: $theme-pink;
   text-transform: uppercase;
   text-align: center;
-  width: 218px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-breakpoint) {
     background-color: $basic-white;
@@ -118,11 +118,11 @@
   &--fill {
     @include font-style(14px, 18px, 400);
     display: block;
+    margin: 0;
+    padding: 0;
     color: $theme-pink;
     text-transform: uppercase;
     text-align: left;
-    margin: 0;
-    padding: 0;
   }
 }
 
@@ -147,13 +147,10 @@
   }
 
   .form__label {
-    padding-left: 23px;
-    padding-bottom: 11px;
+    padding: 0 0 11px 23px;
 
     @media (min-width: $tablet-breakpoint) {
-      padding-left: 0;
-      padding-bottom: 0;
-      padding-top: 3px;
+      padding: 3px 0 0 0;
     }
 
     @media (min-width: $desktop-breakpoint) {
@@ -177,9 +174,9 @@
 
   .form__input {
     @media (min-width: $tablet-breakpoint) {
+      width: 100%;
       margin-left: 18px;
       padding-left: 20px;
-      width: 100%;
     }
 
     @media (min-width: $desktop-breakpoint) {
@@ -193,10 +190,10 @@
   background-color: $theme-grey;
 
   @media (min-width: $tablet-breakpoint) {
-    background-color: $basic-white;
     width: $tablet-width - 4px;
     margin: 66px auto 0;
     padding: 0;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -209,8 +206,8 @@
     padding-top: 34px;
 
     @media (min-width: $tablet-breakpoint) {
-      padding: 0 31px 0;
       width: 374px;
+      padding: 0 31px 0;
       margin-top: -9px;
     }
   }
@@ -291,10 +288,10 @@
     &::before {
       content: "";
       position: absolute;
-      width: 35px;
-      height: 35px;
       left: 0;
       top: 8px;
+      width: 35px;
+      height: 35px;
       background-color: $basic-white;
       border: 2px solid $basic-gray;
       border-radius: 1px;
@@ -343,12 +340,12 @@
 .form__input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
-  display: inline-block;
-  width: 22px;
-  height: 16px;
-  background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.7001 0.284331C21.5105 0.102082 21.2557 0 20.9903 0C20.7249 0 20.47 0.102082 20.2805 0.284331L6.70324 13.6028L1.73472 8.72901C1.64045 8.63578 1.52831 8.56178 1.40474 8.51128C1.28118 8.46079 1.14865 8.43479 1.01479 8.43479C0.88093 8.43479 0.748397 8.46079 0.624833 8.51128C0.50127 8.56178 0.389122 8.63578 0.294859 8.72901C0.106004 8.91537 0 9.16747 0 9.43024C0 9.69302 0.106004 9.94512 0.294859 10.1315L5.98331 15.7115C6.07806 15.8037 6.19042 15.8767 6.31396 15.9262C6.4375 15.9756 6.56979 16.0007 6.70324 16C6.96925 15.9989 7.22416 15.8953 7.41303 15.7115L21.7001 1.69675C21.7951 1.60428 21.8705 1.49427 21.922 1.37306C21.9735 1.25186 22 1.12185 22 0.990541C22 0.859234 21.9735 0.729226 21.922 0.608017C21.8705 0.486809 21.7951 0.376798 21.7001 0.284331Z' fill='%23D22856'/%3E%3C/svg%3E%0A");
   top: 19px;
   left: 9px;
+  width: 22px;
+  height: 16px;
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.7001 0.284331C21.5105 0.102082 21.2557 0 20.9903 0C20.7249 0 20.47 0.102082 20.2805 0.284331L6.70324 13.6028L1.73472 8.72901C1.64045 8.63578 1.52831 8.56178 1.40474 8.51128C1.28118 8.46079 1.14865 8.43479 1.01479 8.43479C0.88093 8.43479 0.748397 8.46079 0.624833 8.51128C0.50127 8.56178 0.389122 8.63578 0.294859 8.72901C0.106004 8.91537 0 9.16747 0 9.43024C0 9.69302 0.106004 9.94512 0.294859 10.1315L5.98331 15.7115C6.07806 15.8037 6.19042 15.8767 6.31396 15.9262C6.4375 15.9756 6.56979 16.0007 6.70324 16C6.96925 15.9989 7.22416 15.8953 7.41303 15.7115L21.7001 1.69675C21.7951 1.60428 21.8705 1.49427 21.922 1.37306C21.9735 1.25186 22 1.12185 22 0.990541C22 0.859234 21.9735 0.729226 21.922 0.608017C21.8705 0.486809 21.7951 0.376798 21.7001 0.284331Z' fill='%23D22856'/%3E%3C/svg%3E%0A");
 
   @media (min-width: $tablet-breakpoint) {
     top: 22px;
@@ -359,8 +356,8 @@
   margin-top: 38px;
 
   @media (min-width: $tablet-breakpoint) {
-    padding: 0 20px;
     width: $tablet-width - 44px;
+    padding: 0 20px;
     margin-top: 66px;
   }
 
@@ -374,15 +371,15 @@
 
     @media (min-width: $tablet-breakpoint) {
       display: block;
+      width: 198px;
       margin-top: -9px;
       padding: 0 30px;
-      width: 198px;
     }
   }
 
   .form__list {
-    padding-bottom: 42px;
     width: 100%;
+    padding-bottom: 42px;
 
     @media (min-width: $tablet-breakpoint) {
       width: 500px;
@@ -424,11 +421,11 @@
         &::before {
           content: "";
           position: absolute;
+          right: 2px;
+          top: 2px;
           width: 59px;
           height: 59px;
           background-image: url("../img/icon-phone.svg");
-          right: 2px;
-          top: 2px;
         }
       }
     }
@@ -440,11 +437,11 @@
         &::before {
           content: "";
           position: absolute;
+          right: 2px;
+          top: 2px;
           width: 59px;
           height: 59px;
           background-image: url("../img/icon-mail.svg");
-          right: 2px;
-          top: 2px;
         }
       }
     }
@@ -475,10 +472,10 @@
   background-color: $theme-grey;
 
   @media (min-width: $tablet-breakpoint) {
-    background-color: $basic-white;
     margin: 57px auto 0;
     padding: 0;
     width: $tablet-width - 4px;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -541,10 +538,10 @@
     &::before {
       content: "";
       position: absolute;
-      width: 37px;
-      height: 37px;
       top: 12px;
       left: 0;
+      width: 37px;
+      height: 37px;
       background-color: $basic-white;
       border: 2px solid $basic-gray;
       border-radius: 50%;
@@ -572,11 +569,11 @@
 .form__input[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
+  top: 25px;
+  left: 13px;
   display: inline-block;
   width: 15px;
   height: 15px;
-  top: 25px;
-  left: 13px;
   background-color: $theme-pink;
   border-radius: 50%;
 
@@ -637,16 +634,16 @@
 
     @media (min-width: $tablet-breakpoint) {
       margin-top: 36px;
+      padding-top: 14px;
       width: 456px;
       height: 155px;
-      padding-top: 14px;
     }
 
     @media (min-width: $desktop-breakpoint) {
-      width: 776px;
-      height: 91px;
       margin-top: 33px;
       padding-top: 13px;
+      width: 776px;
+      height: 91px;
     }
 
     &::placeholder {
@@ -681,16 +678,16 @@
 .form__button {
   @include font-style(18px, 30px, 700);
   @include color-style($basic-white, $theme-green);
-  height: 63px;
   width: $mobile-width;
+  height: 63px;
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
 
   @media (min-width: $tablet-breakpoint) {
     padding: 0;
-    line-height: 0;
     width: 300px;
+    line-height: 0;
   }
 
   &:hover {

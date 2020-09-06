@@ -9,9 +9,9 @@
   margin: 30px auto 63px;
 
   @media (min-width: $tablet-breakpoint) {
+    justify-content: flex-end;
     width: 320px;
     margin: 0;
-    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -213,20 +213,20 @@
 
     &--current {
       @media (max-width: 559px) {
-        display: block;
         position: absolute;
         bottom: -29px;
         left: 20px;
+        display: block;
       }
     }
   }
 
   .controls__range-button {
     position: absolute;
+    top: -6px;
     display: block;
     background-color: transparent;
     border: none;
-    top: -6px;
     outline: none;
 
     &--crop {
@@ -282,8 +282,8 @@
 
 .controls__button {
   @include font-style(18px, 18px, 700);
-  margin-bottom: 12px;
   width: $mobile-width;
+  margin-bottom: 12px;
   margin-left: 50%;
   transform: translateX(-50%);
   padding: 15px 0 16px;
@@ -303,6 +303,7 @@
 
   &--post {
     color: $theme-pink;
+    background-color: transparent;
 
     @media (min-width: $tablet-breakpoint) {
       margin-top: 29px;
