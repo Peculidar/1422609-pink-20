@@ -708,16 +708,14 @@
 
 .form__conditions {
   @include font-style(14px, 30px, 400);
-  position: relative;
   color: $theme-black;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 34px;
-  padding-left: 11px;
+  margin-top: 14px;
   padding-bottom: 16px;
 
   @media (min-width: $tablet-breakpoint) {
-    margin-top: 17px;
+    margin-top: 0;
     padding-bottom: 51px;
   }
 
@@ -725,20 +723,18 @@
     padding-bottom: 0;
   }
 
-  sup {
-    position: absolute;
+  .form__conditions-sup {
     display: inline-block;
-    font-size: 16px;
-    top: 15px;
-    left: 49px;
     color: $theme-pink;
+    padding-right: 2px;
+    padding-top: 20px;
 
     @media (min-width: $tablet-breakpoint) {
-      left: 0;
+      padding-top: 17px;
     }
   }
 
-  span {
+  .form__conditions-span {
     display: none;
 
     @media (min-width: $desktop-breakpoint) {

@@ -1,12 +1,21 @@
 .modal {
   display: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: block;
+  }
 }
 
 
 .modal__window {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
   width: 460px;
   margin: 0 auto;
   text-align: center;
+  background-color: $basic-white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 5px;
 
@@ -15,10 +24,71 @@
   }
 }
 
+.modal__window--error {
+  top: 1164px;
+  padding-bottom: 5px;
+
+  @media (min-width: $desktop-breakpoint) {
+    top: 817px;
+    padding-bottom: 0;
+  }
+
+  .modal__header {
+    padding-top: 11px;
+    margin-bottom: 22px;
+  }
+
+  .modal__text {
+    @media (min-width: $desktop-breakpoint) {
+      margin-bottom: 63px;
+    }
+  }
+
+  .modal__button {
+    margin-top: 10px;
+
+    @media (min-width: $desktop-breakpoint) {
+      margin-top: 50px;
+    }
+  }
+}
+
+.modal__window--sent {
+  top: 1639px;
+
+  @media (min-width: $desktop-breakpoint) {
+    top: 1275px;
+  }
+
+  .modal__header {
+    padding-top: 10px;
+    margin-bottom: 22px;
+
+    @media (min-width: $desktop-breakpoint) {
+      padding-top: 11px;
+    }
+  }
+
+  .modal__text {
+    margin-top: 0;
+    padding-bottom: 7px;
+
+    @media (min-width: $desktop-breakpoint) {
+      padding-bottom: 16px;
+    }
+  }
+
+  .modal__button {
+    margin-top: 50px;
+
+    @media (min-width: $desktop-breakpoint) {
+      width: 460px;
+    }
+  }
+}
 
 .modal__header {
   @include font-style(30px, 40px, 700);
-  padding-top: 49px;
 
   br {
     @media (min-width: $desktop-breakpoint) {
@@ -31,7 +101,8 @@
   @include font-style(18px, 24px, 400);
   color: $theme-black;
   width: 320px;
-  margin: 0 auto 20px;
+  margin: 0 auto 23px;
+  padding-top: 0;
 
   @media (min-width: $desktop-breakpoint) {
     width: 378px;
@@ -41,9 +112,8 @@
 .modal__button {
   @include color-style($basic-white, $theme-green);
   @include font-style(18px, 30px, 700);
-  width: 296px;
-  margin-top: 52px;
-  padding: 16px 0;
+  width: 300px;
+  padding: 14px 0 15px;
   text-transform: uppercase;
   border: 2px solid $theme-green;
   border-radius: 1px;
@@ -58,12 +128,6 @@
 
   &:disabled {
     @include color-style($basic-white, $basic-gray);
-  }
-
-  &--error {
-    @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
-      margin-top: 10px;
-    }
   }
 }
 
