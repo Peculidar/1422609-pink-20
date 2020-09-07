@@ -1,9 +1,10 @@
 .upload {
-
   @media (min-width: $desktop-breakpoint) {
     padding-bottom: 29px;
   }
 }
+
+//publish
 
 .upload__intro {
   @include font-style(14px, 30px, 400);
