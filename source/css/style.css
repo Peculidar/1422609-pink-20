@@ -88,7 +88,7 @@ img {
       background-color: transparent; } }
 
 .page-header__logo {
-  height: 63px;
+  height: 62px;
   padding-top: 6px;
   margin-left: -52px; }
   @media (min-width: 660px) {
@@ -198,10 +198,15 @@ img {
   font-family: inherit;
   line-height: 32px;
   color: #ffffff;
-  background-color: #283645;
   position: relative;
   text-align: center;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15); }
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  margin-top: 1px; }
+  .main-nav__item:first-of-type {
+    border-top: 1px solid #000000; }
+    @media (min-width: desktop-breakpoint) {
+      .main-nav__item:first-of-type {
+        border-top: none; } }
   @media (min-width: 959px) {
     .main-nav__item {
       font-size: 18px;
@@ -209,6 +214,7 @@ img {
       font-family: inherit;
       line-height: 18px;
       margin-right: 79px;
+      margin-top: 0;
       background-color: transparent;
       box-shadow: none; }
       .main-nav__item:last-child {
@@ -219,7 +225,7 @@ img {
   text-decoration: none;
   display: block;
   width: 100%;
-  padding: 17px 0 15px; }
+  padding: 16px 0 15px; }
   @media (min-width: 660px) {
     .main-nav__link {
       padding: 15px 0 17px; } }
@@ -738,7 +744,7 @@ img {
   vertical-align: middle;
   margin-top: 28px;
   width: 274px;
-  padding: 15px 0 16px;
+  padding: 14px 0 17px;
   border: 3px solid #ffffff;
   border-radius: 30px; }
   @media (min-width: 660px) {
@@ -1114,7 +1120,7 @@ img {
 
 .reviews {
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
   text-align: center;
   background-color: #ffffff; }
   @media (min-width: 660px) {
@@ -1309,7 +1315,7 @@ img {
     background-color: transparent; }
 
 .table {
-  margin-top: 112px;
+  margin-top: 105px;
   margin-bottom: 36px;
   display: flex; }
   @media (max-width: 659px) {
