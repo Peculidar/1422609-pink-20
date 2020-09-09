@@ -91,6 +91,6 @@
   }
 
   &:active {
-    color: rgba($theme-pink, 0.3);
+    @include color-style (rgba($theme-pink, 0.3), $basic-white);
   }
 }
