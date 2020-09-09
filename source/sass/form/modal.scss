@@ -1,9 +1,9 @@
 .modal {
   display: none;
 
-  @media (min-width: $tablet-breakpoint) {
-    display: block;
-  }
+  // @media (min-width: $tablet-breakpoint) {
+  //   display: block;
+  // }
 }
 
 
@@ -89,11 +89,12 @@
 
 .modal__header {
   @include font-style(30px, 40px, 700);
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 
-  br {
-    @media (min-width: $desktop-breakpoint) {
-      display: none;
-    }
+  @media (min-width: $desktop-breakpoint) {
+    width: 100%;
   }
 }
 

@@ -3,21 +3,22 @@
   background: {
     color: $theme-black;
     image: url("../img/bg-back-mobile@1x.jpg");
-    size: cover;
+    size: contain;
     repeat: no-repeat;
-    position: left -102px top -45px;
+    position: center top 3px;
   }
 
   @media (min-resolution: 2dppx) {
     background: {
       image: url("../img/bg-back-mobile@2x.jpg");
       size: 320px auto;
-      position: center;
     }
   }
 
   @media (min-width: 321px) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+    background-position: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -27,7 +28,7 @@
 
   @media (min-width: $desktop-breakpoint) {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center top 11px;
+    background-position: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -82,15 +83,12 @@
   }
 }
 
-.index-intro__header {
-  @include font-style(24px, 120%, 300);
-  @include color-style($basic-white, transparent);
+.index-intro__header-wrapper {
   position: relative;
   margin-top: -69px;
   margin-bottom: 0;
-  padding-top: 95px;
-  padding-bottom: 314px;
-  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 315px;
 
   &::before {
     content: "";
@@ -118,9 +116,8 @@
 
 
   @media (min-width: $tablet-breakpoint) {
-    @include font-style(40px, 120%, 300);
     grid-column: 1 / 2;
-    padding-top: 202px;
+    padding-top: 204px;
     padding-bottom: 0;
     margin: 0 auto;
     width: 240px;
@@ -128,13 +125,27 @@
 
   @media (min-width: $desktop-breakpoint) {
     @include font-style(50px, normal, 300);
-    padding-top: 209px;
+    padding-top: 211px;
     width: 100%;
   }
+}
 
-  br {
-    @media (min-width: $tablet-breakpoint) {
-      display: none;
-    }
+.index-intro__header {
+  @include font-style(24px, 120%, 300);
+  @include color-style($basic-white, transparent);
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    @include font-style(40px, 120%, 300);
+    width: 245px;
+    margin: 0;
+    margin-left: -2px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    @include font-style(50px, normal, 300);
+    margin: 0 auto;
   }
 }

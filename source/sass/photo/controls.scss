@@ -283,21 +283,19 @@
 .controls__button {
   @include font-style(18px, 18px, 700);
   width: $mobile-width;
-  margin-bottom: 12px;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  display: block;
+  margin: 0 auto 12px;
   padding: 15px 0 16px;
   border: 3px solid $theme-pink;
   border-radius: 30px;
 
   @media (min-width: $tablet-breakpoint) {
-    transform: none;
     margin-left: 47px;
     width: 260px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    margin-left: 0;
+    margin: 0;
     width: 183px;
   }
 
@@ -312,7 +310,6 @@
     @media (min-width: $desktop-breakpoint) {
       margin-top: 28px;
       margin-left: 2px;
-      margin-right: 38px;
     }
 
     &:hover {
@@ -329,7 +326,11 @@
     border-color: rgba($basic-black, 0.1);
 
     @media (min-width: $tablet-breakpoint) {
-      margin-top: 12px;
+      margin-top: 24px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      margin-top: 28px;
     }
 
     &:hover {
@@ -359,8 +360,9 @@
 
   @media (min-width: $desktop-breakpoint) {
     width: 410px;
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 0;
     padding-top: 55px;
-    margin-bottom: 45px;
   }
 }

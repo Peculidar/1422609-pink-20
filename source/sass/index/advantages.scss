@@ -89,14 +89,6 @@
 .advantages__item {
   margin-bottom: 31px;
 
-  br {
-    display: none;
-
-    @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
-      display: inline;
-    }
-  }
-
   @media (min-width: $tablet-breakpoint) {
     @include font-style(18px, 30px, 400);
     margin-bottom: 35px;
@@ -341,13 +333,35 @@
   @include font-style(30px, 36px, 700);
   @include color-style($color: $basic-black);
   margin-bottom: 10px;
+  width: 200px;
 
   @media (min-width: $desktop-breakpoint) {
     margin-bottom: 25px;
     line-height: 30px;
+    width: 100%;
+  }
+}
 
-    br {
-      display: none;
+.advantages__span {
+  @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint - 1px) {
+    &--because {
+      padding-right: 50px;
+    }
+  }
+
+  @media (max-width: $desktop-breakpoint - 1px) {
+    &--effect {
+      padding-right: 50px;
+    }
+
+    &--effect2 {
+      padding-right: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    &--proof {
+      padding-right: 20px;
     }
   }
 }
@@ -360,7 +374,7 @@
 
   @media (min-width: $desktop-breakpoint) {
     @include font-style($size: 18px, $line: 30px);
-    width: 100%;
+    width: 534px;
     margin-bottom: 31px;
   }
 }
@@ -381,25 +395,5 @@
 
   @media (min-width: $desktop-breakpoint) {
     @include font-style($size: 18px, $line: 30px);
-  }
-}
-
-.advantages__br {
-  display: none;
-
-  @media (min-width: $tablet-breakpoint) {
-    &--two {
-      display: inline;
-    }
-  }
-
-  @media (min-width: $desktop-breakpoint) {
-    &--one {
-      display: inline;
-    }
-
-    &--two {
-      display: none;
-    }
   }
 }
