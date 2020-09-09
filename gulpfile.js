@@ -24,7 +24,6 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
@@ -51,8 +50,7 @@ const scripts = () => {
   return gulp.src("source/js/all-scripts.js")
     .pipe(uglify())
     .pipe(rename("scripts.min.js"))
-    .pipe(gulp.dest("build/js"))
-    .pipe(gulp.dest("source/js"));
+    .pipe(gulp.dest("build/js"));
 }
 
 exports.scripts = scripts;
@@ -87,7 +85,6 @@ const sprite = () => {
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
-    .pipe(gulp.dest("source/img"))
 }
 
 exports.sprite = sprite;
@@ -121,7 +118,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
