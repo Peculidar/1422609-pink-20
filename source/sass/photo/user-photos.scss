@@ -1,3 +1,37 @@
+.user-photos {
+  margin-top: -222px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: -289px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: -457px;
+  }
+}
+
+.user-photos__intro {
+  @include color-style($theme-black, $basic-white);
+}
+
+.user-photos__intro-text {
+  @include font-style($line: 30px);
+  width: 250px;
+  margin: 0 auto;
+  padding: 44px 20px 50px;
+  text-align: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    @include font-style(18px, 30px, 400);
+    width: 550px;
+    padding: 91px 40px 77px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 600px;
+    padding-bottom: 89px;
+  }
+}
 
 .user-photos__list {
   list-style: none;
@@ -35,7 +69,7 @@
   top: 0;
   right: 0;
   z-index: 100;
-  padding: 6px 20px;
+  padding: 6px 20px 6px 19px;
   margin: 0;
   text-transform: uppercase;
 

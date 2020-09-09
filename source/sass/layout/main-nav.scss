@@ -37,7 +37,6 @@
 
 .main-nav__item {
   @include font-style(18px, 32px, 700);
-  // @include color-style($basic-white, $theme-black);
   color: $basic-white;
   position: relative;
   text-align: center;
@@ -47,10 +46,8 @@
   margin-top: 1px;
 
   &:first-of-type {
-    border-top: 1px solid $basic-black;
-
-    @media (min-width: desktop-breakpoint) {
-      border-top: none;
+    @media (max-width: 959px) {
+      border-top: 1px solid $basic-black;
     }
   }
 
@@ -58,6 +55,7 @@
     @include font-style(18px, 18px, 400);
     margin-right: 79px;
     margin-top: 0;
+    border-top: none;
     background-color: transparent;
     box-shadow: none;
 
@@ -74,7 +72,11 @@
   padding: 16px 0 15px;
 
   @media (min-width: $tablet-breakpoint) {
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 17px;
   }
 
   &:hover {
@@ -182,7 +184,7 @@
     background-color: $basic-white;
 
     @media (min-width: $tablet-breakpoint) {
-      top: 53px;
+      top: 55px;
     }
   }
 
